@@ -7,3 +7,12 @@ title: CSSForest.org
 <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+<ul>
+{% for link in site.data.links %}
+  <li>
+    <a href="{{ link }}">
+      {{ link.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
