@@ -2,15 +2,16 @@
 layout: default
 title: CSSForest.org
 ---
-<h2>文章列表</h2>
 <section>
+<h2>文章列表</h2>
 {% for post in site.posts %}
 <article>
 <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-<section>{{ post.excerpt }}</section>
+<section>{{ post.excerpt | remove: '<h1>.*</h1>' }}</section>
 </article>
 {% endfor %}
 </section>
+<aside>
 <h2>链接</h2>
 <ul>
 {% for link in site.data.links %}
@@ -21,3 +22,4 @@ title: CSSForest.org
   </li>
 {% endfor %}
 </ul>
+</aside>
