@@ -2,13 +2,11 @@
 layout: default
 title: CSSForest.org
 ---
-<h2>文章列表</h2>
 <ul>
 {% for post in site.posts %}
 <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-<h2>链接</h2>
 <ul>
 {% for link in site.data.links %}
   <li>
