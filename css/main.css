@@ -46,7 +46,7 @@ footer{background-color:#EEEEEE;padding:0.5rem 0;}
 .recent{-moz-column-count:2;-moz-column-gap:1em;-webkit-column-count:2;-webkit-column-gap:1em;}
 .links{-moz-column-count:4;-moz-column-gap:1em;-webkit-column-count:4;-webkit-column-gap:1em;}
 .lteie6_main{clear:both;padding:0 15px;border:1px solid #FFC832;background-color:#FFFFCC;}
-.qr{float:left;}
+.qr{float:left;margin-right:.5rem;}
 .none{display:none;}
 .accessibility{position:fixed;_position:absolute;top:82px;right:0;padding:10px 10px 10px 25px;background-color:#FFFFFF;}
 .accessibility ul{margin:0;padding:0;list-style:square;}
@@ -55,7 +55,7 @@ footer{background-color:#EEEEEE;padding:0.5rem 0;}
 .indented_comment{position:relative;left:20px;}
 .comment-id{font-size:50%;}
 .lineno{background-color:#323232;color:#FFFFFF;padding:.2rem;}
-#content{max-width:800px;padding:0 40px;}
-#sidebar{border-top:.5rem solid #EEEEEE;margin-top:.5rem;}
+#content{max-width:800px;padding:0 40px;margin-bottom:.5rem;}
+#sidebar{border-top:.5rem solid #EEEEEE;}
 #cse table td{border:none;}
 #swete-basic-badge{position:absolute;left:-200px;}
