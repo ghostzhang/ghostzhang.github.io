@@ -14,7 +14,7 @@ header nav ul{display:inline;padding:0;}
 header nav li{display:inline-block;padding:8px 15px;list-style:none;font-family:inherit;}
 header nav a:link,header nav a:visited{color:#FFFFFF;background-color:transparent;}
 header nav li:hover{background-color:#3399FF;}
-h1{color:#222222;font-size:1rem;}
+h1{color:#222222;}
 h3 a:link,h3 a:visited{color:#222222;}
 input[name="submit"].button{;background-color:rgba(60,132,198,0.8);background-image:-moz-linear-gradient(rgba(28,91,155,0.8) 0,rgba(108,191,255,.9) 90%);border-top-color:#8BA2C1;border-right-color:#5890BF;border-bottom-color:#4F93CA;border-left-color:#768FA5;-webkit-box-shadow:rgba(66,140,240,0.5) 0 10px 16px;-moz-box-shadow:rgba(66,140,240,0.5) 0 10px 16px;}
 input[name="submit"].button.disabled{background-color:rgba(244,244,244,0.8);background-image:-moz-linear-gradient(rgba(244,244,244,0.8) 0,rgba(0,0,0,.9) 90%);border-color:#ADB2B5;-webkit-box-shadow:rgba(173,178,181,0.5) 0 0 0;-moz-box-shadow:rgba(173,178,181,0.5) 0 10px 16px;color:#6D6D6D;cursor:default;font-weight:normal;text-shadow:rgb(255,255,255) 0 0 5px;}
