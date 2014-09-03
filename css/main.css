@@ -25,7 +25,9 @@ blockquote:after{content:"”";}
 pre,code{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
 pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-width:1px 1px 3px;word-wrap:break-word;-moz-box-shadow:0 3px 6px rgba(0,0,0,0.25);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.25);}
 a img[src="http://tcss.qq.com/icon/toss_11.gif"]{display:none}
-footer{background-color:#EEEEEE;padding:0.5rem 0;}
+footer{background-color:#EEEEEE;padding:0.1rem 0;}
+footer p{margin-left:3rem;}
+footer p a{padding:0;}
 .logo{margin:0;padding:0 40px;font-size:380%;font-family:Helvetica,"Microsoft YaHei",STHeiti,Georgia,"Times New Roman",Times,serif;background-image:linear-gradient(bottom,#2EF5F5 17%,#309EFF 51%,#2B78ED 81%);}
 .logo a:link,.logo a:visited{color:#6B6C6C;}
 .logo a:hover{background-color:transparent;}
@@ -46,7 +48,6 @@ footer{background-color:#EEEEEE;padding:0.5rem 0;}
 .recent{-moz-column-count:2;-moz-column-gap:1em;-webkit-column-count:2;-webkit-column-gap:1em;}
 .links{-moz-column-count:4;-moz-column-gap:1em;-webkit-column-count:4;-webkit-column-gap:1em;}
 .lteie6_main{clear:both;padding:0 15px;border:1px solid #FFC832;background-color:#FFFFCC;}
-.qr{float:left;margin-right:.5rem;}
 .none{display:none;}
 .accessibility{position:fixed;_position:absolute;top:82px;right:0;padding:10px 10px 10px 25px;background-color:#FFFFFF;}
 .accessibility ul{margin:0;padding:0;list-style:square;}
