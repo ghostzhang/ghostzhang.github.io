@@ -4,12 +4,13 @@ title: CSSForest.org
 ---
 <section>
 <h2>文章列表</h2>
+<section>
+<ul>
 {% for post in site.posts %}
-<article>
-<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-<section>{{ post.excerpt | remove: '<h1>.*</h1>' }}</section>
-</article>
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
+</section>
 </section>
 <aside id="sidebar">
 <h2>链接</h2>

@@ -16,10 +16,14 @@
 			  </nav>
 			</header>
 			<div id="content">
+				<article>
 		　　　　{{ content }}
+				</article>
+				<aside>
 				<!-- 多说评论框 start -->
 					<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
 				<!-- 多说评论框 end -->
+				</aside>
 			</div>
 			{% include footer.html %}
 		</div>
