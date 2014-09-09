@@ -23,6 +23,7 @@ blockquote{margin:4px 0 4px 20px;padding:4px 8px;background-color:#EFEFEF;border
 blockquote:before{content:"“";}
 blockquote:after{content:"”";}
 sup{margin-left:-8px;}
+em{padding:4px;}
 pre,code{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
 pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-width:1px 1px 3px;word-wrap:break-word;-moz-box-shadow:0 3px 6px rgba(0,0,0,0.25);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.25);}
 a img[src="http://tcss.qq.com/icon/toss_11.gif"]{display:none}
