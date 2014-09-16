@@ -5,13 +5,13 @@ title: CSSForest.org
 <section>
 <h2>文章列表</h2>
 <section>
-<ul class="listing">
 {% for post in paginator.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
-    <li class="listing-seperator">{{ y }}</li>
+    <h3 class="listing-seperator">{{ y }}</h3>
   {% endif %}
+<ul class="listing">
   <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
@@ -19,8 +19,8 @@ title: CSSForest.org
     <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
     {% endif%}
   </li>
-{% endfor %}
 </ul>
+{% endfor %}
 
 <div id="post-pagination" class="paginator">
 
