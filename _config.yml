@@ -6,3 +6,4 @@ permalink: /:title/
 author: Ghostzhang
 qq: 22168741
 email: Ghostzhang@cssforest.org
+paginate: 20
