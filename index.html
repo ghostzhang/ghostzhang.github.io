@@ -7,7 +7,7 @@ title: CSSForest.org
 <section>
 <ul>
 {% for post in site.posts %}
-<li>[{{ page.date |  date: "%F }}] <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+<li>[{{ post.date |  date: "%F }}] <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </section>
