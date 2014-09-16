@@ -1,9 +1,11 @@
 name: CSS森林(CSS Forest)
 description: 一个页面仔的成长之路
 url: http://blog.cssforest.org
-markdown: rdiscount
-#permalink: /:title/
 author: Ghostzhang
 qq: 22168741
 email: Ghostzhang@cssforest.org
+markdown: rdiscount
 paginate: 20
+#permalink: /:title/
+pygments: true
+safe: true
