@@ -3,7 +3,7 @@ title: 标签
 layout: index
 ---
 
-#标签
+#{{ page.title }}
 
 <div id='tag_cloud'>
 {% for tag in site.tags %}
