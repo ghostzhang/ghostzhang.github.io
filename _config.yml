@@ -6,6 +6,5 @@ qq: 22168741
 email: Ghostzhang@cssforest.org
 markdown: rdiscount
 paginate: 5
-#permalink: /:title/
 pygments: true
 safe: true
