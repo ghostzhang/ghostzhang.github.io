@@ -1,1 +1,0 @@
-文章被分类到：[page.categories](http://blog.cssforest.org/categories/#{{ page.categories }})
