@@ -1,4 +1,4 @@
-文章被分类到：[page.categories](http://blog.cssforest.org/categories/#{{ page.categories }})
+文章被分类到：[{{ page.categories }}](http://blog.cssforest.org/categories/#{{ page.categories }})
 
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
