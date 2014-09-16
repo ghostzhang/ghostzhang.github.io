@@ -3,14 +3,22 @@ title: 标签
 layout: index
 ---
 
+<<<<<<< HEAD
 #标签
 
+=======
+>>>>>>> parent of 724d66b... 更新样式
 <div id='tag_cloud'>
 {% for tag in site.tags %}
-<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> 
 {% endfor %}
 </div>
 
+<<<<<<< HEAD
+{% for tag in site.tags %}
+<h2 class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</h2>
+=======
+>>>>>>> parent of 724d66b... 更新样式
 <ul class="listing">
 {% for tag in site.tags %}
   <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
