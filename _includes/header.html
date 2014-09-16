@@ -1,11 +1,13 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Language" content="zh-cn" />
 		<meta name="robots" content="all" />
-		<meta name="author" content="GhostZhang" />
-		<meta name="Copyright" content="CSSForest" />
+		<meta name="author" content="{{ site.author }}" />
+		<meta name="Copyright" content="CSS森林(CSS Forest)" />
 		<meta name="Description" content="{{ site.description }}" />
 		<meta name="application-name" content="CSS森林(CSS Forest)" />
-		<meta name="Keywords" content="CSS森林,css forest,Ghost,GhostZhang,页面重构,模块化设计,模块化,forest,CSS,样式表,Blog,博客,XHTML" />
-		<title>{{ page.title }}</title>
+		<meta name="Keywords" content="CSS森林,css forest,Ghost,GhostZhang,页面重构,模块化,forest,CSS,样式表,Blog,博客,XHTML" />
+		<title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}</title>
 		<link href='/feed.articles.xml' rel='alternate' type='application/atom+xml' />
+		<link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
 		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/highlight.css" />

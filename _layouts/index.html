@@ -6,14 +6,7 @@
 	<body>
 		<div id="container">
 			<header>
-			  <h1 class="logo"><a href="http://blog.cssforest.org/"><span data-title="CSS"><span>C</span><span>S</span><span>S</span></span><span data-title="Forest">森林</span></a></h1>
-			  <nav>
-			    <h2 class="none">导航</h2>
-			    <ul>
-			     <li><a href="http://blog.cssforest.org/" accesskey="1" class="menunow" title="首页">INDEX</a></li>
-			     <li><a href="##" accesskey="2" title="关于">ABOUT</a></li>
-			    </ul>
-			  </nav>
+			  {% include nav.html %}
 			</header>
 			<div id="content">
 		　　　　{{ content }}
