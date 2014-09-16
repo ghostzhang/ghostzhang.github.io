@@ -1,5 +1,6 @@
+<div class="archive-info">
 文章被分类到：[{{ page.categories }}](http://blog.cssforest.org/categories/#{{ page.categories }})
-
+</div>
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
