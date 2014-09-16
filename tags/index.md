@@ -1,6 +1,6 @@
 ---
 title: 标签
-layout: page
+layout: index
 ---
 
 <div id='tag_cloud'>
