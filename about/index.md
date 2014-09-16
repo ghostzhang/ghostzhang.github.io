@@ -1,7 +1,6 @@
 ---
 title: 关于
 layout: index
-comments: no
 ---
 
 #关于小站
