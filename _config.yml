@@ -10,3 +10,4 @@ pygments: true
 safe: true
 permalink: /:year/:month/:day/:title.html
 markdown: rdiscount
+published: false
