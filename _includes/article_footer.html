@@ -1,5 +1,13 @@
 <div class="archive-info">
-    <p>文章被分类到：<a href="http://blog.cssforest.org/categories/#{{ page.categories }}" title="{{ page.categories }}">{{ page.categories }}</a></p>
+    <p>文章永久地址：{{ article.url }}</p>
+    <p>文章被分类到：<a href="/categories/#{{ page.categories }}" title="{{ page.categories }}">{{ page.categories }}</a></p>
+    {% if page.tags %}
+    <p>文章被贴上标签：
+    {% for tag in article.tags %}
+    <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> 
+    {% endfor %}
+    </p>
+    {% endif %}
 </div>
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
