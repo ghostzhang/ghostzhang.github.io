@@ -23,10 +23,9 @@ title: CSSForest.org
 {% endfor %}
 
 <div id="post-pagination" class="paginator">
-
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/"><前页</a>
+    <a href="/">&lt;前页</a>
     {% else %}
     <a href="/page{{paginator.previous_page}}">&lt;前页</a>
     {% endif %}
