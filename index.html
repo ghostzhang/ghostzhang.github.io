@@ -13,10 +13,12 @@ title: CSSForest.org
   {% endif %}
 <ul class="listing">
   <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    {% if site.truncate %}
-    <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
+    {% if post.published %}
+      <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      {% if site.truncate %}
+      <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
+      {% endif%}
     {% endif%}
   </li>
 </ul>
