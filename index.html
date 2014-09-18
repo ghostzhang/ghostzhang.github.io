@@ -6,6 +6,7 @@ title: CSSForest.org
 <h2>文章列表</h2>
 <section>
 {% for post in paginator.posts %}
+{% if post.published %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
@@ -13,15 +14,14 @@ title: CSSForest.org
   {% endif %}
 <ul class="listing">
   <li class="listing-item">
-    {% if post.published %}
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       {% if site.truncate %}
       <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
       {% endif%}
-    {% endif%}
   </li>
 </ul>
+{% endif%}
 {% endfor %}
 
 <div id="post-pagination" class="paginator">
