@@ -5,7 +5,12 @@ layout: index
 
 #链接
 
-{% for lists in site.data.links %}
-{% assign org = lists[1] %}
-{{ site.data.org }}
+<ul>
+{% for link in site.data.links %}
+  <li>
+    <a href="{{ link.url }}">
+      {{ link.name }}
+    </a>
+  </li>
 {% endfor %}
+</ul>
