@@ -8,7 +8,7 @@ layout: index
 {% for lists in site.data.links %}
 {% assign links = lists[1] %}
 <ul>
-{% for link in links %}
+{% for link in lists[1] %}
   <li>
     <a href="{{ link.url }}">
       {{ link.name }}
