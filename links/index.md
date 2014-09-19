@@ -6,7 +6,8 @@ layout: index
 #链接
 
 <ul>
-{% for link in site.data.links %}
+{% for link_hash in site.data.links %}
+{% assign link = link_hash[1] %}
   <li>
     <a href="{{ link.url }}">
       {{ link.name }}
