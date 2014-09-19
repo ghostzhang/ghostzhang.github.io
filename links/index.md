@@ -7,5 +7,5 @@ layout: index
 
 {% for lists in site.data.links %}
 {% assign org = lists[1] %}
-{{ org }}
+{{ site.data.org }}
 {% endfor %}
