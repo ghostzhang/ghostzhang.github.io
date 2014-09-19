@@ -6,5 +6,6 @@ layout: index
 #链接
 
 {% for lists in site.data.links %}
-{{ lists }}
+{% assign org = lists[1] %}
+{{ org }}
 {% endfor %}
