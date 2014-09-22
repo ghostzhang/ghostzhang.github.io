@@ -1,4 +1,14 @@
+my:
+  - name: my github
+    url: https://github.com/ghostzhang
+
+  - name: CSS森林（旧站）
+    url: http://www.cssforest.org/blog/
+
 links:
+  - 
+
+friends:
   - name: 阿成
     url: http://ac.geodesy.cn/
 
@@ -46,3 +56,6 @@ links:
 
   - name: 崔凯的博客
     url: http://uicss.cn/
+
+  - name: 余果
+    url: http://yuguo.us/weblog/

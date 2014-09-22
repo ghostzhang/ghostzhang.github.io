@@ -3,7 +3,7 @@ title: 链接
 layout: index
 ---
 
-#链接
+#{{ page.title }}
 
 <ul>
 {% for link_hash in site.data.links %}
