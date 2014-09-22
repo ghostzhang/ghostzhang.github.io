@@ -5,4 +5,4 @@ layout: index
 
 #{{ page.title }}
 
-{% include data_links.html links=site.data.links %}
+{% include data_links.html nodes=site.data.nerd_urls %}

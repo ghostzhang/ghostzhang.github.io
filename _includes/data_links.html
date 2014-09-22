@@ -1,7 +1,7 @@
-<ul>{% for node in include.links %}
+<ul>{% for node in include.nodes %}
   <li>{% if node.meta == false and node.data %}
     {{ node.name }}
-    {% include data_links.html links=node.data %}{% else %}
+    {% include data_links.html nodes=node.data %}{% else %}
     <a href="{{ node.link }}">{{ node.name }}</a>{% if node.desc %}
     {{ node.desc }}{% endif %}
   {% endif %}</li>{% endfor %}
