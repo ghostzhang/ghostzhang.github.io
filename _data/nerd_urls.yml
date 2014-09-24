@@ -1,56 +1,65 @@
 - name: WebSites
   meta: false
   data:
-    - name: my github
-      url: https://github.com/ghostzhang
-    - name: CSS森林（旧站）
-      url: http://www.cssforest.org/blog/
-- name: Blogs
+  - name: 个人相关
+    meta: false
+    data:
+      - name: my github
+        url: https://github.com/ghostzhang
+      - name: CSS森林（旧站）
+        url: http://www.cssforest.org/blog/
+  - name: 友情链接
+    meta: false
+    data:
+      - name: lilac（雪青）
+        url: http://www.cnblogs.com/lilaczhu/
+      - name: 冰糖橙子
+        url: http://www.btorange.com/
+      - name: 白树
+        url: http://peunzhang.cnblogs.com/
+      - name: 好前端
+        url: www.haoqianduan.com/
+      - name: 苏塔
+        url: http://suta.im/
+      - name: Smallni.com
+        url: http://www.smallni.com/
+      - name: 阿成
+        url: http://ac.geodesy.cn/
+      - name: 臭鱼的交互设计
+        url: http://www.chouyu.com.cn/
+      - name: 人仔
+        url: http://www.tesion.cn
+      - name: 飘飘的生活空间
+        url: http://www.pufen.net/
+      - name: 米随随 s5s5
+        url: http://s5s5.me/
+      - name: Time Machine
+        url: http://rlog.cn/
+      - name: PuterJam's Blog
+        url: http://www.pjhome.net/
+      - name: aoao
+        url: http://www.aoao.org.cn/
+      - name: 豆豆猫
+        url: http://www.ddcat.net/blog/
+      - name: 沁Kling
+        url: http://www.tangzhehao.com.cn          
+      - name: cbm's land
+        url: http://www.cbmland.com/          
+      - name: WEB前端开发
+        url: http://www.css88.com
+      - name: tension's house
+        url: http://tension.name/
+      - name: 胖大菜
+        url: http://dyggang.blog.163.com/
+      - name: 彬Go
+        url: http://blog.bingo929.com/
+      - name: 崔凯的博客
+        url: http://uicss.cn/
+      - name: 余果
+        url: http://yuguo.us/weblog/
+- name: 团队博客
   meta: false
   data:
-    - name: lilac（雪青）
-      url: http://www.cnblogs.com/lilaczhu/
-    - name: 冰糖橙子
-      url: http://www.btorange.com/
-    - name: 白树
-      url: http://peunzhang.cnblogs.com/
-    - name: 好前端
-      url: www.haoqianduan.com/
-    - name: 苏塔
-      url: http://suta.im/
-    - name: Smallni.com
-      url: http://www.smallni.com/
-    - name: 阿成
-      url: http://ac.geodesy.cn/
-    - name: 臭鱼的交互设计
-      url: http://www.chouyu.com.cn/
-    - name: 人仔
-      url: http://www.tesion.cn
-    - name: 飘飘的生活空间
-      url: http://www.pufen.net/
-    - name: 米随随 s5s5
-      url: http://s5s5.me/
-    - name: Time Machine
-      url: http://rlog.cn/
-    - name: PuterJam's Blog
-      url: http://www.pjhome.net/
-    - name: aoao
-      url: http://www.aoao.org.cn/
-    - name: 豆豆猫
-      url: http://www.ddcat.net/blog/
-    - name: 沁Kling
-      url: http://www.tangzhehao.com.cn          
-    - name: cbm's land
-      url: http://www.cbmland.com/          
-    - name: WEB前端开发
-      url: http://www.css88.com
-    - name: tension's house
-      url: http://tension.name/
-    - name: 胖大菜
-      url: http://dyggang.blog.163.com/
-    - name: 彬Go
-      url: http://blog.bingo929.com/
-    - name: 崔凯的博客
-      url: http://uicss.cn/
-    - name: 余果
-      url: http://yuguo.us/weblog/
+      - name: TID设计中心
+        url: http://tid.tenpay.com/
+        desc: 财付通设计中心
