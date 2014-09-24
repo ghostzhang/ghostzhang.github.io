@@ -31,6 +31,9 @@
       - name: 色生活
         url: http://www.seshenghuo.com/
         desc: carl
+      - name: 飚飚
+        url: http://blog.yulonh.com/
+        desc: yulonh
       - name: CS_wuxiang的专栏
         url: http://blog.csdn.net/cs_wuxiang
         desc: wuxiang
