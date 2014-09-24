@@ -11,6 +11,9 @@
   - name: 友情链接
     meta: false
     data:
+      - name: twinsen
+        url: http://www.twinsenliang.net/
+        desc: 虎三
       - name: lilac（雪青）
         url: http://www.cnblogs.com/lilaczhu/
       - name: 白树
@@ -77,3 +80,8 @@
       - name: TID设计中心
         url: http://tid.tenpay.com/
         desc: 财付通设计中心
+- name: 其它
+  meta: false
+  data:
+      - name: 惠海IT连锁
+        url: http://www.hhit.com.cn/
