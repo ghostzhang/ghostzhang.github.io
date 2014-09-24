@@ -8,6 +8,19 @@
 - name: Blogs
   meta: false
   data:
+    - name: lilac（雪青）
+      url: http://www.cnblogs.com/lilaczhu/
+    - name: 冰糖橙子
+      url: http://www.btorange.com/
+    - name: 白树
+      url: http://peunzhang.cnblogs.com/
+    - name: 好前端
+      meta: false
+      url: www.haoqianduan.com/
+    - name: 苏塔
+      url: http://suta.im/
+    - name: Smallni.com
+      url: http://www.smallni.com/
     - name: 阿成
       url: http://ac.geodesy.cn/
     - name: 臭鱼的交互设计
