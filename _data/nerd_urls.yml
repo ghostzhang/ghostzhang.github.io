@@ -13,14 +13,28 @@
     data:
       - name: lilac（雪青）
         url: http://www.cnblogs.com/lilaczhu/
-      - name: 冰糖橙子
-        url: http://www.btorange.com/
       - name: 白树
         url: http://peunzhang.cnblogs.com/
+        desc: peun
       - name: 好前端
-        url: www.haoqianduan.com/
+        url: http://www.haoqianduan.com/
+        desc: gold
+      - name: Freetao's Blog
+        url: http://blog.kainy.cn/
+        desc: kainy
+      - name: 前端逸事
+        url: http://4gfuns.com/
+        desc: happy
+      - name: 小网
+        url: http://www.seshenghuo.com/
+        desc: carl
+      - name: CS_wuxiang的专栏
+        url: http://blog.csdn.net/cs_wuxiang
+        desc: wuxiang
       - name: 苏塔
         url: http://suta.im/
+      - name: 冰糖橙子
+        url: http://www.btorange.com/
       - name: Smallni.com
         url: http://www.smallni.com/
       - name: 阿成
