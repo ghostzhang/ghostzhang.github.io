@@ -88,6 +88,8 @@
 - name: 其它
   meta: false
   data:
+      - name: WebRebuild
+        url: http://www.webrebuild.org/
       - name: 惠海IT连锁
         url: http://www.hhit.com.cn/
       - name: web标准化交流会
