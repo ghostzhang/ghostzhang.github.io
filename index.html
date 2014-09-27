@@ -2,9 +2,9 @@
 layout: index
 title: CSSForest.org
 ---
+
 <section>
 <h2>文章列表</h2>
-<section>
 {% for post in paginator.posts %}
 {% if post.published %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
@@ -57,6 +57,10 @@ title: CSSForest.org
   (共{{ paginator.total_posts }}篇)
 </div>
 </section>
-</section>
-<!--<aside id="sidebar">
-</aside>-->
+
+<aside id="sidebar">
+<h2>最新评论</h2>
+<!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+</aside>
