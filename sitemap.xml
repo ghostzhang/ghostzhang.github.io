@@ -33,15 +33,11 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 		<lastmod>2014-09-29</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.5</priority>
-	</url>
-	{% for post in site.posts %}
-	<url>
-		{% unless post.link %}
+	</url>{% for post in site.posts %}
+	<url>{% unless post.link %}
 		<loc>{{ site.url }}{{ post.url }}</loc>
 		<lastmod>{{ post.date | date:"%Y-%m-%d" }}</lastmod>
 		<changefreq>daily</changefreq>
-		<priority>0.5</priority>
-		{% endunless %}
-	</url>
-	{% endfor %}
+		<priority>0.5</priority>{% endunless %}
+	</url>{% endfor %}
 </urlset>
