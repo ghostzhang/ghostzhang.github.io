@@ -79,6 +79,8 @@
         url: http://yuguo.us/weblog/
       - name: 小志
         url: http://blog.linxz.de/
+      - name: 焕义
+        url: http://www.avenirzheng.net/
 - name: 团队博客
   meta: false
   data:
@@ -88,6 +90,8 @@
 - name: 其它
   meta: false
   data:
+      - name: github
+        url: https://github.com/ghostzhang
       - name: WebRebuild
         url: http://www.webrebuild.org/
       - name: 惠海IT连锁
