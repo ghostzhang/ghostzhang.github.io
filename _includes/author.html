@@ -1,2 +1,6 @@
+{% if page.author %}
+{% assign author = page.author %}
+{% else %}
 {% assign author = site.data.author %}
+{% endif %}
 由 <a href="{{ author.url }}">{{ author.name | capitalize }}</a> 发表于 {{ page.date |  date: "%F %R" }}
