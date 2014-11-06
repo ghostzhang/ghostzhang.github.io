@@ -57,6 +57,7 @@ footer p a:link,footer p a:visited{padding:0;}
 .comment-id{font-size:50%;}
 .lineno{background-color:#323232;color:#FFFFFF;padding:.2rem;}
 #content{max-width:800px;padding:0 40px;margin-bottom:.5rem;}
+#content p img{max-width:800px;}
 #sidebar{border-top:.5rem solid #EEEEEE;}
 #cse table td{border:none;}
 #swete-basic-badge{position:absolute;left:-200px;}
