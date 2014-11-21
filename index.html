@@ -11,8 +11,8 @@ title: CSSForest.org
   {% if year != y %}
     {% assign year = y %}
     <h3 class="listing-seperator">{{ year }}</h3>
-  {% endif %}
     <ul class="listing">
+  {% endif %}
       <li class="listing-item">
           <section>
           <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -22,8 +22,8 @@ title: CSSForest.org
           {% endif%}
           </section>
       </li>
-    </ul>
 {% endif%}
+    </ul>
 {% endfor %}
 </section>
 
