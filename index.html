@@ -3,9 +3,11 @@ layout: index
 title: CSSForest.org
 ---
 
+<section>
 <h2>文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
+    <section>
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
   {% if year != y %}
     {% assign year = y %}
@@ -22,8 +24,10 @@ title: CSSForest.org
           </section>
       </li>
     </ul>
+    </section>
 {% endif%}
 {% endfor %}
+</section>
 
 <div id="post-pagination" class="paginator">
   {% if paginator.previous_page %}
