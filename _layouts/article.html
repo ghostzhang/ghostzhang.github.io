@@ -5,18 +5,19 @@
 	</head>
 	<body>
 		<div id="container">
-			<header>
+			<header class="main-header">
 			  {% include nav.html %}
 			</header>
 			<main id="content">
 				<article>
 		　　　　{{ content }}
 				</article>
-				<aside>
+				<section>
+                    <h1 class="none">评论列表</h1>
 				<!-- 多说评论框 start -->
 					<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
 				<!-- 多说评论框 end -->
-				</aside>
+				</section>
 			</main>
 			{% include footer.html %}
 		</div>
