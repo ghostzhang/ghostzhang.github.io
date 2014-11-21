@@ -3,7 +3,7 @@ layout: index
 title: CSSForest.org
 ---
 
-<section>
+<action>
 <h2>文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
@@ -11,23 +11,17 @@ title: CSSForest.org
   {% if year != y %}
     {% assign year = y %}
     <h3 class="listing-seperator">{{ year }}</h3>
-    <ul class="listing">
   {% endif %}
-      <li class="listing-item">
-          <section>
-          <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-          <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-          {% if site.truncate %}
-          <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
-          {% endif%}
-          </section>
-      </li>
-  {% if year != y %}
-    </ul>
-  {% endif %}
+    <section class="listing">
+        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        {% if site.truncate %}
+        <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
+        {% endif%}
+    </section>
 {% endif%}
 {% endfor %}
-</section>
+</action>
 
 <div id="post-pagination" class="paginator">
   {% if paginator.previous_page %}
