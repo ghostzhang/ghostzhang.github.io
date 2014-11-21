@@ -7,9 +7,7 @@ categories: 随便写写
 published: true
 ---
 
-#{{ page.title }}
-
-{% include author.html %}
+{% include  article_header.html %}
 
 PhotoshopNews 公布了由 Jeff Schewe 收集的，Photoshop 历年以来——从 Display 0.07 （Photoshop 的前身） 到目前为止最新版 Photoshop CS2 ——各个版本的启动画面及彩蛋。而我们 PConline软件资讯栏目 曾经在《傲视群雄——平面设计霸主Photoshop辉煌十三载》一文章中介绍过 Photoshop 带有传奇色彩的发展成长故事。现在就让我们通过这些图片一起再来回顾一下 Photoshop 的演变历史。
 

@@ -25,9 +25,9 @@ em{padding:4px;}
 pre,code,kbd{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
 pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-width:1px 1px 3px;word-wrap:break-word;-moz-box-shadow:0 3px 6px rgba(0,0,0,0.25);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.25);}
 a img[src="http://tcss.qq.com/icon/toss_11.gif"]{display:none}
-footer{background-color:#EEEEEE;padding:0.1rem 0;}
-footer p{margin-left:3rem;}
-footer p a:link,footer p a:visited{padding:0;}
+.main-footer{background-color:#EEEEEE;padding:0.1rem 0;}
+.main-footer p{margin-left:3rem;}
+.main-footer p a:link,footer p a:visited{padding:0;}
 .gist pre,.gist td{background:none;border:none 0;-moz-box-shadow:none;-webkit-box-shadow:none;}
 .logo{margin:0;padding:0 40px;font-size:380%;font-family:Helvetica,"Microsoft YaHei",STHeiti,Georgia,"Times New Roman",Times,serif;background-image:linear-gradient(bottom,#2EF5F5 17%,#309EFF 51%,#2B78ED 81%);}
 .logo a:link,.logo a:visited{color:#6B6C6C;}
