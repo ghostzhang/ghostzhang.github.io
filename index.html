@@ -9,11 +9,9 @@ title: CSSForest.org
 {% for post in paginator.posts %}
 {% if post.published %}
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-    
+
     {% if year != y %}
-        {% if n === 1 %}
     <section>
-        {% endif %}
         <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
         <section class="listing">
@@ -24,10 +22,7 @@ title: CSSForest.org
             {% endif%}
         </section>
     {% if year != y %}
-        {% if n === 1 %}
     </section>
-        {% endif %}
-        {% assign n = 2 %}
     {% endif %}
 {% endif%}
 {% endfor %}
