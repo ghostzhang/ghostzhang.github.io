@@ -10,13 +10,12 @@ title: CSSForest.org
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
 
     {% if year != y %}
-        {% if year != null %}
+        {% if year == null %}
     <section>
         {% else %}
     </section>
         {% endif %}
         {% assign year = y %}
-    
         <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
         <section class="listing">
