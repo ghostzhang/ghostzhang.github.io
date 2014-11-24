@@ -12,7 +12,11 @@ title: CSSForest.org
     {% if year != y %}
         {% if year == null %}
     <section>
+            {% assign n = y %}
         {% else %}
+            {% if n != year %}
+    <section>
+            {% endif %}
     </section>
         {% endif %}
         {% assign year = y %}
