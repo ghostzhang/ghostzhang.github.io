@@ -8,17 +8,17 @@
 			<header class="main-header">
 			  {% include nav.html %}
 			</header>
-			<main id="content">
-				<article>
+			<article id="content">
+				<main>
 		　　　　{{ content }}
-				</article>
+                </main>>
 				<section>
                     <h1 class="none">评论列表</h1>
 				<!-- 多说评论框 start -->
 					<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
 				<!-- 多说评论框 end -->
 				</section>
-			</main>
+			</article>
 			{% include footer.html %}
 		</div>
 	</body>
