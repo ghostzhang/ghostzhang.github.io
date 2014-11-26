@@ -1,9 +1,3 @@
-{% if page.id %}
-    {% assign a = page.url %}
-    {% assign b = page.id %}
-    {{ a | remove:b }}
-{% endif %}
-
 {% unless page.id %}
 <h1 class="logo">{% include logo.html %}</h1>
 {% endunless %}
