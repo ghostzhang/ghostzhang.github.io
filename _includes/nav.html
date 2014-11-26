@@ -1,9 +1,10 @@
-{% if {{ page.path | remove: {{ page.id }} }} == 'index.html' %}
+{% unless page.id %}
 <h1 class="logo">{% include logo.html %}</h1>
-{% else %}
+{% endunless %}
+{% if page.id %}
 <div class="logo">{% include logo.html %}</div>
-{% endif %}	
-{{ page.id }}|{{ page.path }}
+{% endunless %}
+
 	<nav>
 	<h2 class="none">导航</h2>
 	<ul>
