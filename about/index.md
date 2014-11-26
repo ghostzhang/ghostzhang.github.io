@@ -3,7 +3,7 @@ title: 关于
 layout: index
 ---
 
-#关于小站
+##关于小站
 
 
 
