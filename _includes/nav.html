@@ -1,4 +1,4 @@
-{% if {{ page.path | remove: page.id }} == 'index.html' %}
+{% if {{ page.path | remove: {{ page.id }} }} == 'index.html' %}
 <h1 class="logo">{% include logo.html %}</h1>
 {% else %}
 <div class="logo">{% include logo.html %}</div>
