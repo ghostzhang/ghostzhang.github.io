@@ -3,36 +3,34 @@ layout: index
 title: CSSForest.org
 ---
 
-<action>
-    <h2>文章列表</h2>
+<h2>文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
 
     {% if year != y %}
         {% if year == null %}
-    <section>
+<section>
             {% assign n = y %}
         {% else %}
             {% if n != y %}
-    </section>
+</section>
             {% endif %}
-    <section>
+<section>
         {% endif %}
         {% assign year = y %}
-        <h3 class="listing-seperator">{{ y }}</h3>
+    <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
-        <section class="listing">
-            <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-            <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-            {% if site.truncate %}
-            <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
-            {% endif%}
-        </section>
+    <section class="listing">
+        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        {% if site.truncate %}
+        <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
+        {% endif%}
+    </section>
 {% endif%}
 {% endfor %}
-    </section>
-</action>
+</section>
 
 <div id="post-pagination" class="paginator">
   {% if paginator.previous_page %}
