@@ -5,7 +5,7 @@ author: GhostZhang
 github: ghostzhang
 qq: 22168741
 email: Ghostzhang@cssforest.org
-paginate: 20
+#paginate: 20
 pygments: true
 safe: true
 permalink: /:year/:month/:day/:title.html

@@ -12,11 +12,11 @@ layout: index
 ##联系方式：
 <address>
 {% if site.qq %}
-ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
+ＱＱ：<a title="QQ" href="tencent://message/?uin={{ site.qq }}">{{ site.qq }}</a>
 {% endif %}
-网站：[{{ site.name }}]({{ site.url }})
+网站：<a title="邮箱" href="{{ site.url }}">{{ site.name }}</a>
 
-邮箱：[{{ site.email }}](mailto:{{ site.email }})
+邮箱：<a title="邮箱" href="mailto:{{ site.email }}">site.email</a>
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
+GitHub : <a title="Github" href="http://github.com/{{ site.github }}">http://github.com/{{ site.github }}</a>
 </address>
