@@ -17,6 +17,9 @@ layout: index
 2006年加入腾讯ISD；
 负责Qzone4.0页面重构、Qzone5.0的前端页面架构设计和实现；
 
+2007
+参与[WebRebuild.org](http://webrebuild.org/about.html)的组建；
+
 2009.9~2010.11
 轮岗到腾讯电商；
 参与拍拍网购物车改版；
