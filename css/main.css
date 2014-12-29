@@ -29,7 +29,8 @@ a img[src="http://tcss.qq.com/icon/toss_11.gif"]{display:none}
 .main-footer{background-color:#EEEEEE;padding:0.1rem 0;}
 .main-footer p{margin-left:3rem;}
 .main-footer p a:link,footer p a:visited{padding:0;}
-.gist pre,.gist td{background:none;border:none 0;-moz-box-shadow:none;-webkit-box-shadow:none;}
+.gist pre,
+.gist td{background:none;border:none 0;-moz-box-shadow:none;-webkit-box-shadow:none;}
 .logo{margin:0;padding:0 40px;font-size:380%;font-family:Helvetica,"Microsoft YaHei",STHeiti,Georgia,"Times New Roman",Times,serif;background-image:linear-gradient(bottom,#2EF5F5 17%,#309EFF 51%,#2B78ED 81%);}
 .logo a:link,.logo a:visited{color:#6B6C6C;}
 .logo a:hover{background-color:transparent;}
