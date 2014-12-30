@@ -68,7 +68,8 @@ a img[src="http://tcss.qq.com/icon/toss_11.gif"]{display:none}
 .listing time{color:#333333;}
 
 @media (max-device-width:420px){
-    .main-header nav ul{display:-webkit-box;display:box;}
-    .main-header nav li{-webkit-box-flex:5;box-flex:5;padding:auto;}
+    .main-header nav ul{display:flex;}
+    .main-header nav li{flex:5;padding:auto;}
+    .listing time{display:none;}
 }
 
