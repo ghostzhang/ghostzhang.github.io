@@ -67,8 +67,8 @@ pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-
 .listing time{color:#333333;}
 
 @media (max-device-width:420px){
-    .main-header nav{margin-left:auto;padding-left:10px;}
+    .main-header nav{margin-left:auto;padding-left:0;}
     .main-header nav ul{display:flex;}
-    .main-header nav li{flex:5;padding:auto;}
+    .main-header nav li{flex:5;padding:6px;text-align:center;}
     .listing time{display:none;}
 }
