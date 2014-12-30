@@ -5,20 +5,20 @@
 <div class="logo">{% include logo.html %}</div>
 {% endif %}
 
-	<nav>
+	<nav role="navigation">
         {% unless page.id %}
         <h2 class="none">导航</h2>
-        <ul>
-            <li><a title="网站首页"  accesskey="1" href="/">首页</a></li>
-            <li><a title="文章分类"  accesskey="2" href="/categories/">分类</a></li>
-            <li><a title="标签索引"  accesskey="3" href="/tags/">标签</a></li>
-            <li><a title="友情链接"  accesskey="4" href="/links/">链接</a></li>
-            <li><a title="关于站长"  accesskey="5" href="/about/">关于</a></li>
+        <ul role="menubar">
+            <li><a title="网站首页" role="menuitem" accesskey="1" href="/">首页</a></li>
+            <li><a title="文章分类" role="menuitem" accesskey="2" href="/categories/">分类</a></li>
+            <li><a title="标签索引" role="menuitem" accesskey="3" href="/tags/">标签</a></li>
+            <li><a title="友情链接" role="menuitem" accesskey="4" href="/links/">链接</a></li>
+            <li><a title="关于站长" role="menuitem" accesskey="5" href="/about/">关于</a></li>
         </ul>
         {% endunless %}
         {% if page.id %}
-        <ul>
-            <li><a title="返回首页"  accesskey="1" href="/">返回首页</a></li>
+        <ul role="menubar">
+            <li><a title="返回首页" role="menuitem" accesskey="1" href="/">返回首页</a></li>
         </ul>
         {% endif %}
 	</nav>
