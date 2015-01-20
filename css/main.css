@@ -19,9 +19,9 @@ em{padding:4px;}
 pre,code,kbd{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
 pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-width:1px 1px 3px;word-wrap:break-word;-moz-box-shadow:0 3px 6px rgba(0,0,0,0.25);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.25);}
 .main-header{padding:20px 0 0;background-color:#F1F1F1;}
-.main-header nav{overflow:hidden;margin-left:-14px;margin-top:16px;padding-left:3rem;background-color:#444444;}
+.main-header nav{overflow:hidden;margin-top:16px;padding-left:3rem;background-color:#444444;}
 .main-header nav ul{display:inline;padding:0;}
-.main-header nav li{display:inline-block;padding:8px 15px;list-style:none;font-family:inherit;}
+.main-header nav li{display:inline-block;margin-left:-14px;padding:8px 15px;list-style:none;font-family:inherit;}
 .main-header nav a:link,
 .main-header nav a:visited{color:#FFFFFF;background-color:transparent;}
 .main-header nav li:hover{background-color:#3399FF;}

@@ -1,5 +1,5 @@
 ﻿(function() {
-    
+
     if (/msie6.0/.test(window.navigator.userAgent.toLowerCase().replace(/\s/g, "")) || /msie7.0/.test(window.navigator.userAgent.toLowerCase().replace(/\s/g, ""))) {
         return false;
     }
@@ -358,7 +358,7 @@
     QQTAT.sWitch = {
         "hide": function(a) {
             var timer;
-            var TagBody = QQTAT.lib.$Tag("body")[0];
+            var eBody = QQTAT.lib.$Tag("body")[0];
             var fHide = function() {
                 QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Hook"), {
                     left: "0"
@@ -369,7 +369,7 @@
                     QQTAT.sWitch.cursor(false);
                     QQTAT.lib.$Id("a11y_TAT_Subtitle_Panel").innerHTML = '把光标移到文字上看看';
                 });
-                QQTAT.lib.animate(TagBody, {
+                QQTAT.lib.animate(eBody, {
                     paddingLeft: "0"
                 }, 1);
             }
@@ -386,13 +386,13 @@
             timer = null
         },
         "show": function() {
-        	var TagBody = QQTAT.lib.$Tag("body")[0];
+            var eBody = QQTAT.lib.$Tag("body")[0];
             QQTAT.subtitle.setSwitchBtn(true);
             QQTAT.subtitle.setAudioSwitchBtn(false);
             QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Hook"), {
                 left: "-69"
             }, 1);
-            QQTAT.lib.animate(TagBody, {
+            QQTAT.lib.animate(eBody, {
                 paddingLeft: "69"
             }, 1);
             QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Panel"), {
@@ -469,14 +469,13 @@
                 allySub.style.MozTransformOrigin = transOrigin;
                 l.style.MozTransform = bodyMult;
                 l.style.MozTransformOrigin = transOrigin;
-
             } else {
                 l.style.zoom = m;
                 if (!QQTAT.lib.$Browser.ie) {
                     ally.style.zoom = 1 / m;
                     allySub.style.zoom = 1 / m;
                 }
-                l.style.marginLeft = 52 + "px";
+                l.style.marginLeft = -(69 * (m - 1)) + 'px';
             }
         },
         zoomIn: function() {
