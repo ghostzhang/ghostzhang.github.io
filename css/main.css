@@ -67,6 +67,8 @@ pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-
 .listing time{color:#333333;}
 #content .mod-encourage img{display:block;width: auto;}
 
+#a11y_TAT_Copyrighs *{padding:0;margin:0;}
+
 @media (max-device-width:420px){
 	.logo,#content{padding:0 1rem;}
 	.main-header nav{padding-left:1rem;}
