@@ -13,25 +13,25 @@ layout: index
 
 2005年开始从事页面重构工作；
 
-2006.11~2009.09
 2006年加入腾讯ISD；
+
+2006.11~2009.09
 负责Qzone4.0页面重构、Qzone5.0的前端页面架构设计和实现；
 
 2007
 参与[WebRebuild.org](http://webrebuild.org/about.html)的组建；
 
 2009.9~2010.11
-轮岗到腾讯电商；
-参与拍拍网购物车改版；
+轮岗到腾讯电商，参与拍拍网购物车改版；
 
 2010.11~2011.1
-轮岗到QQ音乐；
-负责音乐客户端MiniPortal V3等项目；
+轮岗到QQ音乐，负责音乐客户端MiniPortal V3等项目；
 
 2011.1~now
 2011年加入财付通设计中心，负责重构团队管理工作；
 
 CSS森林(www.cssforest.org)作者；
+
 2006年《时代周刊》年度风云人物。
 
 <address>
@@ -40,5 +40,6 @@ CSS森林(www.cssforest.org)作者；
 {% endif %}
 网站：<a title="邮箱" href="{{ site.url }}">{{ site.name }}</a><br />
 邮箱：<a title="邮箱" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-GitHub : <a title="Github" href="http://github.com/{{ site.github }}">http://github.com/{{ site.github }}</a>
+GitHub : <a title="Github" href="http://github.com/{{ site.github }}">http://github.com/{{ site.github }}</a><br />
+Linkedin：<a title="Github" href="https://www.linkedin.com/in/{{ site.linkedin }}">{{ site.linkedin }}</a>
 </address>
