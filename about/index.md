@@ -43,3 +43,4 @@ CSS森林(www.cssforest.org)作者；
 GitHub : <a title="Github" href="http://github.com/{{ site.github }}">http://github.com/{{ site.github }}</a><br />
 Linkedin：<a title="Github" href="https://www.linkedin.com/in/{{ site.linkedin }}">{{ site.linkedin }}</a>
 </address>
+<object type="application/x-shockwave-flash" style="outline:none;float:right;margin-top:-225px;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="300" height="225"><param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?"></param><param name="AllowScriptAccess" value="always"></param><param name="wmode" value="opaque"></param></object>
