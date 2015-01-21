@@ -359,26 +359,26 @@
         "hide": function(a) {
             var timer;
             var eBody = QQTAT.lib.$Tag("body")[0];
-            var fHide = function() {
-                QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Hook"), {
-                    left: "0"
-                }, 1);
-                QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Panel"), {
-                    left: "-69"
-                }, 1, function() {
-                    QQTAT.sWitch.cursor(false);
-                    QQTAT.lib.$Id("a11y_TAT_Subtitle_Panel").innerHTML = '把光标移到文字上看看';
-                });
-                QQTAT.lib.animate(eBody, {
-                    paddingLeft: "0"
-                }, 1);
-            }
             QQTAT.subtitle.setSwitchBtn(false);
             QQTAT.subtitle.setAudioSwitchBtn(false);
             if (QQTAT.config.zoomCurr != 0) {
                 QQTAT.zoom.Revert();
             }
             if (a) {
+                var fHide = function() {
+                    QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Hook"), {
+                        left: "0"
+                    }, 1);
+                    QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Panel"), {
+                        left: "-69"
+                    }, 1, function() {
+                        QQTAT.sWitch.cursor(false);
+                        QQTAT.lib.$Id("a11y_TAT_Subtitle_Panel").innerHTML = '把光标移到文字上看看';
+                    });
+                    QQTAT.lib.animate(eBody, {
+                        paddingLeft: "0"
+                    }, 1);
+                }
                 fHide();
                 return;
             }
@@ -807,26 +807,30 @@
     }
 
     QQTAT.init = function() {
-        var sTatHtml, sTatStyle, $Lib = QQTAT.lib,
-            eTmpStyle;
+        if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent))) {
+            var sTatHtml, sTatStyle, $Lib = QQTAT.lib,
+                eTmpStyle;
 
-        sTatHtml = '<a id="a11y_TAT_Hook" href="javascript:void(0)" onClick="QQTAT.sWitch.show()" role="button" title="无障碍辅助工具">TAT</a><div id="a11y_TAT_Panel"><a id="close_A11y_TAT" class="a11y_TAT_Btn" href="javascript:void(0)" onclick="QQTAT.sWitch.hide(true)"><em>关闭</em></a><div class="a11y_TAT_Btn a11y_TAT_Subtitle_ed" id="a11y_TAT_Subtitle" tabindex="0"><em>字幕</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_TTS" tabindex="0"><em>语音阅读</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_Zoom_In" tabindex="0" role="button" aria-pressed="false"><em>放大网页</em><span></span></div><div class="a11y_TAT_Btn a11y_TAT_Dis_Zoom_F" id="a11y_TAT_Zoom_F" tabindex="0" role="button" aria-pressed="false"><em>还原网页</em><span></span></div><div class="a11y_TAT_Btn a11y_TAT_Dis_Zoom_Out" id="a11y_TAT_Zoom_Out" tabindex="0" role="button" aria-pressed="false"><em>缩小网页</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_Help" tabindex="0" role="button" aria-pressed="false"><em>帮助</em><span></span></div><div id="ally_TAT_flashPlayer"></div></div><div id="a11y_TAT_Subtitle_Panel">把光标移到文字上看看</div>';
-        sTatStyle = '#a11y_TAT_Hook{width:54px;height:0;padding-top:54px;display:block;overflow:hidden;position:fixed;left:-69px;top:210px;z-index:10010;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat 0 0;}{background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat 0 -54px}#a11y_TAT_Panel{width:54px;position:fixed;left:0;top:0;bottom:0;padding:47px 7px 0;border-right:1px solid #e1e1e1;background:#fff;box-shadow:1px 0 3px #ccc;z-index:1926;zoom:1}#a11y_TAT_Panel:after{content:"";display:table;clear:both}.a11y_TAT_Btn{height:54px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_link_xl.cur),auto;position:relative;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat;display:block;border:1px solid #fff;}.a11y_TAT_Btn:hover{border:1px solid #0081dc}.a11y_TAT_Btn em{display:block;height:0;padding-top:54px;overflow:hidden;font-style:normal;}#a11y_TAT_Panel .a11y_TAT_Subtitle_ed,#a11y_Explain #a11y_icon1{background-position:0 -108px}#a11y_TAT_Subtitle,#a11y_Explain #a11y_icon2{background-position:0 -162px}#a11y_TAT_Panel .a11y_TAT_TTS_ed,#a11y_Explain #a11y_icon3{background-position:0 -216px}#a11y_TAT_TTS,#a11y_Explain #a11y_icon4{background-position:0 -270px}#a11y_TAT_Zoom_In,#a11y_Explain #a11y_icon5{background-position:0 -378px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_In{background-position:0 -323px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Zoom_F,#a11y_Explain #a11y_icon7{background-position:0 -486px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_F{background-position:0 -432px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Zoom_Out,#a11y_Explain #a11y_icon6{background-position:0 -594px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_Out{background-position:0 -540px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Help,#a11y_Explain #a11y_icon8{background-position:0 -702px}#a11y_TAT_Panel .a11y_TAT_Help_ed{background-position:0 -648px}#a11y_TAT_Subtitle_Panel{width:94%;padding:0 3%;position:fixed;bottom:54px;left:0;right:0;z-index:1918;color:#1460ad;font-family:"微软雅黑","幼圆";font-weight:bold;text-align:center;text-shadow:1px 1px 1px #666;overflow:hidden;background:url(http://mat1.gtimg.com/www/a11y/bg.png?v=20150120_185323.png)}#a11y_TAT_Copyrighs{height:650px;width:750px;margin:-400px 0 0 -350px;}#a11y_Explain{height:399px;border-top:1px solid #dcdcdc;clear:both}#a11y_Explain li{float:left;display:inline;width:325px;height:93px;margin-left:47px;font:24px/93px "微软雅黑"}#a11y_Explain li span{width:54px;float:left;height:54px;margin:21px 18px 0 0;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat}#a11y_TAT_A11y_Intr{font:14px/26px "Arial";padding:45px 19px 17px;border-top:1px solid #dcdcdc;display:block}#a11y_TAT_A11y_Intr strong{font-weight:normal;color:#e51b00}#a11y_TAT_A11y_Intr em{font-weight:bold}#a11y_contacts{font:12px/24px "simsun";margin:0 19px;color:#9d9d9d}#close_A11y_TAT{background-position:0 -810px}#close_A11y_TAT:hover{background-position:0 -756px}.a11y_TAT_Tips{width:592px;height:270px;padding:25px;position:fixed;left:50%;top:50%;margin:-135px 0 0 -296px;background:#fff;display:none;z-index:100001}#close_a11y_TAT_Tips{width:25px;height:0;padding-top:25px;float:right;margin:7px 0 20px;overflow:hidden;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat -14px -825px}#close_a11y_TAT_Tips:hover{background-position:-14px -771px}.a11y_TAT_Tips_Content{font:30px/70px "微软雅黑";padding-top:65px;clear:both;border-top:1px solid #dcdcdc;text-align:center;}.subTitle_ft1{font-size:43px;height:90px }.subTitle_lh1{line-height:90px }.subTitle_lh11{line-height:45px }.subTitle_ft2{font-size:54px;height:110px }.subTitle_lh2{line-height:110px }.subTitle_lh22{line-height:55px }.subTitle_ft3{font-size:58px;height:120px }.subTitle_lh3{line-height:120px }.subTitle_lh33{line-height:60px }.subTitle_ft4{font-size:61px;height:130px }.subTitle_lh4{line-height:130px }.subTitle_lh44{line-height:65px }.subTitle_ft5{font-size:68px;height:140px }.subTitle_lh5{line-height:140px }.subTitle_lh55{line-height:70px }.subTitle_ft6{font-size:71px;height:150px }.subTitle_lh6{line-height:150px }.subTitle_lh66{line-height:75px }.subTitle_ft7{font-size:82px;height:170px }.subTitle_lh7{line-height:170px }.subTitle_lh77{line-height:85px }.tat_vis{background:#6b6b6b;color:#fff}#a11y_Explain *{padding:0;margin:0;}';
-        eTmpStyle = $Lib.$Create("style");
+            sTatHtml = '<a id="a11y_TAT_Hook" href="javascript:void(0)" onClick="QQTAT.sWitch.show()" role="button" title="无障碍辅助工具">TAT</a><div id="a11y_TAT_Panel"><a id="close_A11y_TAT" class="a11y_TAT_Btn" href="javascript:void(0)" onclick="QQTAT.sWitch.hide(true)"><em>关闭</em></a><div class="a11y_TAT_Btn a11y_TAT_Subtitle_ed" id="a11y_TAT_Subtitle" tabindex="0"><em>字幕</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_TTS" tabindex="0"><em>语音阅读</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_Zoom_In" tabindex="0" role="button" aria-pressed="false"><em>放大网页</em><span></span></div><div class="a11y_TAT_Btn a11y_TAT_Dis_Zoom_F" id="a11y_TAT_Zoom_F" tabindex="0" role="button" aria-pressed="false"><em>还原网页</em><span></span></div><div class="a11y_TAT_Btn a11y_TAT_Dis_Zoom_Out" id="a11y_TAT_Zoom_Out" tabindex="0" role="button" aria-pressed="false"><em>缩小网页</em><span></span></div><div class="a11y_TAT_Btn" id="a11y_TAT_Help" tabindex="0" role="button" aria-pressed="false"><em>帮助</em><span></span></div><div id="ally_TAT_flashPlayer"></div></div><div id="a11y_TAT_Subtitle_Panel">把光标移到文字上看看</div>';
+            sTatStyle = '#a11y_TAT_Hook{width:54px;height:0;padding-top:54px;display:block;overflow:hidden;position:fixed;left:-69px;bottom:10%;z-index:10010;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat 0 0;}#a11y_TAT_Panel{width:54px;position:fixed;left:0;top:0;bottom:0;padding:47px 7px 0;border-right:1px solid #e1e1e1;background:#fff;box-shadow:1px 0 3px #ccc;z-index:1926;zoom:1}#a11y_TAT_Panel:after{content:"";display:table;clear:both}.a11y_TAT_Btn{height:54px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_link_xl.cur),auto;position:relative;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat;display:block;border:1px solid #fff;}.a11y_TAT_Btn:hover{border:1px solid #0081dc}.a11y_TAT_Btn em{display:block;height:0;padding-top:54px;overflow:hidden;font-style:normal;}#a11y_TAT_Panel .a11y_TAT_Subtitle_ed,#a11y_Explain #a11y_icon1{background-position:0 -108px}#a11y_TAT_Subtitle,#a11y_Explain #a11y_icon2{background-position:0 -162px}#a11y_TAT_Panel .a11y_TAT_TTS_ed,#a11y_Explain #a11y_icon3{background-position:0 -216px}#a11y_TAT_TTS,#a11y_Explain #a11y_icon4{background-position:0 -270px}#a11y_TAT_Zoom_In,#a11y_Explain #a11y_icon5{background-position:0 -378px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_In{background-position:0 -323px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Zoom_F,#a11y_Explain #a11y_icon7{background-position:0 -486px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_F{background-position:0 -432px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Zoom_Out,#a11y_Explain #a11y_icon6{background-position:0 -594px}#a11y_TAT_Panel .a11y_TAT_Dis_Zoom_Out{background-position:0 -540px;cursor:url(http://mat1.gtimg.com/www/a11y/aero_arrow_xl.cur),auto}#a11y_TAT_Help,#a11y_Explain #a11y_icon8{background-position:0 -702px}#a11y_TAT_Panel .a11y_TAT_Help_ed{background-position:0 -648px}#a11y_TAT_Subtitle_Panel{width:94%;padding:0 3%;position:fixed;bottom:54px;left:0;right:0;z-index:1918;color:#1460ad;font-family:"微软雅黑","幼圆";font-weight:bold;text-align:center;text-shadow:1px 1px 1px #666;overflow:hidden;background:url(http://mat1.gtimg.com/www/a11y/bg.png?v=20150120_185323.png)}#a11y_TAT_Copyrighs{height:650px;width:750px;margin:-400px 0 0 -350px;}#a11y_Explain{height:399px;border-top:1px solid #dcdcdc;clear:both}#a11y_Explain li{float:left;display:inline;width:325px;height:93px;margin-left:47px;font:24px/93px "微软雅黑"}#a11y_Explain li span{width:54px;float:left;height:54px;margin:21px 18px 0 0;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat}#a11y_TAT_A11y_Intr{font:14px/26px "Arial";padding:45px 19px 17px;border-top:1px solid #dcdcdc;display:block}#a11y_TAT_A11y_Intr strong{font-weight:normal;color:#e51b00}#a11y_TAT_A11y_Intr em{font-weight:bold}#a11y_contacts{font:12px/24px "simsun";margin:0 19px;color:#9d9d9d}#close_A11y_TAT{background-position:0 -810px}#close_A11y_TAT:hover{background-position:0 -756px}.a11y_TAT_Tips{width:592px;height:270px;padding:25px;position:fixed;left:50%;top:50%;margin:-135px 0 0 -296px;background:#fff;display:none;z-index:100001}#close_a11y_TAT_Tips{width:25px;height:0;padding-top:25px;float:right;margin:7px 0 20px;overflow:hidden;background:url(http://mat1.gtimg.com/www/a11y/TAT.png?v=20150120_185323.png) no-repeat -14px -825px}#close_a11y_TAT_Tips:hover{background-position:-14px -771px}.a11y_TAT_Tips_Content{font:30px/70px "微软雅黑";padding-top:65px;clear:both;border-top:1px solid #dcdcdc;text-align:center;}.subTitle_ft1{font-size:43px;height:90px }.subTitle_lh1{line-height:90px }.subTitle_lh11{line-height:45px }.subTitle_ft2{font-size:54px;height:110px }.subTitle_lh2{line-height:110px }.subTitle_lh22{line-height:55px }.subTitle_ft3{font-size:58px;height:120px }.subTitle_lh3{line-height:120px }.subTitle_lh33{line-height:60px }.subTitle_ft4{font-size:61px;height:130px }.subTitle_lh4{line-height:130px }.subTitle_lh44{line-height:65px }.subTitle_ft5{font-size:68px;height:140px }.subTitle_lh5{line-height:140px }.subTitle_lh55{line-height:70px }.subTitle_ft6{font-size:71px;height:150px }.subTitle_lh6{line-height:150px }.subTitle_lh66{line-height:75px }.subTitle_ft7{font-size:82px;height:170px }.subTitle_lh7{line-height:170px }.subTitle_lh77{line-height:85px }.tat_vis{background:#6b6b6b;color:#fff}#a11y_Explain *{padding:0;margin:0;}';
+            eTmpStyle = $Lib.$Create("style");
 
-        $Lib.$Tag("head")[0].appendChild(eTmpStyle);
-        if (eTmpStyle.styleSheet) {
-            eTmpStyle.styleSheet.cssText = sTatStyle;
-        } else {
-            eTmpStyle.appendChild(QQTAT.lib.$CreateText(sTatStyle));
-        };
-        $Lib.$Tag("body")[0].insertAdjacentHTML("beforeEnd", sTatHtml);
-        QQTAT.sWitch.hide();
-        QQTAT.zoom.init();
-        QQTAT.subtitle.init();
-        QQTAT.help.init();
-        QQTAT.boss.bind();
-        eTmpDiv = null;
+            $Lib.$Tag("head")[0].appendChild(eTmpStyle);
+            if (eTmpStyle.styleSheet) {
+                eTmpStyle.styleSheet.cssText = sTatStyle;
+            } else {
+                eTmpStyle.appendChild(QQTAT.lib.$CreateText(sTatStyle));
+            };
+            $Lib.$Tag("body")[0].insertAdjacentHTML("beforeEnd", sTatHtml);
+            QQTAT.lib.$Id("a11y_TAT_Hook").style.left = "0"
+            QQTAT.lib.$Id("a11y_TAT_Panel").style.left = "-69px"
+            QQTAT.sWitch.hide();
+            QQTAT.zoom.init();
+            QQTAT.subtitle.init();
+            QQTAT.help.init();
+            QQTAT.boss.bind();
+            eTmpDiv = null;
+        }
     };
 
     QQTAT.lib.$Ready(document, QQTAT.init);
