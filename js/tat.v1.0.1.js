@@ -821,8 +821,8 @@
             eTmpStyle.appendChild(QQTAT.lib.$CreateText(sTatStyle));
         };
         $Lib.$Tag("body")[0].insertAdjacentHTML("beforeEnd", sTatHtml);
-        QQTAT.lib.$Id("a11y_TAT_Hook").style.left = "0"
-        QQTAT.lib.$Id("a11y_TAT_Panel").style.left = "-69px"
+        QQTAT.lib.$Id("a11y_TAT_Hook").style.left = "0";
+        QQTAT.lib.$Id("a11y_TAT_Panel").style.left = "-69px";
         QQTAT.sWitch.hide();
         QQTAT.zoom.init();
         QQTAT.subtitle.init();
@@ -831,5 +831,6 @@
         eTmpDiv = null;
     };
 
-    QQTAT.lib.$Ready(document, QQTAT.init);
+    // QQTAT.lib.$Ready(document, QQTAT.init);
+    QQTAT.init();
 })();
