@@ -13,10 +13,7 @@
   ga('send', 'pageview');
 </script>
 <script>
-function test_MB(){
-  return (/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent));
-}
-if (!test_MB()) {
+if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent))) {
      (function(i, s, o, g) {
          a = s.createElement(o),
              m = s.getElementsByTagName(o)[0];
