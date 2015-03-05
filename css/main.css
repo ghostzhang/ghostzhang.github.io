@@ -65,7 +65,7 @@ pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-
 #swete-basic-badge{position:absolute;left:-200px;}
 .listing h4{display:inline-block;margin:.2rem 0;}
 .listing time{color:#333333;}
-#content .mod-encourage img{display:block;width: auto;}
+#content .mod-encourage img{width: auto;}
 
 @media (max-device-width:420px){
 	.logo,#content{padding:0 1rem;}
