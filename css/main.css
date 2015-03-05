@@ -58,7 +58,7 @@ pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-
 .comment-id{font-size:50%;}
 .lineno{background-color:#323232;color:#FFFFFF;padding:.2rem;}
 #content{max-width:800px;padding:0 3rem;margin-bottom:.5rem;}
-#content p img{width:auto;max-width:800px;}
+#content article p img{width:100%;max-width:800px;}
 #content iframe{border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px;max-width:100%;}
 #sidebar{border-top:.5rem solid #EEEEEE;}
 #cse table td{border:none;}
