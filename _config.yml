@@ -11,3 +11,4 @@ pygments: true
 safe: true
 permalink: /:year/:month/:day/:title.html
 published: false
+file: http://blog.cssforest.org/file
