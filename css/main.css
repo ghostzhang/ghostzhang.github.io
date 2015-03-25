@@ -72,6 +72,6 @@ pre{margin:4px 0;padding:4px 8px;border-color:#CCCCCC;border-style:solid;border-
 	.main-header nav{padding-left:1rem;}
 	.main-header nav{margin-left:auto;padding-left:0;}
 	.main-header nav ul{display:flex;display:-webkit-box;}
-	.main-header nav li{-webkit-box-flex:1;flex:5;margin-left:0;padding:6px;text-align:center;}
+	.main-header nav li{-webkit-box-flex:1;flex:5;margin-left:6px;padding:6px;text-align:center;}
 	.listing time{display:none;}
 }
