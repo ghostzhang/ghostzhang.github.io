@@ -3,7 +3,7 @@ layout: index
 title: CSSForest.org
 ---
 
-<h2>文章列表</h2>
+<h2 class="none">文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
     {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
