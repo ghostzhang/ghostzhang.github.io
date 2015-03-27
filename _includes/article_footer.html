@@ -7,14 +7,14 @@
     {% if page.categories %}
     <p>文章被分类到：
     {% for categorie in page.categories %}
-    <a href="/categories/#{{ categorie }}" title="{{ categorie }}">{{ categorie }}</a>
+    <a href="{{ site.url }}/categories/#{{ categorie }}" title="{{ categorie }}">{{ categorie }}</a>
     {% endfor %}
     </p>
     {% endif %}
     {% if page.tags %}
     <p>文章被贴上标签：
     {% for tag in page.tags %}
-    <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a> 
+    <a href="{{ site.url }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a> 
     {% endfor %}
     </p>
     {% endif %}

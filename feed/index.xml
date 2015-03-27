@@ -13,7 +13,7 @@ layout: none
 		{% for post in site.posts %}
 			{% unless post.link %}
 				{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-				{% if year == y %}
+				{% if y == "2015" %}
 				<item>
 					<title>{{ post.title | xml_escape }}</title>
 					<description>{{ post.content | xml_escape }}</description>
