@@ -19,3 +19,10 @@
     </p>
     {% endif %}
 </footer>
+
+{% if page.coffee %}
+<script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+{% endif %}
+{% if page.less %}
+<script src="{{ site.url }}/editr/libs/parser.less.js"></script>
+{% endif %}
