@@ -14,6 +14,7 @@ input[name="submit"].button.disabled{background-color:rgba(244,244,244,0.8);back
 table{border-collapse:collapse;width:99.9%;}
 td,th{border:1px solid #CCCCCC;padding:6px;}
 blockquote{margin:4px 0 4px 20px;padding:4px 8px;background-color:#EFEFEF;border-left:5px double #CCCCCC;white-space:pre-line;}
+blockquote p{margin:0;}
 sup{margin-left:-8px;}
 em{padding:4px;}
 pre,code,kbd{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
