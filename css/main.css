@@ -13,7 +13,7 @@ input[name="submit"].button{background-color:rgba(60,132,198,0.8);background-ima
 input[name="submit"].button.disabled{background-color:rgba(244,244,244,0.8);background-image:-moz-linear-gradient(rgba(244,244,244,0.8) 0,rgba(0,0,0,.9) 90%);border-color:#ADB2B5;-webkit-box-shadow:rgba(173,178,181,0.5) 0 0 0;-moz-box-shadow:rgba(173,178,181,0.5) 0 10px 16px;color:#6D6D6D;cursor:default;font-weight:normal;text-shadow:rgb(255,255,255) 0 0 5px;}
 table{border-collapse:collapse;width:99.9%;}
 td,th{border:1px solid #CCCCCC;padding:6px;}
-blockquote{margin:4px 0 4px 20px;padding:4px 8px;background-color:#EFEFEF;border-left:5px double #CCCCCC;}
+blockquote{margin:4px 0 4px 20px;padding:4px 8px;background-color:#EFEFEF;border-left:5px double #CCCCCC;white-space:pre-line;}
 sup{margin-left:-8px;}
 em{padding:4px;}
 pre,code,kbd{background-color:#F6F6F6;font-family:Consolas,"Courier New",Courier,monospace;}
