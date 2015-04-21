@@ -1,0 +1,9 @@
+/* @reset */
+body {
+    background-color: #FFFFFF;
+}
+
+/* ==== demo ==== */
+p:nth-of-type(-n+3) {
+    background: #ff0000;
+}
