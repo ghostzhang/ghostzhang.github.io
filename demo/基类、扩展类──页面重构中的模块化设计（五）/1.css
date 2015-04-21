@@ -1,0 +1,66 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+.demo {
+    padding:10px;
+    overflow:hidden;
+    font-size:12px;
+}
+.demo p {
+    margin:0;
+    padding:0;
+}
+.demo a:link, .demo a:visited, .demo a:hover, .demo a:active {
+    color:#226399;
+}
+.demo a:link, .demo a:visited {
+    text-decoration:none;
+}
+.demo a:hover, .demo a:active {
+    text-decoration:underline;
+}
+/* S 图片列表 */
+ .pic_lists li, .pic_lists li img {
+    float:left;
+    width:122px;
+    height:122px;
+    margin-bottom:8px;
+}
+.pic_lists li {
+    list-style:none;
+    margin:0 0 0 6px;
+    text-align:center;
+}
+.pic_lists li .pic {
+    display:block;
+    border:1px solid #476081;
+}
+/* E 图片列表 */
+
+/* S mtv列表 */
+ .mtv_lists {
+    width:930px;
+    height:130px;
+}
+.mtv_lists li, .mtv_lists li img {
+    float:left;
+    width:120px;
+    margin-bottom:8px;
+}
+.mtv_lists li {
+    list-style:none;
+    margin:0 10px 0 0;
+    text-align:center;
+}
+.mtv_lists li img {
+    height:90px;
+    border:1px solid #476081;
+}
+.mtv_lists li .pic {
+    display:block;
+    width:120px;
+    height:90px;
+    margin-bottom:8px;
+}
+/* E mtv列表 */

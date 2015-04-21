@@ -1,0 +1,23 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+.holder {
+    width:740px;
+    height:200px;
+    border:1px solid #777;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+/*以下样式针对IE*/
+ .edge {
+    width:0;
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+.container {
+    vertical-align:middle;
+    display:inline-block;
+}

@@ -1,0 +1,76 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+html,div,ol,li{
+margin:0;
+padding:0
+}
+body{
+font:12px/1.5em Tahoma, Verdana, Simsun, Microsoft YaHei, Arial Unicode MS, Mingliu, Arial, Helvetica;
+text-align:center;
+background-color:#FFFFFF;
+}
+/* 组件页面流程图 */
+.flow_step{width:950px;height:25px;overflow:hidden;margin:20px auto 10px;padding:0;}
+.flow_step ol{width:110%;margin:0;padding:0;}
+.flow_step li{float:left;padding:0px 15px 0px 0px;list-style:decimal inside;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAABLCAYAAACvH90wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVFhHvc/RjYNAEARRJ3lhXYCXAGn43NOFWJY2ZvhwSW3JaJ4Ej+fY329rDwV14ejdCiuoC4dpUAd14XgebAvqAhgH2Qd1Aa3j/BjUBahxmoO6LlZQ18UK6rpYQV0XK6jrYgWteHQtjPvKN0Mc8BKGuAF+xBA3wVMMcQFqnO6DuIDWcb4FcQGMgziIC8fzYH2o3Ybabajt8c/rb2PH1w5H71ZYQV04TIM6qAvH82BbUBfAOMg+qAtoHefHoC5AjdMc1HWxgrouVlDXxQrqulhBXRcraMWja2HcV74Z4oCXMMQN8COGuAmeYogLUON0H8QFtI7zLYgLYBzEQVw4ngfrQ+021F6/Q+HgbK/frWVZWju8djp6t8IKW6XDNKjDVul4HmwLWyUwDrIPWyW0jvNj2CpBjdMctmpjha3aWGGrNlbYqo0Vtmpjha14dC1M9Z1vxlQrvIQx1Qg/Ykw1w1OMqRLUON2HqRJax/kWpkpgHMRhqnQ8D9aH2m2o3YbLsjz/AbljPGSvaIB8AAAAAElFTkSuQmCC) #e6e6e6 no-repeat 100% -50px;color:#333333;font:700 14px/25px "宋体";text-align:center;}
+
+.flow_step .cols3 li{width:301px;}
+.flow_step .cols4 li{width:222px;}
+.flow_step .cols5 li{width:175px;}
+.flow_step .cols6 li{width:143px;}
+
+.flow_step_no1 .step_1,
+.flow_step_no2 .step_2,
+.flow_step_no3 .step_3,
+.flow_step_no4 .step_4,
+.flow_step_no5 .step_5,
+.flow_step_no6 .step_6
+{background-position:100% -50px;background-color:#FF5500;color:#FFFFFF;}
+
+.cols3 .step_3,
+.cols4 .step_4,
+.cols5 .step_5,
+.cols6 .step_6
+{background-image:none;}
+
+.flow_step_no2 .step_1,
+.flow_step_no3 .step_2,
+.flow_step_no4 .step_3,
+.flow_step_no5 .step_4,
+.flow_step_no6 .step_5
+{background-position:100% -25px;background-color:#FFD98D;color:#FF6600;}
+
+.flow_step_no3 .step_1,
+.flow_step_no4 .step_1,.flow_step_no4 .step_2,
+.flow_step_no5 .step_1,.flow_step_no5 .step_2,.flow_step_no5 .step_3,
+.flow_step_no6 .step_1,.flow_step_no6 .step_2,.flow_step_no6 .step_3,.flow_step_no6 .step_4
+{background-position:100% 0;background-color:#FFD98D;color:#FF6600;}
+
+.flow_step_no3 .cols3 .step_3,
+.flow_step_no4 .cols4 .step_4,
+.flow_step_no5 .cols5 .step_5,
+.flow_step_no6 .cols6 .step_6
+{background-color:#ff5500;color:#ffffff;}
+
+.flow_step_no1_n .step_1,
+.flow_step_no2_n .step_2,
+.flow_step_no3_n .step_3,
+.flow_step_no4_n .step_4,
+.flow_step_no5_n .step_5,
+.flow_step_no6_n .step_6
+{background-position:100% -50px;background-color:#FFD98D;color:#FF6600;}
+
+.flow_step_no2_n .step_1,
+.flow_step_no3_n .step_2,
+.flow_step_no4_n .step_3,
+.flow_step_no5_n .step_4,
+.flow_step_no6_n .step_5
+{background-position:100% 0;}
+
+.flow_step_no3_n .cols3 .step_3,
+.flow_step_no4_n .cols4 .step_4,
+.flow_step_no5_n .cols5 .step_5,
+.flow_step_no6_n .cols6 .step_6
+{background-color:#FFD98D;color:#FF6600;}

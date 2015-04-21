@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>页面重构中的组件制作要点</title>
+</head>
+<body>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="current">第一步</li>
+        <li>第二步</li>
+        <li class="last">第三步</li>
+    </ol>
+</div>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="done current_prev">第一步</li>
+        <li class="current">第二步</li>
+        <li class="last">第三步</li>
+    </ol>
+</div>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="done">第一步</li>
+        <li class="done current_prev">第二步</li>
+        <li class="last_current">第三步</li>
+    </ol>
+</div>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="done_none">第一步</li>
+        <li>第二步</li>
+        <li class="last">第三步</li>
+    </ol>
+</div>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="done">第一步</li>
+        <li class="current done_none">第二步</li>
+        <li class="last">第三步</li>
+    </ol>
+</div>
+<div class="flow_step">
+    <ol class="cols3">
+        <li class="done">第一步</li>
+        <li class="done">第二步</li>
+        <li class="last_current_none">第三步</li>
+    </ol>
+</div>
+</body>
+</html>

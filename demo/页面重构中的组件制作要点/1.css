@@ -1,0 +1,79 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+html, div, ol, li {
+    margin:0;
+    padding:0
+}
+body {
+    font:12px/1.5em Tahoma, Verdana, Simsun, Microsoft YaHei, Arial Unicode MS, Mingliu, Arial, Helvetica;
+    text-align:center;
+    background-color:#FFFFFF;
+}
+.flow_step {
+    width:950px;
+    height:25px;
+    margin:20px auto 10px;
+    padding:0;
+}
+.flow_step ol {
+    margin:0;
+    padding:0;
+}
+.flow_step li {
+    float:left;
+    padding:0px 15px 0px 0px;
+    list-style:decimal inside;
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAABLCAYAAACvH90wAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGESURBVFhHvc/RjYNAEARRJ3lhXYCXAGn43NOFWJY2ZvhwSW3JaJ4Ej+fY329rDwV14ejdCiuoC4dpUAd14XgebAvqAhgH2Qd1Aa3j/BjUBahxmoO6LlZQ18UK6rpYQV0XK6jrYgWteHQtjPvKN0Mc8BKGuAF+xBA3wVMMcQFqnO6DuIDWcb4FcQGMgziIC8fzYH2o3Ybabajt8c/rb2PH1w5H71ZYQV04TIM6qAvH82BbUBfAOMg+qAtoHefHoC5AjdMc1HWxgrouVlDXxQrqulhBXRcraMWja2HcV74Z4oCXMMQN8COGuAmeYogLUON0H8QFtI7zLYgLYBzEQVw4ngfrQ+021F6/Q+HgbK/frWVZWju8djp6t8IKW6XDNKjDVul4HmwLWyUwDrIPWyW0jvNj2CpBjdMctmpjha3aWGGrNlbYqo0Vtmpjha14dC1M9Z1vxlQrvIQx1Qg/Ykw1w1OMqRLUON2HqRJax/kWpkpgHMRhqnQ8D9aH2m2o3YbLsjz/AbljPGSvaIB8AAAAAElFTkSuQmCC) #E6E6E6 no-repeat 100% -50px;
+    color:#333333;
+    font:700 14px/25px"宋体";
+    text-align:center;
+}
+/* 当前步骤 */
+ .flow_step li.current {
+    background-color:#FF5500;
+    color:#FFFFFF;
+}
+/* 已完成步骤 */
+ .flow_step li.done {
+    background-position:100% 0px;
+    background-color:#FFD98D;
+    color:#FF6600;
+}
+/* 已完成无当前步骤 */
+ .flow_step li.done_none {
+    background-position:100% -50px;
+    background-color:#FFD98D;
+    color:#FF6600;
+}
+/* 当前步骤的上一步 */
+ .flow_step li.current_prev {
+    background-position:100% -25px;
+    background-color:#FFD98D;
+}
+/* 最后一个步骤 */
+ .flow_step li.last {
+    background:none;
+    background-color:#E6E6E6;
+}
+/* 最后一个步骤为当前步骤 */
+ .flow_step li.last_current {
+    background:none;
+    background-color:#ff5500;
+    color:#FFFFFF;
+}
+.flow_step li.last_current_none {
+    background:none;
+    background-color:#FFD98D;
+    color:#FF6600;
+}
+.flow_step .cols3 li {
+    width:301px;
+}
+.flow_step .cols4 li {
+    width:222px;
+}
+.flow_step .cols5 li {
+    width:175px;
+}

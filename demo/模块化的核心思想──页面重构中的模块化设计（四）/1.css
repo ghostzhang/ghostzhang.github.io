@@ -1,0 +1,59 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+.demo {
+    width:400px;
+    padding:10px;
+    font-size:12px;
+}
+.demo p {
+    margin:0;
+    padding:0;
+}
+/* S 提示条 基类 */
+ .mode_hint {
+    position:relative;
+    margin:3px 0;
+    padding:5px;
+    border:1px solid #F0EFB2;
+    background-color:#FFFEAB;
+    color:#000000;
+    _zoom:1;
+}
+.mode_hint .op {
+    position:absolute;
+    right:8px;
+    top:5px;
+}
+.mode_hint .op a {
+    color:#000000;
+}
+/* E 提示条 基类 */
+
+/* S 提示条 扩展类 */
+ .op_hint {
+    border-color:#7B0006;
+    background-color:#A00008;
+    color:#FFFFFF;
+}
+.op_hint .op a {
+    color:#FFFFFF;
+}
+/* E 提示条 扩展类 */
+
+/* S 提示条 单独定义 */
+ .hint_01 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:99%;
+}
+.hint_02 {
+    position:absolute;
+    top:45%;
+    left:50%;
+    width:400px;
+    margin-left:-200px;
+}
+/* E 提示条 单独定义 */

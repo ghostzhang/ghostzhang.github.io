@@ -1,0 +1,9 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+.demo-demo2{background-color:#FFA500;}
+div[title]{color:#FFFFFF;background-color:#0000FF;}
+div[class=demo]{color:#FF0000;}
+h1[class~=demo]{color:#0000FF;}
+h2[class|=demo]{color:#008000;}

@@ -1,0 +1,15 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+ .try-a{ color:#00f; }
+ .try~a{ color:#00f; }
+ .try`a{ color:#00f; }
+ .try&a{ color:#00f; }
+ .try$a{ color:#00f; }
+ 
+ .try-b{ color:#f00; }
+ .try~b{ color:#f00; }
+ .try`b{ color:#f00; }
+ .try&b{ color:#f00; }
+ .try$b{ color:#f00; }

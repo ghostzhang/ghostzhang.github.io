@@ -1,0 +1,12 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+/*IE*/
+div{width:200px;height:300px;float:left;}
+.left{color:Aqua;}
+.right{color:Fuchsia;}
+
+/*FF*/
+div[class=left]{color:Blue;}
+div[class=right]{color:Gray;}

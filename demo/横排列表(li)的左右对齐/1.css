@@ -1,0 +1,29 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+* {
+    margin:0;
+    padding:0;
+}
+.overdiv {
+    width:290px;
+    height:300px;
+    overflow:hidden;
+    background-color:#436973;
+}
+.overdiv ul {
+    list-style:none;
+    width:320px;
+    height:auto;
+}
+.overdiv li {
+    float:left;
+    width:80px;
+    height:80px;
+    margin-right:25px;
+    margin-bottom:5px;
+    background-color:#83B1DF;
+    text-align:center;
+    line-height:80px;
+}

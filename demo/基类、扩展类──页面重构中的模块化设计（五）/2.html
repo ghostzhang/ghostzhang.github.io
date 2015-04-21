@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>基类、扩展类──页面重构中的模块化设计（五）</title>
+</head>
+<body>
+<div class="demo">
+    <!-- S 动态 -->
+    <div class="mode_message">
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="ghostzhang" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name"><a href="#">如果这就是爱情如果情如果这就是爱情</a></strong>
+
+                <div class="op_music">
+                    <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                    </button>
+                    <button title="添加" class="bt_add"><span class="none">添加</span>
+
+                    </button>
+                    <button title="下载" class="bt_down"><span class="none">下载</span>
+
+                    </button>
+                </div>
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <div class="op"><a href="##">评论</a> · <a href="##">赞</a><span>(123)</span> · <a href="##">踩</a><span>(123)</span> | <a href="##">我也喜欢</a>
+
+            </div>
+            <!-- S 操作提示 -->
+            <div class="mode_hint">
+                <p>您已经“**”过这条信息了。</p>
+                <div class="op"><a href="##">X</a>
+
+                </div>
+            </div>
+            <!-- E 操作提示 -->
+            <!-- S 回复 -->
+            <div class="write_back">
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                </div>
+                <div class="cont">
+                    <!-- S 发表评论 -->
+                    <div class="zt">
+                        <div class="zt2">
+                            <!-- 未选中时给input加上normal这个类 -->
+                            <textarea rows="1" cols="20">我来说两句</textarea>
+                            <div class="op">
+                                <button class="bt_v2">发表</button>	<a href="#">取消</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 发表评论 -->
+                </div>
+            </div>
+            <!-- E 回复 -->
+            <!-- S 回复 -->
+            <div class="write_back">
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                    <div class="cont">
+                        <p><a href="##">用户名</a> 说点什么好呢？</p>
+                        <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                </div>
+                <div class="cont">
+                    <!-- S 发表评论 -->
+                    <div class="zt">
+                        <div class="zt2 normal">
+                            <textarea rows="1" cols="20">我来说两句</textarea>
+                            <div class="op">
+                                <button class="bt_v2">发表</button>	<a href="#">取消</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 发表评论 -->
+                </div>
+            </div>
+            <!-- E 回复 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+</div>
+
+<h2>扩展类</h2>
+
+<p>“扩展类”指在“基类”的基础上进行简单的修改，而形成一个与“基类”类似的。</p>
+<p>无头像的列表</p>
+<div class="demo">
+    <!-- S 动态 -->
+    <div class="mode_message message_nopic">
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name">如果这就是爱情如果这就是爱情</strong>
+
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <!-- S 操作 -->
+            <div class="op"><a href="##">赞</a><span>(123)</span> · <a href="##">踩</a><span>(123)</span>
+
+            </div>
+            <!-- E 操作 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+</div>
+
+<h2>应用</h2>
+
+
+<h3>有头像、带评论的列表</h3>
+
+<div class="demo">
+    <!-- S 动态 -->
+    <div class="mode_message">
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="ghostzhang" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name"><a href="#">如果这就是就是爱情</a></strong>
+
+                <div class="op_music">
+                    <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                    </button>
+                    <button title="添加" class="bt_add"><span class="none">添加</span>
+
+                    </button>
+                    <button title="下载" class="bt_down"><span class="none">下载</span>
+
+                    </button>
+                </div>
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <div class="op"><a href="##">评论</a> · <a href="##">赞</a><span>(123)</span> · <a href="##">踩</a><span>(123)</span> | <a href="##">我也喜欢</a>
+
+            </div>
+            <!-- S 操作提示 -->
+            <div class="mode_hint">
+                <p>您已经“**”过这条信息了。</p>
+                <div class="op"><a href="##">X</a>
+
+                </div>
+            </div>
+            <!-- E 操作提示 -->
+            <!-- S 回复 -->
+            <div class="write_back">
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                </div>
+                <div class="cont">
+                    <!-- S 发表评论 -->
+                    <div class="zt">
+                        <div class="zt2">
+                            <!-- 未选中时给input加上normal这个类 -->
+                            <textarea rows="1" cols="20">我来说两句</textarea>
+                            <div class="op">
+                                <button class="bt_v2">发表</button>	<a href="#">取消</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 发表评论 -->
+                </div>
+            </div>
+            <!-- E 回复 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+    <!-- S 动态 -->
+    <div class="mode_message">
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="ghostzhang" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name"><a href="#">如果这就是爱情如果如果这就是爱情如果这就是爱情如果这就是爱情</a></strong>
+
+                <div class="op_music">
+                    <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                    </button>
+                    <button title="添加" class="bt_add"><span class="none">添加</span>
+
+                    </button>
+                    <button title="下载" class="bt_down"><span class="none">下载</span>
+
+                    </button>
+                </div>
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <div class="op"><a href="##">评论</a> · <a href="##">赞</a><span>(123)</span> · <a href="##">踩</a><span>(123)</span> | <a href="##">我也喜欢</a>
+
+            </div>
+            <!-- S 回复 -->
+            <div class="write_back">
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                    <div class="cont">
+                        <p><a href="##">用户名</a> 说点什么好呢？</p>
+                        <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="cont">
+                    <p><a href="##">用户名</a> 说点什么好呢？</p>
+                    <p><span class="time">2010-11-12 00:12</span>  <a href="#">回复</a>  <a href="#">删除</a>
+
+                    </p>
+                </div>
+                <div class="cont">
+                    <!-- S 发表评论 -->
+                    <div class="zt">
+                        <div class="zt2 normal">
+                            <textarea rows="1" cols="20">我来说两句</textarea>
+                            <div class="op">
+                                <button class="bt_v2">发表</button>	<a href="#">取消</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- E 发表评论 -->
+                </div>
+            </div>
+            <!-- E 回复 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+</div>
+
+<h3>无头像的列表</h3>
+
+<p>扩展模块同时可使用基类中所定义的功能。</p>
+<div class="demo">
+    <!-- S 动态 -->
+    <div class="mode_message message_nopic">
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name">如果这就是爱情如果这就是爱情</strong>
+
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <!-- S 操作 -->
+            <div class="op"><a href="##">赞</a><span>(123)</span> · <a href="##">踩</a><span>(123)</span>
+
+            </div>
+            <!-- E 操作 -->
+            <!-- S 操作提示 -->
+            <div class="mode_hint">
+                <p>您已经“**”过这条信息了。</p>
+                <div class="op"><a href="##">X</a>
+
+                </div>
+            </div>
+            <!-- E 操作提示 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+    <!-- S 动态 -->
+    <div class="mode_message message_nopic">
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听 <strong class="music_name">如果这就是爱情如果这就是爱情</strong>
+
+                <div class="op_music">
+                    <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                    </button>
+                    <button title="添加" class="bt_add"><span class="none">添加</span>
+
+                    </button>
+                    <button title="下载" class="bt_down"><span class="none">下载</span>
+
+                    </button>
+                </div>
+            </div>
+            <div class="msg"> <span class="p_zt_l"></span>文字在这里，文字在这里<span class="p_zt_r"></span>  <span class="time">10-1-21 00:01</span> 
+            </div>
+            <!-- S 操作 -->
+            <div class="op"><a href="##">删除</a>
+
+            </div>
+            <!-- E 操作 -->
+        </div>
+    </div>
+    <!-- E 动态 -->
+</div>
+
+<h3>带楼层的列表</h3>
+
+<p>扩展模块同时可使用基类中所定义的功能。</p>
+<div class="demo">
+    <div class="mode_message message_luo">
+        <p class="num_luo">1楼</p>
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="用户名" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听
+                <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                </button> <strong class="music_name">如果这就是爱情</strong>
+
+            </div>
+            <div class="msg">文字在这里，文字在这里 文字在这里，文字在这里 文字在这里，文字 文字在这里，文字在这里 <span class="time">10-1-21 00:01</span> 
+            </div>
+        </div>
+    </div>
+    <div class="mode_message message_luo">
+        <p class="num_luo">2楼</p>
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="用户名" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听
+                <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                </button> <strong class="music_name">如果这就是爱情</strong>
+
+            </div>
+            <div class="msg">文字在这里，文字在这里 文字在这里，文字在这里 文字在这里，文字 文字在这里，文字在这里 <span class="time">10-1-21 00:01</span> 
+            </div>
+        </div>
+    </div>
+    <div class="mode_message message_luo">
+        <p class="num_luo">3楼</p>
+        <div class="user_info">
+            <p class="pic">
+                <img src="http://en.gravatar.com/userimage/1302628/cdbb1702e02bbc3cb14ff0cae4c573d1.jpg" alt="用户名" />
+            </p>
+            <p>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAKCAMAAADreAzsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQJQTFRFJpQPkuhFNIsEIngF/vv3L4YFMp0VKH8FPp4J6/vWLIIFMokEQKgc+/vx9vvp8PvfJXsFYMEsHo0LULQkKJQVieFBh9xNb800ftg7kM2F+f31Ya82MpQK6vrfKo4L8PnmL5IKNZcKZrEAY7A2OJkKLJAKsOWFjOBCgsJ3IYIN////MJkUt+ePIpEKc8I2UqpBUKcNttquLpgXUqlA5/bVPqMbIZEJy++vKokRdL9bmc2CyOS+KIwLRqUzTaUjtdiuWKkBNZEXbLpUWa4parVZQZsdTKg6XLsqXLIvSqk2JZMO9fvv2PC8Ta8jOJ4kVKobkcmJX7BQJZAPUqcF4fTUAAAAqF28wAAAAFZ0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBKTWzZAAAA1klEQVR42nSK51aDQBBG1wiLBgK4ixhSCKQQe0vRxJLeTFfn/V/FHSAnf8w9Z765M+cjACc74BAESvl6IXOdKSzmpfvq0X8AyeaD4ott27fF4DebEJwnYvZCyh3W3TLGhk22KauSpKYxdoKoaQJ+6+fBsqza3aU/kFMp+QIjEgSFAOT6j+PVx5eT+5wkdT15hhGKIBJRAq+9nj073mjJFcNQBIaBm3OuhA+OJai8TZ1Kr6Fp5ilimjiaFt4oYQncJ/f1hlJ6vIfS+BYrKsH71Tc5CPwJMAD6FibRjQWNuAAAAABJRU5ErkJggg==" alt="Lv 7" />
+            </p>
+        </div>
+        <div class="mode_message_cont">
+            <div class="info">	<a href="##" class="tx_hot">用户名</a> 喜欢听
+                <button title="播放" class="bt_play"><span class="none">播放</span>
+
+                </button> <strong class="music_name">如果这就是爱情</strong>
+
+            </div>
+            <div class="msg">文字在这里，文字在这里 文字在这里，文字在这里 文字在这里，文字 文字在这里，文字在这里 <span class="time">10-1-21 00:01</span> 
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
