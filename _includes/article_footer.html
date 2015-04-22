@@ -39,7 +39,7 @@ var _statcounter = _statcounter || [];
     {% endif %}
     {% if page.categories.size > 1 %}
     {% for i in page.categories %}
-    ,"categorie": "{{ page.categories }}"
+    ,"categorie": "{{ i }}"
     {% endfor %}
     {% else %}
     ,"categorie": "{{ page.categories }}"
