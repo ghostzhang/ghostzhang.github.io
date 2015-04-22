@@ -29,30 +29,9 @@
 <script>
 var _statcounter = _statcounter || [];
     _statcounter.push({"tags":{
-    {% if page.id %}
-        "page": "{{ page.title }}"
-    }});
-    {% endif %}
-    {% if page.tags %}
-    {% capture tags %}
-        {% page.tags %}
-    {% endcapture %}
-    _statcounter.push({"tags":{
-        "tag": "{{ page.tags[0] }}"
-        {% for tag in (1..tags.quantity) %}
-        ,"tag": "{{ tag }}"
-        {% endfor %}
-    }});
-    {% endif %}
-    {% if page.categories %}
-    {% capture categories %}
-        {% page.categories %}
-    {% endcapture %}
-    _statcounter.push({"tags":{
-        "categorie": "{{ page.categories[0] }}"
-        {% for tag in (1..categories.quantity) %}
-        ,"categorie": "{{ categorie }}"
-        {% endfor %}
+    {% if page.id %}"page": "{{ page.title }}"{% endif %}
+    {% if page.tags %},"tag": "{{ page.tags }}"{% else %}{% endif %}
+    {% if page.categories %},"categorie": "{{ page.categories }}"{% else %}{% endif %}
     }});
     {% endif %}
 </script>
