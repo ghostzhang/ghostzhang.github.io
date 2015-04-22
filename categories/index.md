@@ -22,3 +22,7 @@ layout: index
 {% endfor %}
 </ul>
 {% endfor %}
+<script>
+var _statcounter = _statcounter || [];
+_statcounter.push({"tags": {"topic": "categories"}});
+</script>

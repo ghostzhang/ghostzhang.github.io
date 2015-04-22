@@ -26,3 +26,27 @@
 {% if page.less %}
 <script src="{{ site.url }}/editr/libs/parser.less.js"></script>
 {% endif %}
+<script>
+var _statcounter = _statcounter || [];
+    {% if page.id %}
+    _statcounter.push({"tags":{
+        "page": "{{ page.title }}"
+    }});
+    {% endif %}
+    {% if page.tags %}
+    _statcounter.push({"tags":{
+        "tag": "{{ tag }}"
+        {% for tag in (2..page.tags.quantity) %}
+        ,"tag": "{{ tag }}"
+        {% endfor %}
+    }});
+    {% endif %}
+    {% if page.categories %}
+    _statcounter.push({"tags":{
+        "categorie": "{{ categorie }}"
+        {% for tag in (2..page.categories.quantity) %}
+        ,"categorie": "{{ categorie }}"
+        {% endfor %}
+    }});
+    {% endif %}
+</script>
