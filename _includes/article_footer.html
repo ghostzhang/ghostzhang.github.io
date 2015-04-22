@@ -35,7 +35,8 @@ var _statcounter = _statcounter || [];
     {% endif %}
     {% if page.tags %}
     {% capture tags %}
-    {% tags = page.tags %}
+        {% page.tags %}
+    {% endcapture %}
     _statcounter.push({"tags":{
         "tag": "{{ page.tags[0] }}"
         {% for tag in (1..tags.quantity) %}
@@ -45,7 +46,8 @@ var _statcounter = _statcounter || [];
     {% endif %}
     {% if page.categories %}
     {% capture categories %}
-    {% categories = page.tags %}
+        {% page.categories %}
+    {% endcapture %}
     _statcounter.push({"tags":{
         "categorie": "{{ page.categories[0] }}"
         {% for tag in (1..categories.quantity) %}
