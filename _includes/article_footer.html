@@ -29,9 +29,24 @@
 <script>
 var _statcounter = _statcounter || [];
     _statcounter.push({"tags":{
-    {% if page.id %}"page": "{{ page.title }}"{% endif %}
-    {% if page.tags %},"tag": "{{ page.tags }}"{% else %}{% endif %}
-    {% if page.categories %},"categorie": "{{ page.categories }}"{% else %}{% endif %}
-    }});
+    "page": "{{ page.title }}"
+    {% if page.tags.size > 1 %}
+    ,"tag":[
+        {% for i in page.tags %}
+        "{{ i }}",
+        {% endfor %}
+    ""]
+    {% else %}
+    ,"tag": "{{ page.tags }}"
     {% endif %}
+    {% if page.categories.size > 1 %}
+    ,"tag":[
+        {% for i in page.categories %}
+        "{{ i }}",
+        {% endfor %}
+    ""]
+    {% else %}
+    ,"categorie": "{{ page.categories }}"
+    {% endif %}
+    }});
 </script>
