@@ -28,23 +28,27 @@
 {% endif %}
 <script>
 var _statcounter = _statcounter || [];
-    {% if page.id %}
     _statcounter.push({"tags":{
+    {% if page.id %}
         "page": "{{ page.title }}"
     }});
     {% endif %}
     {% if page.tags %}
+    {% capture tags %}
+    {% tags = page.tags %}
     _statcounter.push({"tags":{
         "tag": "{{ page.tags[0] }}"
-        {% for tag in (1..page.tags.quantity) %}
+        {% for tag in (1..tags.quantity) %}
         ,"tag": "{{ tag }}"
         {% endfor %}
     }});
     {% endif %}
     {% if page.categories %}
+    {% capture categories %}
+    {% categories = page.tags %}
     _statcounter.push({"tags":{
         "categorie": "{{ page.categories[0] }}"
-        {% for tag in (2..page.categories.quantity) %}
+        {% for tag in (1..categories.quantity) %}
         ,"categorie": "{{ categorie }}"
         {% endfor %}
     }});
