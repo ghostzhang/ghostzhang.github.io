@@ -17,6 +17,8 @@
 {% else %}
 	{% if include.hide %}
 	 data-hide="{{ include.hide }}"
+	{% elseif include.js == null %}
+	 data-hide="js"
 	{% endif %}
 {% endif %}
 ><span class="none">效果展示</span></div>
