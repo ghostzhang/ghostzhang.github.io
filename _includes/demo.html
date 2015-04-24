@@ -1,1 +1,14 @@
-<div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}><span class="none">代码展示</span></div>
+<div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}
+{% case include.view %}
+{% when "h" %}
+ data-view="horizontal"
+{% when "v" %}
+ data-view="vertical"
+{% when "c" %}
+ data-view="cartesian"
+{% else %}
+{% endcase %}
+{% if include.hide %}
+data-hide="{{ include.hide }}"
+{% endif %}
+><span class="none">效果展示</span></div>
