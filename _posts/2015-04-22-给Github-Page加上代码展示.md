@@ -39,8 +39,6 @@ demo: true
 {% endraw %}
 {% endhighlight %}
 
-在`<head>`中加入：
-
 {% highlight css %}
 {% raw %}
 {% if page.code %}
@@ -48,8 +46,6 @@ demo: true
 {% endif %}
 {% endraw %}
 {% endhighlight %}
-
-在`<body>`中加入：
 
 {% highlight js %}
 {% raw %}
@@ -107,8 +103,6 @@ demo: true
 <div class="editr" data-files-html="1.html" data-files-css="1.css"></div>
 {% endraw %}
 {% endhighlight %}
-
-另外，editr也支持[github][]的Gist，不过需要通过php进行鉴权，这里不支持php，所以也就没戏了。更多参数设置详看项目说明。
 
 {% include links.md %}
 {% include article_footer.html %}
