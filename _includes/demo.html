@@ -1,14 +1,14 @@
 <div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}
 {% case include.view %}
 {% when "h" %}
- data-view="horizontal"
+ data-view="horizontal" data-hide="all"
 {% when "v" %}
- data-view="vertical"
+ data-view="vertical" data-hide="all"
 {% when "c" %}
- data-view="cartesian"
+ data-view="cartesian" data-hide="all"
 {% else %}
-{% endcase %}
 {% if include.hide %}
 data-hide="{{ include.hide }}"
 {% endif %}
+{% endcase %}
 ><span class="none">效果展示</span></div>
