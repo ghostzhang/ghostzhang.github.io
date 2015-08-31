@@ -15,6 +15,8 @@ layout: index
 
 2006年加入腾讯ISD；
 
+2006年《时代周刊》年度风云人物。
+
 2006.11~2009.09
 负责Qzone4.0页面重构、Qzone5.0的前端页面架构设计和实现；
 
@@ -32,7 +34,7 @@ layout: index
 
 CSS森林(www.cssforest.org)作者；
 
-2006年《时代周刊》年度风云人物。
+[技术树](http://skill.phodal.com/#_a2b2defhmrstuvx_1_GhostZhang)
 
 <address>
 {% if site.qq %}
