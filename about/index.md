@@ -27,7 +27,7 @@ published: true
 
 **2006.11 ~ 2009.09** 负责Qzone4.0页面重构、Qzone5.0的前端页面架构设计和实现；
 
-**2007.8** 参与[WebRebuild.org](WebRebuild.org)的组建；
+**2007.8** 参与[WebRebuild.org](http://WebRebuild.org)的组建；
 
 **2007.9** 个人博客更名为[CSS森林](http://www.cssforest.org)，开始折腾个人空间;
 
