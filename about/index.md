@@ -4,6 +4,7 @@ layout: index
 published: true
 ---
 
+
 ##关于CSS森林
 
 建立于2007年9月，主要记录了我这些年来在工作上的经验及思考，也记录了我所经历的“网页重构”这个岗位发展的过程。
@@ -24,11 +25,11 @@ published: true
 
 **2006.9** 建立CSS森林群(30247792)
 
-**2006.9** 个人博客更名为[CSS森林](www.cssforest.org)，开始折腾个人空间;
-
 **2006.11 ~ 2009.09** 负责Qzone4.0页面重构、Qzone5.0的前端页面架构设计和实现；
 
 **2007.8** 参与[WebRebuild.org](WebRebuild.org)的组建；
+
+**2007.9** 个人博客更名为[CSS森林](http://www.cssforest.org)，开始折腾个人空间;
 
 **2008** 开始思考HTML、CSS模块化；（[一些内容](http://blog.cssforest.org/tags/#%E6%A8%A1%E5%9D%97%E5%8C%96)）
 
