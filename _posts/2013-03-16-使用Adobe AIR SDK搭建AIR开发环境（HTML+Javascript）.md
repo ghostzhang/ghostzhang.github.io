@@ -16,13 +16,13 @@ code: true
 
 ADL 和 ADT 工具包含在 AIR SDK 的 bin 文件夹中；请将此文件夹的路径添加到 `PATH` 环境变量中。
 
-##安装SDK
+## 安装SDK
 
-###windows
+### windows
 
 首先把 SDK 解压到你要的目录下，如『`C:\AIRSDK`』这个目录，右击“我的电脑”图标->属性->高级->环境变量。在界面里找到名为『`path`』的环境变量（建议先备份下内容），在它的最后面加上 `;C:\AIRSDK\bin` （注意前面的『;』是分隔区）。然后按『<key>win+r</key>』，输入 `cmd` 回车，在命令行中输入 `adl` ，如果刚才的路径设置正确，命令行会显示 adl 命令的帮助信息。
 
-###mac
+### mac
 
 mac 下的安装可以看 [这里](http://www.funky-monkey.nl/blog/2008/10/24/installing-the-adobe-air-sdk-on-a-mac/) ，原理也是一样的，把 SDK 的安装目录加到系统路径中，然后就可以调用了，简单说明下过程：
 
@@ -35,14 +35,14 @@ mac 下的安装可以看 [这里](http://www.funky-monkey.nl/blog/2008/10/24/in
 与 windows 不同的是，通过终端设置的是临时的，重新打开终端后之前的设置都会被重置。解决的方案就是把这个设置写到系统配置文件里，方法可以看上面的那篇文章，这里简单说下过程
 
 `~/.profile`
-	:每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,它设置一些环境变量,然后执行用户的.bashrc文件.
+: 每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,它设置一些环境变量,然后执行用户的.bashrc文件.
 
 `~/.bashrc`
-	:该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该该文件被读取.
+: 该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该该文件被读取.
 
 在终端输入
 
-{% highlight cmd linenos %}
+{% highlight cmd %}
 {% raw %}
 cd ~
 ls -a
@@ -51,7 +51,7 @@ ls -a
 
 找找看有没『.profile』，如果没有找到，那么需要先创建它
 
-{% highlight cmd linenos %}
+{% highlight cmd %}
 {% raw %}
 pico .profile
 {% endraw %}
@@ -61,7 +61,7 @@ pico .profile
 
 如果原来就有『.profile』文件，就简单了，直接输入
 
-{% highlight cmd linenos %}
+{% highlight cmd %}
 {% raw %}
 open -e .profile
 {% endraw %}
@@ -71,7 +71,7 @@ open -e .profile
 
 做完上面的工作，要么重启下系统，要么运行下面的命令，让刚才的设置生效
 
-{% highlight cmd linenos %}
+{% highlight cmd %}
 {% raw %}
 . .profile
 {% endraw %}
