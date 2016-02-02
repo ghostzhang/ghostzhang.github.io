@@ -73,7 +73,7 @@ open -e .profile
 
 {% highlight cmd %}
 {% raw %}
-. .profile
+..profile
 {% endraw %}
 {% endhighlight %}
 
