@@ -60,6 +60,13 @@ article, aside, footer, header, hgroup, main, nav, section{display: block;}
 #content article p img{display:block;width:auto;max-width:800px;}
 #content iframe{border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px;max-width:100%;}
 
+/* === code === */
+.highlight .gutter,
+.highlight .code,
+.highlight .code pre,
+.lineno{border:none 0;-webkit-box-shadow:none;}
+.highlight .gutter{width:5%;}
+
 /*#sidebar {
     border-top: .5rem solid #EEEEEE;
 }
