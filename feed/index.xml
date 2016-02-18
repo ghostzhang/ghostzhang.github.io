@@ -9,13 +9,25 @@ layout: none
 		<link>{{ site.url }}</link>
 		<language>zh-cn</language>
 		<copyright>cssforest.org</copyright>
+		<author>
+			<name>GhostZhang</name>
+			<email>ghostzhang@cssforest.org</email>
+		</author>
 		<atom:link href="{{ site.url }}/feed.articles.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
 			{% unless post.link %}
-				{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+				{% capture y %}
+					{{post.date | date:"%Y"}}
+				{% endcapture %}
+				{% if page.author %}
+					{% assign author = page.author %}
+				{% else %}
+					{% assign author = site.data.author %}
+				{% endif %}
 				{% if y == "2015" %}
 				<item>
 					<title>{{ post.title | xml_escape }}</title>
+					<author>{{ author.name | capitalize }}</author>  
 					<description>{{ post.content | xml_escape }}</description>
 					<pubDate>{{ post.date | date: "%F %T" }}</pubDate>
 					<link>{{ site.url }}{{ post.url }}</link>
