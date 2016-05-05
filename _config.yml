@@ -4,11 +4,10 @@ url: http://blog.cssforest.org
 author: GhostZhang
 github: ghostzhang
 qq: 22168741
-email: Ghostzhang@cssforest.org
+email: ghostzhang@cssforest.org
 linkedin: ghostzhang
 paginate: 100
 highlighter: rouge
-pygments: true
 safe: true
 permalink: /:year/:month/:day/:title.html
 published: false
