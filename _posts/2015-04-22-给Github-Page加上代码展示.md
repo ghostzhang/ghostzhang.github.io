@@ -15,7 +15,7 @@ published: true
 
 动手前先看看[说明](https://github.com/Idered/Editr.js/blob/master/README.md)，看到安装的部分，下载项目文件，将editr目录放到需要的目录下，这里我放在根目录下（不是所有的文件都是必须的）：
 
-{% highlight text %}
+```text
 . username.github.com
 |---. editr
 |    |--- editr.js
@@ -30,7 +30,7 @@ published: true
 
 要引用的文件还蛮多的，有没办法不要每个页面都加载呢？想到了文件头部的设置，我们可以加一个自定义的属性，像“demo”，做为一个开关，当需要使用的时候将它设置为“true”：
 
-{% highlight text %}
+```text
 {% raw %}
 ---
 title: 文章标题
@@ -39,7 +39,7 @@ demo: true
 {% endraw %}
 {% endhighlight %}
 
-{% highlight css %}
+```css
 {% raw %}
 {% if page.code %}
 <link rel="stylesheet" href="{{ site.url }}/editr/editr.css">
@@ -47,7 +47,7 @@ demo: true
 {% endraw %}
 {% endhighlight %}
 
-{% highlight js %}
+```js
 {% raw %}
 {% if page.code %}
 <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
@@ -69,7 +69,7 @@ demo: true
 
 为了方便文件的管理，我们新建一个名为“demo”的目录，并且以文章标题为目录区分不同的示例：
 
-{% highlight text %}
+```text
 . username.github.com
 |---. editr
 |---. demo
@@ -82,7 +82,7 @@ demo: true
 
 把Editr的设置修改为：
 
-{% highlight js %}
+```js
 {% raw %}
 <script>
     $('.editr').each(function() {
@@ -98,7 +98,7 @@ demo: true
 
 然后在对应文章中，如《[关于nth-child的疑惑][]》这篇文章，需要展示代码的位置加入如下的代码：
 
-{% highlight html %}
+```html
 {% raw %}
 <div class="editr" data-files-html="1.html" data-files-css="1.css"></div>
 {% endraw %}

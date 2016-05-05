@@ -42,40 +42,40 @@ mac 下的安装可以看 [这里](http://www.funky-monkey.nl/blog/2008/10/24/in
 
 在终端输入
 
-{% highlight cmd %}
+```cmd
 {% raw %}
 cd ~
 ls -a
 {% endraw %}
-{% endhighlight %}
+```
 
 找找看有没『.profile』，如果没有找到，那么需要先创建它
 
-{% highlight cmd %}
+```cmd
 {% raw %}
 pico .profile
 {% endraw %}
-{% endhighlight %}
+```
 
 会打开一个编辑器的界面，现在输入『`export PATH=$PATH:/Users/ghostzhang/AIRSDK/bin`』，然后按『<key>ctrl+x</key>』->『<key>y</key>』->回车，这时再用 `ls -a` 就能看到『.profile』了。
 
 如果原来就有『.profile』文件，就简单了，直接输入
 
-{% highlight cmd %}
+```cmd
 {% raw %}
 open -e .profile
 {% endraw %}
-{% endhighlight %}
+```
 
 然后把『`export PATH=$PATH:/Users/ghostzhang/AIRSDK/bin`』加到文件里，保存。
 
 做完上面的工作，要么重启下系统，要么运行下面的命令，让刚才的设置生效
 
-{% highlight cmd %}
+```cmd
 {% raw %}
 ..profile
 {% endraw %}
-{% endhighlight %}
+```
 
 注意文件前的点『.』，到此，AIR的环境就建好了。可以 [使用 AIR SDK 创建第一个基于 HTML 的 AIR 应用程序](http://help.adobe.com/zh_CN/AIR/1.5/devappshtml/WS5b3ccc516d4fbf351e63e3d118666ade46-7ecc.html) 了。
 
