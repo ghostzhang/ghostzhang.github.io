@@ -8,7 +8,7 @@ published: true
 code: true
 ---
 
-{% include  article_header.html %}
+{% include article_header.html %}
 
 之前开发 AIR，用的是 Aptana2 + AIR 的插件，界面的操作的确带来很大的方便，不过可惜 Aptana 后来就更新到3了，然后……然后就不支持 AIR 插件了，而且 AIR 插件也不更新了……
 

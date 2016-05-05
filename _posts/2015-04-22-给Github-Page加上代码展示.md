@@ -7,7 +7,7 @@ categories: 技术研究 经验总结
 published: true
 ---
 
-{% include  article_header.html %}
+{% include article_header.html %}
 
 博客中常常会需要用到代码展示，在《[用Github搭建个人博客][]》中也介绍了几个可以用于代码展示的站点，不过由于是跨站的服务，可能会由于种种原因访问慢甚至打不开，于是就想找找有没本地实现的方法。自己写一个？No。
 
