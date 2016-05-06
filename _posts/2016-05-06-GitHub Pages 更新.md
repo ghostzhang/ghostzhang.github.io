@@ -4,7 +4,7 @@ title: GitHub Pages 更新
 date: 2016-05-06 18:26:59
 tags: jekyll github markdown blog
 categories: 技术研究 经验总结
-published: false true
+published: true
 ---
 
 {% include article_header.html %}
