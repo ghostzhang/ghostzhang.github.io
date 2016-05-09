@@ -18,9 +18,9 @@ published: true
 ```{% raw %}{% highlight js %}
 code
 {% endhighlight %}{% endraw %}```的方式进行代码高亮，那么就得修改啦，用
-```{% raw %}```js
+``` ```js
 code
-```{% endraw %}```
+``` ```
 即可。
 3. Jekyll 3.0对本地版本的优化，我没有使用过，不太了解，有兴趣的同学自己到上面的链接看吧。​
 4. 将不再支持[Textile](http://redcloth.org/textile)
