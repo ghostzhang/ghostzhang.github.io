@@ -18,7 +18,7 @@ published: true
 ```{% raw %}{% highlight js %}
 code
 {% endhighlight %}{% endraw %}```的方式进行代码高亮，那么就得修改啦，用
-````{% raw %}```js
+```{% raw %}```js
 code
 ```{% endraw %}```
 即可。
