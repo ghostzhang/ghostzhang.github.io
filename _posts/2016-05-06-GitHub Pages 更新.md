@@ -14,7 +14,7 @@ published: true
 首先，看看这次系统升级了些什么，根据邮件指示，来到了这里：[GitHub Pages now faster and simpler with Jekyll 3.0](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 "GitHub Pages now faster and simpler with Jekyll 3.0")，大概的意思是GitHub Pages更新到Jekyll 3.0了，有以下几点变动：
 
 1. 2016年5月1号开始，GitHub Pages只支持[kramdown](http://kramdown.gettalong.org/),作为Jekyll的默认Markdown引擎，如果你用的是其它的引擎，那么你有三个月时间进行更新。
-2. 代码高亮​的实现方式也要改啦，只支持[Rouge](https://github.com/jneen/rouge)的方式。原先如果使用```{% highlight js %}代码{% endhighlight %}```的方式进行代码高亮，那么就得修改啦，用```````js 代码```````即可。
+2. 代码高亮​的实现方式也要改啦，只支持[Rouge](https://github.com/jneen/rouge)的方式。原先如果使用```{% raw %}{% highlight js %}代码{% endhighlight %}{% endraw %}```的方式进行代码高亮，那么就得修改啦，用````{% raw %}{% endraw %}```js 代码```````即可。
 3. Jekyll 3.0对本地版本的优化，我没有使用过，不太了解，有兴趣的同学自己到上面的链接看吧。​
 4. 将不再支持[Textile](http://redcloth.org/textile)
 
