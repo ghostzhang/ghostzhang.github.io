@@ -12,3 +12,4 @@ safe: true
 permalink: /:year/:month/:day/:title.html
 published: false
 file: http://blog.cssforest.org/file
+copyright: 2016
