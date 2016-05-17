@@ -22,7 +22,8 @@ layout: none
 					{% assign author = site.data.author %}
 				{% endif %}
 				{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-				{% if y == site.copyright %}
+				{% capture yn %}{{site.copyright}}{% endcapture %}
+				{% if y == yn %}
 				<item>
 					<title>{{ post.title | xml_escape }}</title>
 					<author>{{ author.name | capitalize }}</author>  
