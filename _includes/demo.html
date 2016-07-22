@@ -1,3 +1,4 @@
+{% if page.demo %}
 <div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}
 {% if include.view %}
 	{% case include.view %}
@@ -22,3 +23,4 @@
 	{% endif %}
 {% endif %}
 ><span class="none">效果展示</span></div>
+{% endif %}

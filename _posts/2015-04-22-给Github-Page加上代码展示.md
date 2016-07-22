@@ -33,27 +33,37 @@ published: true
 ```text
 {% raw %}
 ---
-title: 文章标题
 demo: true
 ---
 {% endraw %}
 ```
 
-```css
+在页面头部加上样式：
+
+```html
 {% raw %}
-{% if page.code %}
+{% if page.demo %}
 <link rel="stylesheet" href="{{ site.url }}/editr/editr.css">
 {% endif %}
 {% endraw %}
 ```
 
+在页面底部加上脚本：
+
 ```js
 {% raw %}
-{% if page.code %}
+{% if page.demo %}
+
 <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
 <script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
+{% if page.coffee %}
+<script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+{% endif %}
+{% if page.less %}
+<script src="{{ site.url }}/editr/libs/parser.less.js"></script>
+{% endif %}
 <script src="{{ site.url }}/editr/editr.js"></script>
 <script>
     $('.editr').each(function() {
@@ -67,17 +77,64 @@ demo: true
 {% endraw %}
 ```
 
+创建一个通用的模块：
+
+```html
+{% raw %}
+{% if page.demo %}
+<div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}
+{% if include.view %}
+    {% case include.view %}
+    {% when "h" %}
+     data-view="horizontal"
+    {% when "v" %}
+     data-view="vertical"
+    {% when "c" %}
+     data-view="cartesian"
+    {% else %}
+    {% endcase %}
+    {% if include.hide %}
+     data-hide="{{ include.hide }}"
+    {% else %}
+     data-hide="all"
+    {% endif %}
+{% else %}
+    {% if include.hide %}
+     data-hide="{{ include.hide }}"
+    {% elsif include.js == null %}
+     data-hide="js"
+    {% endif %}
+{% endif %}
+><span class="none">效果展示</span></div>
+{% endif %}
+{% endraw %}
+```
+
 为了方便文件的管理，我们新建一个名为“demo”的目录，并且以文章标题为目录区分不同的示例：
 
 ```text
 . username.github.com
 |---. editr
 |---. demo
-|        |--- index.html
+|        |--- index.html #公共索引文件
 |        |---.  关于nth-child的疑惑 #文章标题
 |            |--- index.html #空文件，没有的话会报404
 |            |--- 1.html
 |            |--- 1.css
+```
+
+index.html文件内容如下：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body></body>
+</html>
 ```
 
 把Editr的设置修改为：

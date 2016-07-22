@@ -4,11 +4,20 @@
 <a href="http://feeds.feedburner.com/CssForest-Articles" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/CssForest-Articles" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
 <!-- 订阅统计发布代码结束 --><br />
   Copyright &copy; 2007-{{ site.copyright }} CSSForest.org | <span title="精神正常者慎入！">CSS森林群(30247792)</span><br />Style by Ghostzhang <br /><a href="http://prose.io/#ghostzhang/ghostzhang.github.io/new/master/_posts">post new article</a></p>
-{% if page.code %}
+<script src="" defer="defer"></script>
+</footer>
+
+{% if page.demo %}
 <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
 <script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
+{% if page.coffee %}
+<script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+{% endif %}
+{% if page.less %}
+<script src="{{ site.url }}/editr/libs/parser.less.js"></script>
+{% endif %}
 <script src="{{ site.url }}/editr/editr.js"></script>
 <script>
     $('.editr').each(function() {
@@ -51,9 +60,6 @@ document.write("<sc"+"ript type='text/javascript' src='" +scJsHost+"statcounter.
 </script>
 <noscript><div class="statcounter"><a title="shopifyanalytics tool" href="http://statcounter.com/shopify/" class="statcounter"><img class="statcounter" src="http://c.statcounter.com/10403973/0/a1f2b1c9/1/" alt="shopify analytics tool" /></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
-<script src="" defer="defer"></script>
-</footer>
-
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"cssforestorg"};
