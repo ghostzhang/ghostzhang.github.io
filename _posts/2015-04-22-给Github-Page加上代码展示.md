@@ -50,10 +50,9 @@ demo: true
 
 在页面底部加上脚本：
 
-```js
+```text
 {% raw %}
 {% if page.demo %}
-
 <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
 <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
@@ -79,7 +78,7 @@ demo: true
 
 创建一个通用的模块：
 
-```html
+```text
 {% raw %}
 {% if page.demo %}
 <div class="editr" {% if include.html %}data-files-html="{{ include.html }}"{% endif %} {% if include.css %}data-files-css="{{ include.css }}"{% endif %} {% if include.js %}data-files-js="{{ include.js }}"{% endif %}
