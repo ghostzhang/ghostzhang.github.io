@@ -3,7 +3,7 @@ title: 分类
 layout: index
 ---
 
-##分类
+## 分类
 
 <div id='tag_cloud'>
 {% for cat in site.categories %}

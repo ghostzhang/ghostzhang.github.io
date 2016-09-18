@@ -3,7 +3,7 @@ title: 标签
 layout: index
 ---
 
-##标签云
+## 标签云
 
 <div id='tag_cloud'>
 {% for tag in site.tags %}
