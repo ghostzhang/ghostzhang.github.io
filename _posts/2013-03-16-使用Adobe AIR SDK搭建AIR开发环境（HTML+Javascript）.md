@@ -5,7 +5,6 @@ date: 2013-03-16
 tags: adobe air
 categories: 技术研究
 published: true
-demo: true
 ---
 
 {% include article_header.html %}
