@@ -9,15 +9,11 @@ published: true
 
 {% include article_header.html %}
 
-在上一篇关于Adobe Air的文章中[^1]，介绍了如何设置Air的开发环境，由于是跟Web差不多的开发方式，基础上Web所使用的编辑器都是适用的，像Dreamweaver、aptana studio等，当然还有Sublime Text。
+在上一篇关于Adobe Air的文章中[^1]，介绍了如何设置Air的开发环境，由于是跟Web差不多的开发方式，基本上Web所使用的编辑器都是适用的，像Dreamweaver、aptana studio等，当然还有Sublime Text。
 
 回到正题，当你下载了Air的SDK后，编辑完一个项目后，需要运行它进行调试，你可以用命令行的方式，设置完AIR的开发环境后在命令行进入到项目目录中，输入
 
-```cmd
-{% raw %}
-adl application.xml
-{% endraw %}
-```
+`adl application.xml`
 
 就会运行你的项目了。这种方式其实也蛮快的，就是每次都得切换窗口、输入、回车，一次两次还行，多了还是挺烦的。
 
