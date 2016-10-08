@@ -27,7 +27,11 @@ mac 下的安装可以看 [这里](http://www.funky-monkey.nl/blog/2008/10/24/in
 
 首先把SDK解压到你要的目录下，如『`/Users/ghostzhang/AIRSDK`』这个目录，然后打开终端（/Applications/Utilities/Terminal），如果现在输入 `adl` 是会显示『-bash: adl: command not found』的，因为找不到这个命令，现在输入下面的命令
 
-`export PATH=$PATH:/Users/ghostzhang/AIRSDK/bin`
+```cmd
+{% raw %}
+export PATH=$PATH:/Users/ghostzhang/AIRSDK/bin
+{% endraw %}
+```
 
 意思就是在系统系统变量 `PATH` 里加上 SDK 的 bin 目录（多个路径的分隔符是『:』），现在再输入 `adl` ，如果出现 adl 的帮助信息，说明刚才的设置正确了，否则就需要再检查下路径了。
 
