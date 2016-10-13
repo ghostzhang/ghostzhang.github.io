@@ -33,12 +33,11 @@ title: CSSForest.org
         {% assign year = y %}
     <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
-    <section class="listing">
-        {% if post.update %}
-        <h4 class="upadte"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-        <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }} 更新</time>
-        {% else %}
+    <section class="listing{% if post.update %}update{% endif %}">
         <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        {% if post.update %}
+        <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
+        {% else %}
         <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         {% endif %}
         {% if site.truncate %}
