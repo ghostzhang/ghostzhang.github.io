@@ -3,5 +3,5 @@
 {% else %}
 {% assign author = site.data.author %}
 {% endif %}
-由 <a href="{{ author.url }}">{{ author.name | capitalize }}</a> 发表于 <time itemprop="datePublished" datetime="{{ page.date |  date: '%F %R' }}">{{ page.date |  date: "%F %R" }}</time>{% if post.update %}更新于 <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
+由 <a href="{{ author.url }}">{{ author.name | capitalize }}</a> 发表于 <time itemprop="datePublished" datetime="{{ page.date |  date: '%F %R' }}">{{ page.date |  date: "%F %R" }}</time>{% if post.update %}更新于 <time itemprop="datePublished" datetime="{{ post.update | date:'%F %R' }}">{{ post.update | date:'%F %R' }}</time>
 {% endif %}
