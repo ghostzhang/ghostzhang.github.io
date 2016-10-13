@@ -23,10 +23,14 @@ title: CSSForest.org
     {% endif %}
     <section class="listing">
         <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        {% if post.update %}
+        <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }} 更新</time>
+        {% else %}
         <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        {% endif %}
         {% if site.truncate %}
         <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
-        {% endif%}
+        {% endif %}
     </section>
 {% endif%}
 {% endfor %}
