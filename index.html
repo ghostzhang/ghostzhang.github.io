@@ -3,18 +3,6 @@ layout: index
 title: CSSForest.org
 ---
 
-<h2 class="none">更新</h2>
-{% for post in paginator.posts %}
-{% if post.published %}
-  {% if post.update %}
-    <section class="listing update">
-        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-        <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
-    </section>
-  {% endif %}
-{% endif %}
-{% endfor %}
-
 <h2 class="none">文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
@@ -33,13 +21,12 @@ title: CSSForest.org
         {% assign year = y %}
     <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
-    <section class="listing{% if post.update %}update{% endif %}">
+    <section class="listing {% if post.update %}update{% endif %}">
         <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
         {% if post.update %}
-        <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
-        {% else %}
-        <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+        <time itemprop="dateUpdate" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
         {% endif %}
+        <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         {% if site.truncate %}
         <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
         {% endif %}
