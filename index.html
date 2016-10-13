@@ -6,7 +6,11 @@ title: CSSForest.org
 <h2 class="none">文章列表</h2>
 {% for post in paginator.posts %}
 {% if post.published %}
-    {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+    {% if post.update %}
+      {% capture y %}{{post.update | date:"%Y"}}{% endcapture %}
+    {% else %}
+      {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+    {% endif %}
 
     {% if year != y %}
         {% if year == null %}
@@ -22,17 +26,18 @@ title: CSSForest.org
     <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
     <section class="listing">
-        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
         {% if post.update %}
+        <h4 class="upadte"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
         <time itemprop="datePublished" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }} 更新</time>
         {% else %}
+        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
         <time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         {% endif %}
         {% if site.truncate %}
         <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
         {% endif %}
     </section>
-{% endif%}
+{% endif %}
 {% endfor %}
 </section>
 
