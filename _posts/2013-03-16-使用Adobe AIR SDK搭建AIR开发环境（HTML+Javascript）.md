@@ -2,7 +2,7 @@
 layout: article
 title: 使用Adobe AIR SDK搭建AIR开发环境（HTML+Javascript）
 date: 2013-03-16
-upadte: 2016-10-13 12:30
+update: 2016-10-13 12:30
 tags: adobe air
 categories: 技术研究
 published: true
