@@ -53,8 +53,11 @@ article, aside, footer, header, hgroup, main, nav, section{display: block;}
 .gist pre,.gist td{background:none;border:none 0;-moz-box-shadow:none;-webkit-box-shadow:none;}
 .txpCommentInputMessage{width:50%;}
 .listing h4{display:inline-block;margin:.2rem 0;font-size:1.5em;line-height:1.5em;}
-.listing h4.upadte:before{content:"new";margin:0 0 0 -2.5em;font-size:.5em;vertical-align:.9em;color:#F27B2E;}
+.listing .new:before{content:"new";margin:0 0 0 -2.5em;font-size:.5em;vertical-align:.9em;color:#F27B2E;}
+.listing a{margin-left:-5px;}
 .listing time{color:#333333;}
+.update h4:before{content:"update";margin:0 0 0 -3.7em;font-size:.5em;color:#54BAF3;position:relative;left:-6px;top:-10px;}
+.update time{float:left;margin:1.6em 0 0 -6.7em;font-size:.5em;color:#F27B2E;}
 
 #content{max-width:800px;padding:0 3rem;margin:auto;}
 #content article h1{font-size:1.5rem;}
