@@ -2,6 +2,7 @@
 layout: article
 title: 使用Adobe AIR SDK搭建AIR开发环境（HTML+Javascript）
 date: 2013-03-16
+upadte: 2016-10-13 12:30
 tags: adobe air
 categories: 技术研究
 published: true
@@ -81,6 +82,12 @@ open -e .profile
 ```
 
 注意文件前的点『.』，到此，AIR的环境就建好了。可以 [使用 AIR SDK 创建第一个基于 HTML 的 AIR 应用程序](http://help.adobe.com/zh_CN/AIR/1.5/devappshtml/WS5b3ccc516d4fbf351e63e3d118666ade46-7ecc.html) 了。
+
+## 2016.10.13更新
+
+更新了macOS到Sierra(10.12)后，发现命令行原先的设置失效了，每次设置后一新开一个窗口就又找不到命令……后来找到这篇[^1]，提到需要把设置放到`~/.bash_profile`这个文件中才会生效，上文所说的`~/.profile`和`~/.bashrc`设置在Sierra中并没有加载。囧
+
+[^1]:https://coolestguidesontheplanet.com/add-shell-path-osx/
 
 {% include links.md %}
 {% include article_footer.html %}
