@@ -31,6 +31,7 @@
 {% endif %}
 {% if site.comments and page.issueid %}
 <!-- 加载评论 开始 -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type='text/javascript'>
     function loadComments(data) {
     for (var i=0; i<data.length; i++) {
@@ -64,15 +65,6 @@
 <!-- 加载评论 结束 -->
 {% endif %}
 <!-- Customize this div -->
-<script type='text/javascript'>
-    var el = document.createElement('script');
-    var url = window.location.href;
-    var head = document.getElementsByTagName("head")[0];
-    el.src = '//www.goemotify.com/api/articles/eb06e7dffacc46cdb729b3c6a4d3ee174.js?url='+url;
-    el.type = 'text/javascript';
-    head.appendChild(el);
-</script>
-
 <script src="http://js.users.51.la/17278621.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

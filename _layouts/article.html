@@ -14,12 +14,11 @@
                 </article>
 				<section>
 					<h2>评论</h2>
-					{{ site.comments }} {{ page.issueid }}
 				<!-- 评论框 start -->
 				{% if site.comments and page.issueid %}
 					<div class="comments">
 					  <div class="header">
-					    想发评论? 请移步到GitHub上的 <a href="https://github.com/{{ site.github_ower }}/{{ site.github_repo }}/issues/{{page.issueId}}#new_comment_field"> （文章评论）{{ page.title }}</a> (要注意的是，你需要一个GitHub账号，发表后会有文章评论区看到你的内容。)
+					    想发评论? 请移步到GitHub上的 <a href="https://github.com/{{ site.github_ower }}/{{ site.github_repo }}/issues/{{page.issueid}}#new_comment_field"> （文章评论）{{ page.title }}</a> (要注意的是，你需要一个GitHub账号，发表后会有文章评论区看到你的内容。)
 					  </div>
 					  <div id="githubissue_comments"></div>
 					</div>
