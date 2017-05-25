@@ -33,6 +33,14 @@
 <!-- 加载评论 开始 -->
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script type='text/javascript'>
+    var reaction_fa = {
+      "+1": "thumbs-o-up",
+      "-1": "thumbs-o-down",
+      "laugh": "smile-o",
+      "hooray": "gift",
+      "confused": "frown-o",
+      "heart": "heart-o"
+    }
     function loadComments(data) {
     for (var i=0; i<data.length; i++) {
       var cuser = data[i].user.login;
