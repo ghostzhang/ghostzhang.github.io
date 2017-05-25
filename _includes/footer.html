@@ -8,26 +8,60 @@
 </footer>
 
 {% if page.demo %}
-<script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
-<script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
-<script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
-{% if page.coffee %}
-<script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+  <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
+  <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
+  <script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
+  {% if page.coffee %}
+    <script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+  {% endif %}
+  {% if page.less %}
+    <script src="{{ site.url }}/editr/libs/parser.less.js"></script>
+  {% endif %}
+  <script src="{{ site.url }}/editr/editr.js"></script>
+  <script>
+      $('.editr').each(function() {
+          new Editr({
+              el: this,
+              theme: 'clouds',
+              path: '{{ site.url }}/demo/{{ page.title }}'
+          });
+      });
+  </script>
 {% endif %}
-{% if page.less %}
-<script src="{{ site.url }}/editr/libs/parser.less.js"></script>
-{% endif %}
-<script src="{{ site.url }}/editr/editr.js"></script>
-<script>
-    $('.editr').each(function() {
-        new Editr({
-            el: this,
-            theme: 'clouds',
-            path: '{{ site.url }}/demo/{{ page.title }}'
-        });
-    });
+{% if site.comments and page.issueid %}
+<!-- 加载评论 开始 -->
+<script type='text/javascript'>
+    function loadComments(data) {
+    for (var i=0; i<data.length; i++) {
+      var cuser = data[i].user.login;
+      var cuserlink = "https://github.com/" + data[i].user.login;
+      var clink = "https://github.com/{{ site.github_ower}}/{{ site.github_repo }}/issues/{{ page.issueId }}#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
+      var cbody = data[i].body_html || data[i].body;
+      var cavatarlink = data[i].user.avatar_url;
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
+      var cdate = new Date(data[i].created_at).toLocaleString("zh-Hans", options);
+      var reactions = data[i].reactions;
+      var creactions = "";
+      if(reactions){
+        for(reactionkey in reaction_fa){
+          if(reactions[reactionkey] > 0) {
+              creactions += '<i class="fa fa-'+ reaction_fa[reactionkey]+'"></i>' + reactions[reactionkey] + "&nbsp;";
+          }
+        }
+      }
+      $("#githubissue_comments").append("<div class='media'><div class='media-left'><a href=\""+ cuserlink +'\"><img src="' + cavatarlink + '" width="48" class="media-object">' + "</a></div><div class='media-body'><h4 class='media-heading'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><small>&nbsp; {% trans %}left a comment on{% endtrans %} &nbsp;<a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></small>&nbsp;"+ creactions + "</h4><div class='commentbody'>" + cbody + "</div></div>");
+    }
+  }
+  $.ajax("https://api.github.com/repos/{{ site.github_ower}}/{{ site.github_repo }}/issues/{{ page.issueId }}/comments", {
+    headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
+    dataType: "json",
+    success: function(msg){
+      loadComments(msg);
+   }
+  });
 </script>
+<!-- 加载评论 结束 -->
 {% endif %}
 <!-- Customize this div -->
 <script type='text/javascript'>
@@ -60,19 +94,7 @@ document.write("<sc"+"ript type='text/javascript' src='" +scJsHost+"statcounter.
 </script>
 <noscript><div class="statcounter"><a title="shopifyanalytics tool" href="http://statcounter.com/shopify/" class="statcounter"><img class="statcounter" src="http://c.statcounter.com/10403973/0/a1f2b1c9/1/" alt="shopify analytics tool" /></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"cssforestorg"};
-(function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-<!-- 多说公共JS代码 end -->
+
 <script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=undefined&from=zh-CHS';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script>
 <script>
 if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent))) {
@@ -84,5 +106,4 @@ if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navig
          a.src = g;
      })(window, document, 'script', 'http://blog.cssforest.org/js/tat.v1.0.1.js');
 }
-
 </script>

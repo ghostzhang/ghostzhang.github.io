@@ -13,10 +13,23 @@
 		　　　　{{ content }}
                 </article>
 				<section>
-                    <h2 class="none">评论列表</h2>
-				<!-- 多说评论框 start -->
-					<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
-				<!-- 多说评论框 end -->
+					<h2>评论</h2>
+				<!-- 评论框 start -->
+				{% if site.comments and page.issueid %}
+					<div class="comments">
+					  <div class="header">
+					    想发评论? 请移步到GitHub上的 <a href="https://github.com/{{ site.github_ower }}/{{ site.github_repo }}/issues/{{page.issueId}}#new_comment_field"> （文章评论）{{ page.title }}</a> (要注意的是，你需要一个GitHub账号，发表后会有文章评论区看到你的内容。)
+					  </div>
+					  <div id="githubissue_comments"></div>
+					</div>
+				{% else %}
+					<div class="comments">
+					  <div class="header">
+					    本文章未开放评论。
+					  </div>
+					</div>
+				{{ endif }}
+				<!-- 评论框 end -->
 				</section>
 			</main>
 			{% include footer.html %}

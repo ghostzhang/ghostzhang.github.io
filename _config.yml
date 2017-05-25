@@ -8,8 +8,10 @@ email: ghostzhang@cssforest.org
 linkedin: ghostzhang
 paginate: 100
 highlighter: rouge
-safe: true
 permalink: /:year/:month/:day/:title.html
 published: false
 file: http://blog.cssforest.org/file
 copyright: 2016
+comments: true
+github_ower: ghostzhang
+github_repo: ghostzhang.github.io
