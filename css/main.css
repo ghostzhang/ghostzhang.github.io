@@ -22,6 +22,7 @@ code{white-space: pre-wrap;}
 pre{padding: 0 1em;border-color:#CCCCCC;border-style:solid;border-width:1px 1px 3px;word-wrap:break-word;-moz-box-shadow:0 3px 6px rgba(0,0,0,0.25);-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.25);}
 article, aside, footer, header, hgroup, main, nav, section{display: block;}
 .none{display:none;}
+.paginator{line-height:2;margin:10px 0;text-align:center;}
 
 /* === logo === */
 .logo{max-width: 800px;margin:0 auto;/* padding: 0 2em; */font-size:3rem;font-family:Helvetica,"Microsoft YaHei",STHeiti,Georgia,"Times New Roman",Times,serif;background-image:linear-gradient(bottom,#2EF5F5 17%,#309EFF 51%,#2B78ED 81%);}
@@ -60,7 +61,7 @@ article, aside, footer, header, hgroup, main, nav, section{display: block;}
 .update time[itemprop="dateUpdate"]{float:left;margin: .9em 0 0 -6.2em;font-size: .1rem;color:#F27B2E;}
 
 #content{max-width:800px;margin:auto;}
-#content article h1{font-size:2rem;}
+#content article h1{font-size:2rem;line-height:1.3em;}
 #content article p{font-size:1rem;line-height:1.8em;}
 #content article p img{display:block;width:auto;max-width:800px;}
 #content iframe{border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px;max-width:100%;}
