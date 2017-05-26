@@ -80,7 +80,7 @@ Object.defineProperty(exports, "__esModule", {
 var LS_ACCESS_TOKEN_KEY = exports.LS_ACCESS_TOKEN_KEY = 'gitment-comments-token';
 var LS_USER_KEY = exports.LS_USER_KEY = 'gitment-user-info';
 
-var NOT_INITIALIZED_ERROR = exports.NOT_INITIALIZED_ERROR = new Error('Comments Not Initialized');
+var NOT_INITIALIZED_ERROR = exports.NOT_INITIALIZED_ERROR = new Error('这……有点尴尬～～');
 
 /***/ }),
 /* 1 */
@@ -2908,7 +2908,7 @@ function renderComments(_ref2, instance) {
           alert(e);
         });
       };
-      initButton.innerText = 'Initialize Comments';
+      initButton.innerText = '朋友，看你骨骼精奇，这个沙发就给你了！！～';
       initHint.appendChild(initButton);
       errorBlock.appendChild(initHint);
     } else {
@@ -2918,14 +2918,14 @@ function renderComments(_ref2, instance) {
     return container;
   } else if (comments === undefined) {
     var loading = document.createElement('div');
-    loading.innerText = 'Loading comments...';
+    loading.innerText = '拼命加载中...';
     loading.className = 'gitment-comments-loading';
     container.appendChild(loading);
     return container;
   } else if (!comments.length) {
     var emptyBlock = document.createElement('div');
     emptyBlock.className = 'gitment-comments-empty';
-    emptyBlock.innerText = 'No Comment Yet';
+    emptyBlock.innerText = '沙发在这里，请坐。';
     container.appendChild(emptyBlock);
     return container;
   }
@@ -3087,7 +3087,7 @@ function renderEditor(_ref3, instance) {
       return;
     }
 
-    preview.innerText = 'Loading preview...';
+    preview.innerText = '想不到你还挺在意细节...';
     instance.markdown(content).then(function (html) {
       return preview.innerHTML = html;
     });
@@ -3101,11 +3101,11 @@ function renderEditor(_ref3, instance) {
       textarea.value = '';
       textarea.style.height = 'auto';
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '((T_T))';
     }).catch(function (e) {
       alert(e);
       submitButton.removeAttribute('disabled');
-      submitButton.innerText = 'Comment';
+      submitButton.innerText = '写好了';
     });
   };
 
