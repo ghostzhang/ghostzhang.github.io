@@ -30,44 +30,21 @@
 {% endif %}
 {% if site.comments and page.issueid %}
 <!-- 加载评论 开始 -->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script type='text/javascript'>
-    var reaction_fa = {
-      "+1": "thumbs-o-up",
-      "-1": "thumbs-o-down",
-      "laugh": "smile-o",
-      "hooray": "gift",
-      "confused": "frown-o",
-      "heart": "heart-o"
-    }
-    function loadComments(data) {
-    for (var i=0; i<data.length; i++) {
-      var cuser = data[i].user.login;
-      var cuserlink = "https://github.com/" + data[i].user.login;
-      var clink = "https://github.com/{{ site.github_ower}}/{{ site.github_repo }}/issues/{{ page.issueId }}#issuecomment-" + data[i].url.substring(data[i].url.lastIndexOf("/")+1);
-      var cbody = data[i].body_html || data[i].body;
-      var cavatarlink = data[i].user.avatar_url;
-      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' };
-      var cdate = new Date(data[i].created_at).toLocaleString("zh-Hans", options);
-      var reactions = data[i].reactions;
-      var creactions = "";
-      if(reactions){
-        for(reactionkey in reaction_fa){
-          if(reactions[reactionkey] > 0) {
-              creactions += '<i class="fa fa-'+ reaction_fa[reactionkey]+'"></i>' + reactions[reactionkey] + "&nbsp;";
-          }
-        }
-      }
-      $("#githubissue_comments").append("<div class='media'><div class='media-left'><a href=\""+ cuserlink +'\"><img src="' + cavatarlink + '" width="48" class="media-object">' + "</a></div><div class='media-body'><h4 class='media-heading'><a class='commentuser' href=\""+ cuserlink + "\">" + cuser + "</a><small>&nbsp;<a class='commentdate' href=\"" + clink + "\">" + cdate + "</a></small>&nbsp;"+ creactions + "</h4><div class='commentbody'>" + cbody + "</div></div>");
-    }
-  }
-  $.ajax("https://api.github.com/repos/{{ site.github_ower}}/{{ site.github_repo }}/issues/{{ page.issueid }}/comments?authorization_request=401bb596aaa4c0225def910949930ef753c90f66", {
-    headers: {Accept: "application/vnd.github.squirrel-girl-preview.full+json"},
-    dataType: "json",
-    success: function(msg){
-      loadComments(msg);
-   }
-  });
+<script src="http://blog.cssforest.org/js/gitment.browser.js"></script>
+<script>
+  var clientId = '35c7ef11aed44af743ef'
+  var clientSecret = '443b757757d3ad08a1a0d5bd99f79af29d6ed453'
+  var gitment = new Gitment({
+    id: 'demo page',
+    owner: 'imsun',
+    repo: 'gitment',
+    oauth: {
+      client_id: clientId,
+      client_secret: clientSecret,
+    },
+  })
+
+  gitment.render('gc-comments-info')
 </script>
 <!-- 加载评论 结束 -->
 {% endif %}
