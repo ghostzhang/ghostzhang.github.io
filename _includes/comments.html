@@ -1,19 +1,5 @@
 {% if site.comments %}
 <div class="comments">
-    <div class="gc-comments" data-repos="{{ site.github_ower }}/{{ site.github_repo }}" data-issues="{{page.issueid}}">
-        <p class="gc-comments-title">
-            想在此发评论? 请到GitHub上的 <a href="https://github.com/{{ site.github_ower }}/{{ site.github_repo }}/issues/{{page.issueid}}#new_comment_field"> （文章评论）{{ page.title }}</a> 写下你的评论。(你需要一个GitHub账号。)
-        </p>
-        <div id="gc-comments-info" class="gc-comments-info">
-        </div>
-    </div>
-</div>
-{% else %}
-<div class="comments">
-    <div class="gc-comments">
-        <p class="gc-comments-title">
-            本文章未开放评论。
-        </p>
-    </div>
+	<div id="gc-comments-info" class="gc-comments-info"></div>
 </div>
 {% endif %}
