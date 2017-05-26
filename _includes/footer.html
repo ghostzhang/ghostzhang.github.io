@@ -28,16 +28,16 @@
       });
   </script>
 {% endif %}
-{% if site.comments and page.issueid %}
+{% if site.comments %}
 <!-- 加载评论 开始 -->
 <script src="http://blog.cssforest.org/js/gitment.browser.js"></script>
 <script>
   var clientId = '35c7ef11aed44af743ef'
   var clientSecret = '443b757757d3ad08a1a0d5bd99f79af29d6ed453'
   var gitment = new Gitment({
-    id: 'demo page',
-    owner: 'imsun',
-    repo: 'gitment',
+    id: '{{ page.title }}',
+    owner: 'ghostzhang',
+    repo: 'ghostzhang.github.io',
     oauth: {
       client_id: clientId,
       client_secret: clientSecret,
