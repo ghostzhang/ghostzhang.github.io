@@ -37,7 +37,7 @@
   var gitment = new Gitment({
     owner: 'ghostzhang',
     repo: 'ghostzhang.github.io',
-    desc: '原文地址：{{ page.url }}',
+    desc: '原文地址：{{ site.url }}/{{ page.url }}',
     labels: ['文章评论'],
     oauth: {
       client_id: clientId,
