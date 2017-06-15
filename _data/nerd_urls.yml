@@ -6,8 +6,8 @@
     data:
       - name: my github
         url: https://github.com/ghostzhang
-      - name: CSS森林（旧站）
-        url: http://www.cssforest.org/blog/
+      - name: 深山老林（CSS森林前身）
+        url: http://forest.blogbus.com/
   - name: 还活着的博客
     meta: false
     data:
@@ -26,14 +26,10 @@
         url: http://www.chouyu.com.cn/
       - name: 余果
         url: http://yuguo.us/weblog/
-      - name: 苏塔
-        url: http://suta.im/
       - name: 豆豆猫
         url: http://www.ddcat.net/blog/
       - name: cbm's land
         url: http://www.cbmland.com/
-      - name: tension's house
-        url: http://tension.name/
       - name: 崔凯的博客
         url: http://uicss.cn/
       - name: 丸子
@@ -45,7 +41,7 @@
     data:
       - name: twinsen
         url: http://www.twinsenliang.net/
-        desc: 虎三
+        desc: 彪叔
       - name: lilac（雪青）
         url: http://www.cnblogs.com/lilaczhu/
       - name: 好前端
@@ -62,14 +58,8 @@
         desc: wuxiang
       - name: 冰糖橙子
         url: http://www.btorange.com/
-      - name: Smallni.com
-        url: http://www.smallni.com/
       - name: 人仔
         url: http://www.tesion.cn
-      - name: 飘飘的生活空间
-        url: http://www.pufen.net/
-      - name: Time Machine
-        url: http://rlog.cn/
       - name: aoao
         url: http://www.aoao.org.cn/ 
       - name: 胖大菜
