@@ -871,7 +871,7 @@
 
                         $(aceEditor.container).addClass('active').siblings(__.isPaneled() ? '.editr__editor--' + item.data('type') : '').removeClass('active');
 
-                        aceEditor.focus();
+                        // aceEditor.focus();
 
                         aceEditor.resize();
                     }
