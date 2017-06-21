@@ -1,0 +1,8 @@
+/* @reset */
+body{background-color:#FFFFFF;}
+
+/* ==== demo ==== */
+*{padding:0;margin:0;}
+section{width:200px;height:200px;overflow:auto;background:#200;}
+div{width:400px;height:200px;background:red;margin:20px;color:#fff;}
+.fix{width:440px;height:1px;margin:0;overflow:hidden;background:transparent;}
