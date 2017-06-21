@@ -2,6 +2,7 @@
 layout: article
 title: margin-right右边距失效
 date: 2017-06-21 16:52:13
+update: 2017-06-21 19:00:00	
 tags: CSS 外边距 盒模型
 categories: 技术研究
 published: true
@@ -10,9 +11,9 @@ demo: true
 
 {% include article_header.html %}
 
-不小心看了下知乎，万年潜水，突然看到有一个邀答，[问题在这里](https://www.zhihu.com/question/61342225)，进去看了下，觉得这个问题很有意思，于是想试着回答下：
+不小心看了下知乎，万年潜水，突然看到有一个邀答，[问题在这里](https://www.zhihu.com/question/61342225)，进去看了下，觉得这个问题很有意思，于是想试着回答：
 
-先试着还原下，在题主的[Demo](https://weblzf.github.io/practice/test/index.html)上改改：
+先试着还原最初的状态，在题主的[Demo](https://weblzf.github.io/practice/test/index.html)上改改：
 
 ![修改的部分]({{ site.file }}/2017-06-21_00.png)
 
@@ -49,10 +50,14 @@ demo: true
 ![父元素也设置外边距后的盒模型]({{ site.file }}/2017-06-21_07.png)
 
 总结下：
-**当父元素的宽度小于子元素的宽度时，子元素的右边距无效。** 用`scrollWidth`取到的值也是不包括右边距的，跟盒模型的规则有点冲突，不知道算不算是BUG。
+ * **默认状态下的块级元素右边距是无效的** 设置float（除了none以外的值）、display (inline-block，inline-flex，inline-grid，inline-table，inline-box，table)、position（absolute，fixed）之后会生效
+
+ * **当父元素的宽度小于子元素的宽度时，子元素的右边距无效。** 用`scrollWidth`取到的值也是不包括右边距的，跟盒模型的规则有点冲突，不知道算不算是BUG。通过设置display（inline-block，inline-flex，inline-grid，inline-table）可以让右边距生效。
+
 
 如果非要子元素有右边距，可以这样：
-* 子元素设置右浮动，但无导致父元素的`overflow`失效，抱脸～～
+
+* 子元素设置右浮动，但会导致父元素的`overflow`失效，抱脸～～
 * 子元素的左边距为`auto`，并且父元素的宽大于子元素的宽；
 
 对于当前问题的解决方案也很简单，为子元素再加一个父级，然后为它设置一个跟子元素实际宽度相等的宽即可：
@@ -64,6 +69,10 @@ demo: true
 {% include demo.html html="2.html" css="2.css" %}
 
 只是，为什么会无效，我没找到答案。
+
+更新：重新又检查了遍，找到一个更简单的方法，设置子元素的`display`：
+
+{% include demo.html html="3.html" css="3.css" %}
 
 [^1]:	> BFC（W3C CSS 2.1 规范中的一个概念）就是所谓的Block formatting contexts （块级格式化上下文）。创建了 BFC的元素就是一个独立的盒子，里面的子元素不会在布局上影响外面的元素，反之亦然，同时BFC仍然属于文档中的普通流。
 

@@ -23,10 +23,5 @@ div {
 }
 
 .fix {
-    width: 440px;
-    height: 1px;
-    margin: 0;
-    overflow: hidden;
-    background: transparent;
+    display: inline-block;
 }
-
