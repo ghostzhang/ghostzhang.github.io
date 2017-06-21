@@ -1,6 +1,6 @@
 ---
 layout: article
-title: margin-right 右边距失效
+title: margin-right右边距失效
 date: 2017-06-21 16:52:13
 tags: CSS 外边距 盒模型
 categories: 技术研究
