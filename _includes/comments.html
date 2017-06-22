@@ -1,4 +1,9 @@
-{% if site.comments %}
+{% if page.comments %}
+{% assign comments = page.comments %}
+{% else %}
+{% assign comments = site.comments %}
+{% endif %}
+{% if comments %}
 <div class="comments">
 	<div id="gc-comments-info" class="gc-comments-info"></div>
 </div>
