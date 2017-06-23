@@ -7,14 +7,14 @@
  * Github username
  * @var string
  */
-$username = 'ghostzhang';
+$username = '';
 
 /**
  * Github Personal Access Token
  * @see https://github.com/settings/tokens/new
  * @var string
  */
-$api_token = 'cb85899422adb0123a4c1a08994ff9e78247744b';
+$api_token = '';
 
 
 /* Don't touch
@@ -22,7 +22,7 @@ $api_token = 'cb85899422adb0123a4c1a08994ff9e78247744b';
 
 header( "Content-Type: application/json" );
 
-$endpoint = 'https://api.github.com/gists/';
+$endpoint = 'https://api.github.com/gists';
 
 $gist_id = isset($_POST['id']) ? $_POST['id'] : '';
 
