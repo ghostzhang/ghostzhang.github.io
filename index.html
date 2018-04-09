@@ -25,9 +25,9 @@ title: CSSForest.org
         <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
         <p class="post-info">
           {% if post.update %}
-          <span class="date-update">发布时间：</span><time itemprop="dateUpdate" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
+          <span class="date-update">更新时间：</span><time itemprop="dateUpdate" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time>
           {% endif %}
-          <span class="date-published">更新时间：</span><time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+          <span class="date-published">发布时间：</span><time itemprop="datePublished" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         </p>
         {% if site.truncate %}
         <p>{{ post.content | strip_html | truncate: site.truncate }}</p>

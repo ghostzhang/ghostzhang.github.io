@@ -58,10 +58,11 @@ article, aside, footer, header, hgroup, main, nav, section{display: block;}
 .listing a{margin-left: -.3em;}
 .listing .post-info{display:inline;}
 .listing time{color:#333333;}
-.listing .date-update{display:none;}
+.listing .listing-item{line-height:1.8em;}
+.listing .date-published{display:none;}
 .update h4:before{content:"update";margin:0 0 0 -3.7em;font-size: .1rem;color: rgba(137, 210, 40, 0.5);position:relative;left:-6px;top: -0.7em;}
 .update time[itemprop="dateUpdate"]{float:left;margin: .9em 0 0 -6.2em;font-size: .1rem;color:#F27B2E;}
-.update .date-published{display:none;}
+.update .date-update{display:none;}
 
 #content{max-width:800px;margin:auto;}
 #content article h1{font-size:2rem;line-height:1.3em;}
