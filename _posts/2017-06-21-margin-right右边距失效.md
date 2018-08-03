@@ -15,23 +15,17 @@ demo: true
 
 先试着还原最初的状态，在题主的[Demo](https://weblzf.github.io/practice/test/index.html)上改改：
 
-<figure>
 ![修改的部分]({{ site.file }}/2017-06-21_00.png)
-</figure>
 
 于是变成这样
 
-<figure>
 ![最初的样式]({{ site.file }}/2017-06-21_01.png)
-</figure>
 
 用Chrome的开发者工具看看：
 
-<figure>
 ![父元素的盒模型]({{ site.file }}/2017-06-21_02.png)
 
 ![子元素的盒模型]({{ site.file }}/2017-06-21_03.png)
-</figure>
 
 可见子元素的margin跟父级元素重叠了，这是外边距合并的现象，具体可以看看这几篇：《[外边距合并](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)》、《[盒模型](http://www.ayqy.net/doc/css2-1/box.html#margin-properties)》、《[CSS 外边距(margin)重叠及防止方法](http://www.hujuntao.com/web/css/css-margin-overlap.html)》、《[What You Should Know About Collapsing Margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)》
 
@@ -39,29 +33,21 @@ demo: true
 
 当父元素设置了`overflow:auto`之后，变成了下面这样
 
-<figure>
 ![激活父元素的BFC]({{ site.file }}/2017-06-21_04.png)
-</figure>
 
 正常哈，因为激活了父元素的BFC[^1]，margin合并的规则失效，现在看到的才是我们预期的样子。
 
-<figure>
 ![激活父元素的BFC后的子元素盒模型]({{ site.file }}/2017-06-21_05.png) 
-</figure>
 
 从Chrome的开发者工具来看，子元素的margin只有top、left、bottom有效，右边距失效。试着移动下子元素：
 
-<figure>
 ![子元素外边距宽度随子元素移动]({{ site.file }}/2017-06-21_06.png)
-</figure>
 
 可以看到子元素的外边距位置是随着子元素移动的，所以才会出现了移到右边后右边的外边距没有显示的结果。
 
 找了下margin合并，或叫外边距塌陷(margin collapsing)相关的内容，基本上都只是提到上下边距的问题，于是试着给父元素也设置了`margin`，然后就看到，右边距基本也是无效的，一个`auto`的状态：
 
-<figure>
 ![父元素也设置外边距后的盒模型]({{ site.file }}/2017-06-21_07.png)
-</figure>
 
 总结下：
  * **默认状态下的块级元素右边距是无效的** 设置float（除了none以外的值）、display (inline-block，inline-flex，inline-grid，inline-table，inline-box，table)、position（absolute，fixed）之后会生效
@@ -76,23 +62,17 @@ demo: true
 
 对于当前问题的解决方案也很简单，为子元素再加一个父级，然后为它设置一个跟子元素实际宽度相等的宽即可：
 
-<figure>
 {% include demo.html html="1.html" css="1.css" %}
-</figure>
 
 或者，加一个兄弟元素，让它隐藏起来，宽度为实际宽度，应该更实用些：
 
-<figure>
 {% include demo.html html="2.html" css="2.css" %}
-</figure>
 
 只是，为什么会无效，我没找到答案。
 
 更新：重新又检查了遍，找到一个更简单的方法，设置子元素的`display`：
 
-<figure>
 {% include demo.html html="3.html" css="3.css" %}
-</figure>
 
 [^1]:	> BFC（W3C CSS 2.1 规范中的一个概念）就是所谓的Block formatting contexts （块级格式化上下文）。创建了 BFC的元素就是一个独立的盒子，里面的子元素不会在布局上影响外面的元素，反之亦然，同时BFC仍然属于文档中的普通流。
 
