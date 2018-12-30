@@ -35,24 +35,10 @@
 {% endif %}
 {% if comments and page.id %}
 <!-- 加载评论 开始 -->
-<!-- <script src="http://blog.cssforest.org/js/gitment.browser.js"></script> -->
-<script src="http://blog.cssforest.org/js/gitalk.min.js"></script>
+<script src="/js/gitalk.min.js"></script>
 <script>
   var clientId = '35c7ef11aed44af743ef'
   var clientSecret = '443b757757d3ad08a1a0d5bd99f79af29d6ed453'
-  // var gitment = new Gitment({
-  //   id: '{{ page.title }}',
-  //   owner: 'ghostzhang',
-  //   repo: 'ghostzhang.github.io',
-  //   desc: '原文地址：{{ site.url }}{{ page.url }}',
-  //   labels: ['文章评论'],
-  //   oauth: {
-  //     client_id: clientId,
-  //     client_secret: clientSecret,
-  //   },
-  // })
-
-  // gitment.render('gc-comments-info')
   var gitalk = new Gitalk({
     clientID: clientId,
     clientSecret: clientSecret,
@@ -103,7 +89,7 @@
       a.async = 1;
       m.parentNode.insertBefore(a, m);
       a.src = g;
-    })(window, document, 'script', 'http://blog.cssforest.org/js/tat.v1.0.1.js');
+    })(window, document, 'script', '/js/tat.v1.0.1.js');
   }
 </script>
 <!-- 无障碍工具 结束 -->
