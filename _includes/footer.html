@@ -1,70 +1,93 @@
 <footer class="main-footer" role="contentinfo">
-<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> <a title="RSS订阅今年的文章"  accesskey="6" href="/feed/" target="_blank">RSS订阅今年的文章</a> <a title="RSS订阅所有文章"  accesskey="6" href="/feed/all.xml" target="_blank">RSS订阅所有文章</a> <!--  订阅统计发布代码开始 -->
-<a href="http://feeds.feedburner.com/CssForest-Articles" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/CssForest-Articles" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
-<!-- 订阅统计发布代码结束 --><br />
-  Copyright &copy; 2007-{{ site.copyright }} CSSForest.org | <span title="精神正常者慎入！">CSS森林群(30247792)</span><br />Style by Ghostzhang <br /><a href="http://prose.io/#ghostzhang/ghostzhang.github.io/new/master/_posts">post new article</a></p>
+  <div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> <a title="RSS订阅今年的文章"
+      accesskey="6" href="/feed/" target="_blank">RSS订阅今年的文章</a> <a title="RSS订阅所有文章" accesskey="6" href="/feed/all.xml"
+      target="_blank">RSS订阅所有文章</a> <!--  订阅统计发布代码开始 -->
+    <a href="http://feeds.feedburner.com/CssForest-Articles" rel="alternate" type="application/rss+xml"><img src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png"
+        alt="" style="vertical-align:middle;border:0" /></a>&nbsp;<a href="http://feeds.feedburner.com/CssForest-Articles"
+      rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
+    <!-- 订阅统计发布代码结束 --><br />
+    Copyright &copy; 2007-{{ site.copyright }} CSSForest.org | <span title="精神正常者慎入！">CSS森林群(30247792)</span><br />Style
+    by Ghostzhang <br /><a href="http://prose.io/#ghostzhang/ghostzhang.github.io/new/master/_posts">post new article</a></p>
 </footer>
 
 {% if page.demo %}
-  <script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
-  <script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
-  <script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
-  {% if page.coffee %}
-    <script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
-  {% endif %}
-  {% if page.less %}
-    <script src="{{ site.url }}/editr/libs/parser.less.js"></script>
-  {% endif %}
-  <script src="{{ site.url }}/editr/editr.js"></script>
-  <script>
-      $('.editr').each(function() {
-          new Editr({
-              el: this,
-              theme: 'clouds',
-              path: '{{ site.url }}/demo/{{ page.title }}'
-          });
-      });
-  </script>
+<script src="{{ site.url }}/editr/libs/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/ace/1.1.01/min/ace.js"></script>
+<script src="//cdn.jsdelivr.net/ace/1.1.01/min/ext-emmet.js"></script>
+<script src="{{ site.url }}/editr/libs/ext.emmet.js"></script>
+{% if page.coffee %}
+<script src="{{ site.url }}/editr/libs/parser.coffeescript.js"></script>
+{% endif %}
+{% if page.less %}
+<script src="{{ site.url }}/editr/libs/parser.less.js"></script>
+{% endif %}
+<script src="{{ site.url }}/editr/editr.js"></script>
+<script>
+  $('.editr').each(function () {
+    new Editr({
+      el: this,
+      theme: 'clouds',
+      path: '{{ site.url }}/demo/{{ page.title }}'
+    });
+  });
+</script>
 {% endif %}
 {% if comments and page.id %}
 <!-- 加载评论 开始 -->
-<script src="http://blog.cssforest.org/js/gitment.browser.js"></script>
+<!-- <script src="http://blog.cssforest.org/js/gitment.browser.js"></script> -->
+<script src="http://blog.cssforest.org/js/gitalk.min.js"></script>
 <script>
   var clientId = '35c7ef11aed44af743ef'
   var clientSecret = '443b757757d3ad08a1a0d5bd99f79af29d6ed453'
-  var gitment = new Gitment({
-    id: '{{ page.title }}',
-    owner: 'ghostzhang',
-    repo: 'ghostzhang.github.io',
-    desc: '原文地址：{{ site.url }}{{ page.url }}',
-    labels: ['文章评论'],
-    oauth: {
-      client_id: clientId,
-      client_secret: clientSecret,
-    },
-  })
+  // var gitment = new Gitment({
+  //   id: '{{ page.title }}',
+  //   owner: 'ghostzhang',
+  //   repo: 'ghostzhang.github.io',
+  //   desc: '原文地址：{{ site.url }}{{ page.url }}',
+  //   labels: ['文章评论'],
+  //   oauth: {
+  //     client_id: clientId,
+  //     client_secret: clientSecret,
+  //   },
+  // })
 
-  gitment.render('gc-comments-info')
+  // gitment.render('gc-comments-info')
+  var gitalk = new Gitalk({
+    clientID: clientId,
+    clientSecret: clientSecret,
+    repo: 'ghostzhang.github.io',
+    owner: 'ghostzhang',
+    admin: ['ghostzhang'],
+    id: '{{ page.title }}',
+    distractionFreeMode: false // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
 </script>
 <!-- 加载评论 结束 -->
 {% endif %}
 <!-- 站点统计 开始 -->
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
-var sc_project=10403973; 
-var sc_invisible=1; 
-var sc_security="a1f2b1c9"; 
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
-document.write("<script type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'><\/script>");
+  var sc_project = 10403973;
+  var sc_invisible = 1;
+  var sc_security = "a1f2b1c9";
+  var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+  document.write("<script type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'><\/script>");
 </script>
 <!-- End of StatCounter Code for Default Guide -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'UA-780254-9', 'auto');
   ga('send', 'pageview');
 </script>
@@ -73,14 +96,14 @@ document.write("<script type='text/javascript' src='" + scJsHost + "statcounter.
 <!-- 无障碍工具 开始 -->
 <!-- <script type='text/javascript'>setTimeout(function(){{var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location && location.href && location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=undefined&from=zh-CHS';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); }},0);</script> -->
 <script>
-if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent))) {
-     (function(i, s, o, g) {
-         a = s.createElement(o),
-             m = s.getElementsByTagName(o)[0];
-         a.async = 1;
-         m.parentNode.insertBefore(a, m);
-         a.src = g;
-     })(window, document, 'script', 'http://blog.cssforest.org/js/tat.v1.0.1.js');
-}
+  if (!(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent))) {
+    (function (i, s, o, g) {
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      m.parentNode.insertBefore(a, m);
+      a.src = g;
+    })(window, document, 'script', 'http://blog.cssforest.org/js/tat.v1.0.1.js');
+  }
 </script>
 <!-- 无障碍工具 结束 -->

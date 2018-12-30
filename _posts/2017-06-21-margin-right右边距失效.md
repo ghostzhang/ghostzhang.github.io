@@ -2,7 +2,7 @@
 layout: article
 title: margin-right右边距失效
 date: 2017-06-21 16:52:13
-update: 2017-06-21 19:00:00	
+update: 2017-06-21 19:00:00
 tags: CSS 外边距 盒模型
 categories: 技术研究
 published: true
@@ -74,7 +74,7 @@ demo: true
 
 {% include demo.html html="3.html" css="3.css" %}
 
-[^1]:	> BFC（W3C CSS 2.1 规范中的一个概念）就是所谓的Block formatting contexts （块级格式化上下文）。创建了 BFC的元素就是一个独立的盒子，里面的子元素不会在布局上影响外面的元素，反之亦然，同时BFC仍然属于文档中的普通流。
+[^1]: > BFC（W3C CSS 2.1 规范中的一个概念）就是所谓的Block formatting contexts （块级格式化上下文）。创建了 BFC的元素就是一个独立的盒子，里面的子元素不会在布局上影响外面的元素，反之亦然，同时BFC仍然属于文档中的普通流。
 
 {% include links.md %}
 {% include article_footer.html %}
