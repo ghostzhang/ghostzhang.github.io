@@ -1,9 +1,11 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="robots" content="all" />
 <meta name="author" content="{{ site.author }}" />
-<meta name="description" content="{% if page.path == 'index.html' %}{{ site.description }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}" />
+<meta name="description"
+	content="{% if page.path == 'index.html' %}{{ site.description }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}" />
 <meta name="application-name" content="CSS森林(CSS Forest)" />
-<meta name="keywords" content="CSS森林,css forest,Ghost,GhostZhang,页面重构,模块化,forest,CSS,样式表,Blog,博客,XHTML{% for tag in page.tags %},{{ tag }}{% endfor %}" />
+<meta name="keywords"
+	content="CSS森林,css forest,Ghost,GhostZhang,页面重构,模块化,forest,CSS,样式表,Blog,博客,XHTML{% for tag in page.tags %},{{ tag }}{% endfor %}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless
 	%}{{ page.title }}{% endif %}</title>
@@ -12,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css" />
 <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
 <link rel="stylesheet" type="text/css" href="/css/gitalk.css" />
+<link rel="stylesheet" type="text/css" href="/css/dark.css" />
 {% if page.demo %}
 <link rel="stylesheet" href="{{ site.url }}/editr/editr.css">
 {% endif %}

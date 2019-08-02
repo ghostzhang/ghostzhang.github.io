@@ -1,0 +1,71 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1E1E1E;
+        color: #C9C9C9;
+    }
+
+    h1 {
+        color: #fcfcfc;
+    }
+
+    img {
+        filter: brightness(0.8)
+    }
+
+    blockquote {
+        background-color: #252525;
+        border-left-color: #000
+    }
+
+    .logo span[data-title='CSS'] span:after {
+        -webkit-transform: rotate(-52deg);
+        -o-transform: rotate(-52deg);
+        -moz-transform: rotate(-52deg);
+        transform: rotate(-52deg);
+    }
+
+    .logo span[data-title='CSS'] span:nth-child(1):after {
+        -webkit-transform: rotate(-68deg);
+        -o-transform: rotate(-68deg);
+        -moz-transform: rotate(-68deg);
+        transform: rotate(-68deg);
+        top: .05em;
+    }
+
+    .main-header,
+    .main-footer {
+        background-color: #252526;
+    }
+
+    .logo span[data-title='CSS'] span:after {
+        background-color: #252526;
+    }
+
+    .listing time {
+        color: #858586;
+    }
+
+    .archive-info {
+        border-top-color: #555;
+    }
+
+
+    .highlight {
+        background: #000;
+    }
+
+    pre,
+    code,
+    kbd {
+        background-color: #000;
+        border-color: #252525;
+    }
+
+    .gt-container .gt-header-textarea {
+        background-color: #252525
+    }
+
+    .gt-container .gt-meta {
+        border-bottom-color: #555;
+    }
+}
