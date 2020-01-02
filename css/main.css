@@ -12,6 +12,17 @@ body {
     line-height: 1.4rem;
 }
 
+a[href^="http://"]:not([href*="cssforest.org"]):after,
+a[href^="https://"]:not([href*="cssforest.org"]):after,
+a[href^="//"]:not([href*="cssforest.org"]):after {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    margin-left: 2px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+Cgk8cGF0aCBmaWxsPSIjZmZmIiBzdHJva2U9IiMzNmMiIGQ9Ik0xLjUgNC41MThoNS45ODJWMTAuNUgxLjV6Ii8+Cgk8cGF0aCBmaWxsPSIjMzZjIiBkPSJNNS43NjUgMUgxMXY1LjM5TDkuNDI3IDcuOTM3bC0xLjMxLTEuMzFMNS4zOTMgOS4zNWwtMi42OS0yLjY4OCAyLjgxLTIuODA4TDQuMiAyLjU0NHoiLz4KCTxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik05Ljk5NSAyLjAwNGwuMDIyIDQuODg1TDguMiA1LjA3IDUuMzIgNy45NSA0LjA5IDYuNzIzbDIuODgyLTIuODgtMS44NS0xLjg1MnoiLz4KPC9zdmc+Cg==");
+}
+
 *::-moz-selection {
     background-color: #323232;
     color: #FFFFFF;
@@ -359,21 +370,26 @@ footer p a:visited {
     display: none;
 }
 
+.update {
+    position: relative;
+}
+
 .update h4:before {
     content: "update";
     margin: 0 0 0 -3.7em;
-    font-size: .1rem;
+    font-size: 10px;
     color: rgba(137, 210, 40, 0.5);
-    position: relative;
-    left: -6px;
-    top: -0.7em;
+    position: absolute;
+    left: -12px;
+    top: 10px;
 }
 
 .update time[itemprop="dateUpdate"] {
-    float: left;
-    margin: .9em 0 0 -6.2em;
-    font-size: .1rem;
+    font-size: 10px;
     color: #F27B2E;
+    position: absolute;
+    left: -75px;
+    top: 0px;
 }
 
 .update .date-update {
