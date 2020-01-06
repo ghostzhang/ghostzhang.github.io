@@ -380,7 +380,7 @@ footer p a:visited {
     font-size: 10px;
     color: rgba(137, 210, 40, 0.5);
     position: absolute;
-    left: -12px;
+    left: -19px;
     top: 10px;
 }
 
@@ -388,12 +388,24 @@ footer p a:visited {
     font-size: 10px;
     color: #F27B2E;
     position: absolute;
-    left: -75px;
+    left: -82px;
     top: 0px;
 }
 
 .update .date-update {
     display: none;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .update h4:before {
+    left: -12px;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .update time[itemprop="dateUpdate"] {
+    left: -71px;
 }
 
 #content {
@@ -506,9 +518,19 @@ footer p a:visited {
         left: .8em;
     }
 
-    .listing time {
+    .update h4:before {
+        content: '●';
+        margin: 0;
+        font-size: 1em;
+        left: -19px;
+        top: 5px;
+        color: #F27B2E;
+    }
+
+    .update time[itemprop="dateUpdate"] {
         display: none;
     }
+
 
     .main-footer {
         font-size: .5rem;
@@ -516,5 +538,11 @@ footer p a:visited {
 
     .main-footer a {
         display: block;
+    }
+}
+
+@media (max-device-width:420px) {
+    .listing time {
+        display: none;
     }
 }
