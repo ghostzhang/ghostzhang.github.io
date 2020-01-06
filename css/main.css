@@ -457,7 +457,7 @@ _:future,
     display: inline-block;
 }
 
-@media (max-device-width:420px) {
+@media (max-width:800px) {
 
     .logo,
     #content {
@@ -515,22 +515,27 @@ _:future,
         position: absolute;
         content: '●';
         color: #54BAF3;
-        left: .8em;
+        left: 8px;
     }
 
     .update h4:before {
         content: '●';
         margin: 0;
         font-size: 1em;
-        left: -19px;
-        top: 5px;
+        left: -24px;
+        top: 4px;
         color: #F27B2E;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root .update h4:before {
+        left: -24px;
     }
 
     .update time[itemprop="dateUpdate"] {
         display: none;
     }
-
 
     .main-footer {
         font-size: .5rem;
@@ -541,7 +546,7 @@ _:future,
     }
 }
 
-@media (max-device-width:420px) {
+@media (max-width:420px) {
     .listing time {
         display: none;
     }
