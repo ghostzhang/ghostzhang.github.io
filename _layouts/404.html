@@ -3,6 +3,59 @@
 
 <head>
     {% include header.html %}
+    <script>
+        /**
+         * [parseURL 解析url]
+         * @param  {[String]} url [url]
+         * @return {[Object]}     [返回解析好的对象]
+         */
+        function parseURL(url) {
+            var a = document.createElement("a");
+            a.href = url;
+            return {
+                source: url,
+                protocol: a.protocol.replace(":", ""),
+                host: a.hostname,
+                port: a.port,
+                query: a.search,
+                params: (function () {
+                    var ret = {},
+                        seg = a.search.replace(/^\?/, "").split("&"),
+                        len = seg.length, i = 0, s;
+                    for (; i < len; i++) {
+                        if (!seg[i]) { continue; }
+                        s = seg[i].split("=");
+                        ret[s[0]] = s[1];
+                    }
+                    return ret;
+                })(),
+                file: (a.pathname.match(/\/([^\/?#]+)$/i) || [, ""])[1],
+                hash: a.hash.replace("#", ""),
+                path: a.pathname.replace(/^([^\/])/, "/$1"),
+                relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ""])[1],
+                segments: a.pathname.replace(/^\//, "").split("/")
+            };
+        }
+
+        let articleUrl = parseURL(document.location.href);
+        let newHost = {{ site.url }};
+        let oldBlogId = articleUrl.params["id"];
+        let oldBlogHost = articleUrl.params["host"];
+
+        if (oldBlogHost == "blog.cssforest.org") {
+            window.location.href = newHost + articleUrl.path;
+        }
+
+        switch (oldBlogId) {
+            case 134:
+                newUrl = newHost + "/2009/06/21/%E9%A1%B5%E9%9D%A2%E9%87%8D%E6%9E%84%E4%B8%AD%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8C%96%E6%80%9D%E7%BB%B4.html";
+                break;
+
+            default:
+                break;
+        }
+
+    </script>
 </head>
 
 <body>

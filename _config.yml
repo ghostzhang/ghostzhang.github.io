@@ -1,6 +1,6 @@
 name: CSS森林(CSS Forest)
 description: 一个页面仔的成长之路
-url: http://cssforest.org
+url: //cssforest.org
 author: GhostZhang
 github: ghostzhang
 qq: 22168741
@@ -10,7 +10,7 @@ paginate: 100
 highlighter: rouge
 permalink: /:year/:month/:day/:title.html
 published: false
-file: http://cssforest.org/file
+file: //cssforest.org/file
 copyright: 2018
 comments: true
 github_ower: ghostzhang
