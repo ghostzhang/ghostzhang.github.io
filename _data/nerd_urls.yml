@@ -1,83 +1,83 @@
 - name: WebSites
   meta: false
   data:
-  - name: 个人相关
-    meta: false
-    data:
-      - name: CSS森林
-        url: http://blog.cssforest.org
-      - name: my github
-        url: https://github.com/ghostzhang
-      - name: 深山老林（CSS森林前身）
-        url: http://forest.blogbus.com/
-  - name: 还活着的博客
-    meta: false
-    data:
-      - name: 张威博客
-        url: http://www.zhangweiwei.cn
-      - name: a'ゞ『完美』
-        url: http://www.zxycc.cc
-      - name: 白树
-        url: http://peunzhang.cnblogs.com/
-        desc: peun
-      - name: WEB前端开发
-        url: http://www.css88.com
-      - name: 米随随 s5s5
-        url: http://s5s5.me/
-      - name: 臭鱼的交互设计
-        url: http://www.chouyu.com.cn/
-      - name: 余果
-        url: http://yuguo.us/weblog/
-      - name: 豆豆猫
-        url: http://www.ddcat.net/blog/
-      - name: cbm's land
-        url: http://www.cbmland.com/
-      - name: 崔凯的博客
-        url: http://uicss.cn/
-      - name: 丸子
-        url: http://i.wanz.im/
-      - name: PuterJam's Blog
-        url: http://www.pjhome.net/
-  - name: 友情链接
-    meta: false
-    data:
-      - name: twinsen
-        url: http://www.twinsenliang.net/
-        desc: 彪叔
-      - name: lilac（雪青）
-        url: http://www.cnblogs.com/lilaczhu/
-      - name: 好前端
-        url: http://www.haoqianduan.com/
-        desc: gold
-      - name: Freetao's Blog
-        url: http://blog.kainy.cn/
-        desc: kainy
-      - name: 色生活
-        url: http://www.seshenghuo.com/
-        desc: carl
-      - name: CS_wuxiang的专栏
-        url: http://blog.csdn.net/cs_wuxiang
-        desc: wuxiang
-      - name: 冰糖橙子
-        url: http://www.btorange.com/
-      - name: 人仔
-        url: http://www.tesion.cn
-      - name: aoao
-        url: http://www.aoao.org.cn/ 
-      - name: 胖大菜
-        url: http://dyggang.blog.163.com/
-      - name: 彬Go
-        url: http://blog.bingo929.com/
-      - name: 林小志
-        url: http://blog.linxz.de/
-      - name: 焕义
-        url: http://www.avenirzheng.net/
+    - name: 个人相关
+      meta: false
+      data:
+        - name: CSS森林
+          url: http://www.cssforest.org
+        - name: my github
+          url: https://github.com/ghostzhang
+        - name: 深山老林（CSS森林前身）
+          url: http://forest.blogbus.com/
+    - name: 还活着的博客
+      meta: false
+      data:
+        - name: 张威博客
+          url: http://www.zhangweiwei.cn
+        - name: a'ゞ『完美』
+          url: http://www.zxycc.cc
+        - name: 白树
+          url: http://peunzhang.cnblogs.com/
+          desc: peun
+        - name: WEB前端开发
+          url: http://www.css88.com
+        - name: 米随随 s5s5
+          url: http://s5s5.me/
+        - name: 臭鱼的交互设计
+          url: http://www.chouyu.com.cn/
+        - name: 余果
+          url: http://yuguo.us/weblog/
+        - name: 豆豆猫
+          url: http://www.ddcat.net/blog/
+        - name: cbm's land
+          url: http://www.cbmland.com/
+        - name: 崔凯的博客
+          url: http://uicss.cn/
+        - name: 丸子
+          url: http://i.wanz.im/
+        - name: PuterJam's Blog
+          url: http://www.pjhome.net/
+    - name: 友情链接
+      meta: false
+      data:
+        - name: twinsen
+          url: http://www.twinsenliang.net/
+          desc: 彪叔
+        - name: lilac（雪青）
+          url: http://www.cnblogs.com/lilaczhu/
+        - name: 好前端
+          url: http://www.haoqianduan.com/
+          desc: gold
+        - name: Freetao's Blog
+          url: http://blog.kainy.cn/
+          desc: kainy
+        - name: 色生活
+          url: http://www.seshenghuo.com/
+          desc: carl
+        - name: CS_wuxiang的专栏
+          url: http://blog.csdn.net/cs_wuxiang
+          desc: wuxiang
+        - name: 冰糖橙子
+          url: http://www.btorange.com/
+        - name: 人仔
+          url: http://www.tesion.cn
+        - name: aoao
+          url: http://www.aoao.org.cn/
+        - name: 胖大菜
+          url: http://dyggang.blog.163.com/
+        - name: 彬Go
+          url: http://blog.bingo929.com/
+        - name: 林小志
+          url: http://blog.linxz.de/
+        - name: 焕义
+          url: http://www.avenirzheng.net/
 - name: 其它
   meta: false
   data:
-      - name: 惠海IT连锁
-        url: http://www.hhit.com.cn/
-      - name: WebRebuild
-        url: http://www.webrebuild.org/
-      - name: web标准化交流会
-        url: http://w3ctech.com/
+    - name: 惠海IT连锁
+      url: http://www.hhit.com.cn/
+    - name: WebRebuild
+      url: http://www.webrebuild.org/
+    - name: web标准化交流会
+      url: http://w3ctech.com/

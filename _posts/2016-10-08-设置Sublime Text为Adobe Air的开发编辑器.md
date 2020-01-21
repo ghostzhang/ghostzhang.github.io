@@ -54,7 +54,7 @@ adl application.xml
 
 在窗口左边会出现项目的目录，说明设置成功了。然后选择我们创建的Build设置『Tools->Build System->Air』，这时我们按『<key>Ctrl+B</key>』，mac下快捷键为『<key>command+B</key>』，可以看到我们的项目就运行了。
 
-[^1]:   [使用Adobe AIR SDK搭建AIR开发环境（HTML+Javascript）](http://blog.cssforest.org/2013/03/16/%E4%BD%BF%E7%94%A8Adobe-AIR-SDK%E6%90%AD%E5%BB%BAAIR%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-HTML+Javascript.html)
+[^1]:   [使用Adobe AIR SDK搭建AIR开发环境（HTML+Javascript）][]
 
 [^2]:   windows：Preferences->Browse Packages…；mac：Sublime Text->Preferences->Browse Packages…；打开后里面的User目录
 

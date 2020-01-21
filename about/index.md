@@ -28,9 +28,9 @@ published: true
 
 **2007.8** 参与[WebRebuild.org](http://WebRebuild.org)的组建
 
-**2007.9** 个人博客更名为[CSS 森林](http://www.cssforest.org)，开始折腾个人空间
+**2007.9** 个人博客更名为[CSS 森林]({{ site.url }})，开始折腾个人空间
 
-**2008** 开始思考 HTML、CSS 模块化；（[一些内容](http://blog.cssforest.org/tags/#%E6%A8%A1%E5%9D%97%E5%8C%96)）
+**2008** 开始思考 HTML、CSS 模块化；（[一些内容]({{ site.url }}/tags/#%E6%A8%A1%E5%9D%97%E5%8C%96)）
 
 **2009.9 ~ 2010.11** 轮岗到腾讯电商，参与拍拍网购物车改版
 

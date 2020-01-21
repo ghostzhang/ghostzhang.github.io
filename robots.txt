@@ -1,1 +1,1 @@
-Sitemap: http://blog.cssforest.org/sitemap.xml
+Sitemap: http://www.cssforest.org/sitemap.xml
