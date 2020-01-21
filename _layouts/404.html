@@ -39,6 +39,7 @@
 
         let articleUrl = parseURL(document.location.href);
         let newHost = "{{ site.url }}";
+        let newUrl = "";
         let oldBlogId = articleUrl.params["id"];
         let oldBlogHost = articleUrl.params["host"];
 
@@ -71,6 +72,9 @@
 
             default:
                 break;
+        }
+        if (newUrl != "") {
+            window.location.href = newUrl;
         }
 
     </script>
