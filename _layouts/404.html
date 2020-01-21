@@ -38,7 +38,7 @@
         }
 
         let articleUrl = parseURL(document.location.href);
-        let newHost = """ + {{ site.url }} + """;
+        let newHost = "{{ site.url }}";
         let oldBlogId = articleUrl.params["id"];
         let oldBlogHost = articleUrl.params["host"];
 
