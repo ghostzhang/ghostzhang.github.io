@@ -41,9 +41,10 @@
         let newHost = "{{ site.url }}";
         let newUrl = "";
         let oldBlogId = articleUrl.params["id"];
-        let oldBlogHost = articleUrl.params["host"];
+        let isOldBlogHost = articleUrl.params["host"] == "blog.cssforest.org";
+        let isOldBlogDir = articleUrl.segments[0] == "blog";
 
-        if (oldBlogHost == "blog.cssforest.org") {
+        if (isOldBlogHost || isOldBlogDir) {
             window.location.href = newHost + articleUrl.path;
         }
 
@@ -74,6 +75,10 @@
                 break;
             case "38":
                 newUrl = newHost + "/2012/01/16/CSS%E4%B9%A6%E5%86%99%E9%A1%BA%E5%BA%8F.html";
+                break;
+            case "129":
+            case "131":
+                newUrl = newHost + "/2019/02/17/CSS-Sprites-%E6%A0%B7%E5%BC%8F%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7.html";
                 break;
 
 
