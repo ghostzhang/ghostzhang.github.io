@@ -44,8 +44,11 @@
         let isOldBlogHost = articleUrl.params["host"] == "blog.cssforest.org";
         let isOldBlogDir = articleUrl.segments[0] == "blog";
 
-        if (isOldBlogHost || isOldBlogDir) {
+        if (isOldBlogHost) {
             window.location.href = newHost + articleUrl.path;
+        }
+        if (isOldBlogDir) {
+            window.location.href = newHost;
         }
 
         switch (oldBlogId) {
@@ -98,7 +101,7 @@
             {% include nav.html %}
         </header>
         <article id="content" role="main" class="nofind">
-            <p>由于子域名进行了变更，当前内容的地址可能已经改变，可以尝试去掉子域(blog.cssforest.org 中的 blog）再访问。</p>
+            <p>你要找的文章位置已经变更或删除，感谢你的关注，欢迎留言。</p>
         </article>
         {% include footer.html %}
     </div>
