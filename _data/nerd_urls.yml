@@ -13,8 +13,8 @@
     - name: 还活着的博客
       meta: false
       data:
-        - name: 张威博客
-          url: http://www.zhangweiwei.cn
+        - name: 二律背反
+          url: http://seki.design/
         - name: a'ゞ『完美』
           url: http://www.zxycc.cc
         - name: 白树
@@ -30,14 +30,6 @@
           url: http://yuguo.us/weblog/
         - name: 豆豆猫
           url: http://www.ddcat.net/blog/
-        - name: cbm's land
-          url: http://www.cbmland.com/
-        - name: 崔凯的博客
-          url: http://uicss.cn/
-        - name: 丸子
-          url: http://i.wanz.im/
-        - name: PuterJam's Blog
-          url: http://www.pjhome.net/
     - name: 友情链接
       meta: false
       data:
@@ -72,6 +64,12 @@
           url: http://blog.linxz.de/
         - name: 焕义
           url: http://www.avenirzheng.net/
+        - name: 崔凯的博客
+          url: http://uicss.cn/
+        - name: PuterJam's Blog
+          url: http://www.pjhome.net/
+        - name: cbm's land
+          url: http://www.cbmland.com/
 - name: 其它
   meta: false
   data:
