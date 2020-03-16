@@ -46,7 +46,7 @@ published: true
 
 **2018.7 ~ now** 参与研发效能平台、工具的建设
 
-[技能树](http://skill.phodal.com/#_a2b2defhmrstuvx_1_GhostZhang)
+**2018.9 ~ now** 开始负责研发效能平台、工具的交互设计工作
 
 <address>
 {% if site.qq %}
