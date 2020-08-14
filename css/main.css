@@ -271,6 +271,10 @@ section {
 
 /* === nav === */
 .main-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 1.5em 0 0;
     background-color: #F1F1F1;
 }
@@ -305,6 +309,15 @@ section {
 
 .main-header nav li:hover {
     background-color: #3399FF;
+}
+
+h2.listing-seperator,
+h3.listing-seperator {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 150px;
+    margin-left: -3.5em;
+    margin-bottom: 6px;
 }
 
 /* === footer === */
@@ -372,6 +385,7 @@ footer p a:visited {
 
 .update {
     position: relative;
+    z-index: 1;
 }
 
 .update h4:before {
@@ -411,6 +425,12 @@ _:future,
 #content {
     max-width: 800px;
     margin: auto;
+}
+
+#content article header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 #content article h1 {
