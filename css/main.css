@@ -272,8 +272,6 @@ section {
 /* === nav === */
 .main-header {
     position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     z-index: 10;
     padding: 1.5em 0 0;
     background-color: #F1F1F1;
@@ -315,7 +313,7 @@ h2.listing-seperator,
 h3.listing-seperator {
     position: -webkit-sticky;
     position: sticky;
-    top: 150px;
+    top: 0;
     margin-left: -3.5em;
     margin-bottom: 6px;
 }
@@ -431,10 +429,14 @@ _:future,
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: #1e1e1e;
+    z-index: 9;
+    margin-bottom: 20px;
+    padding: 10px 0;
 }
 
 #content article h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.3em;
 }
 
@@ -525,6 +527,17 @@ _:future,
         margin-left: 6px;
         padding: .3em .1em;
         text-align: center;
+    }
+
+    h2.listing-seperator {
+        margin: 0 -10px;
+        background-color: #1e1e1e;
+        padding: 15px 10px 10px;
+    }
+
+    h3.listing-seperator {
+        margin-left: auto;
+        text-align: right;
     }
 
     .listing h4 {
