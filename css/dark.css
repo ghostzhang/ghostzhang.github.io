@@ -68,4 +68,8 @@
     .gt-container .gt-meta {
         border-bottom-color: #555;
     }
+
+    #content article header {
+        background-color: #1e1e1e;
+    }
 }
