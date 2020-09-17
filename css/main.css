@@ -313,7 +313,7 @@ h2.listing-seperator,
 h3.listing-seperator {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 3px;
     margin-left: -3.5em;
     margin-bottom: 6px;
 }
