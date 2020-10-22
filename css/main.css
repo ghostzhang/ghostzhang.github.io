@@ -431,7 +431,7 @@ _:future,
     margin: auto;
 }
 
-#content article header {
+#content article>header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -441,13 +441,13 @@ _:future,
     padding: 1px 0 0;
 }
 
-#content article header h1 {
+#content article>header h1 {
     font-size: 1.8rem;
     line-height: 1.3em;
     margin-top: 15px;
 }
 
-#content article header p {
+#content article>header p {
     padding-bottom: 5px;
 }
 
