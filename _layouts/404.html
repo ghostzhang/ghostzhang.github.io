@@ -41,7 +41,7 @@
         let newHost = "{{ site.url }}";
         let newUrl = "";
         let oldBlogId = articleUrl.params["id"];
-        let isOldBlogHost = articleUrl.params["host"] == "blog.cssforest.org";
+        let isOldBlogHost = articleUrl.host == "blog.cssforest.org";
         let isOldBlogDir = articleUrl.segments[0] == "blog";
 
         if (isOldBlogHost) {
@@ -98,6 +98,7 @@
             default:
                 break;
         }
+
         if (newUrl != "") {
             window.location.href = newUrl;
         }
