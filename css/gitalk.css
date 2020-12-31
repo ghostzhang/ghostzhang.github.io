@@ -1084,7 +1084,8 @@
   transition: all 0.25s ease;
 }
 
-.gt-container .gt-header-textarea:hover {
+.gt-container .gt-header-textarea:hover,
+.gt-container .gt-header-textarea:focus {
   background-color: #fbfbfb;
 }
 

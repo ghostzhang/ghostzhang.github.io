@@ -65,6 +65,10 @@
         background-color: #252525
     }
 
+    .gt-container .gt-user-inner {
+        fill: #C9C9C9;
+    }
+
     .gt-container .gt-meta {
         border-bottom-color: #555;
     }
