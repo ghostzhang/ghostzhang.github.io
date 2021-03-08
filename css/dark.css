@@ -41,6 +41,10 @@
         background-color: #252526;
     }
 
+    h2.listing-seperator {
+        background-color: #1e1e1e;
+    }
+
     .listing time {
         color: #858586;
     }
@@ -48,7 +52,6 @@
     .archive-info {
         border-top-color: #555;
     }
-
 
     .highlight {
         background: #000;
