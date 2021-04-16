@@ -254,14 +254,14 @@ section {
     font-size: 1.5rem;
 }
 
-.logo span[data-title='CSS']span:after {
+.logo span[data-title='CSS'] span:after {
     -webkit-transform: rotate(-52deg);
     -o-transform: rotate(-52deg);
     -moz-transform: rotate(-52deg);
     transform: rotate(-52deg);
 }
 
-.logo span[data-title='CSS']span:nth-child(1):after {
+.logo span[data-title='CSS'] span:nth-child(1):after {
     -webkit-transform: rotate(-68deg);
     -o-transform: rotate(-68deg);
     -moz-transform: rotate(-68deg);
