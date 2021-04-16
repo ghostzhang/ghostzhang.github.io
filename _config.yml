@@ -6,7 +6,7 @@ github: ghostzhang
 qq: 22168741
 email: ghostzhang@cssforest.org
 linkedin: ghostzhang
-paginate: 100
+paginate: 50
 highlighter: rouge
 permalink: /:year/:month/:day/:title.html
 published: false
