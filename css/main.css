@@ -1,3 +1,6 @@
+:root{
+    --max-width:652px;
+}
 html,
 body {
     margin: 0;
@@ -173,7 +176,7 @@ section {
 
 /* === logo === */
 .logo {
-    max-width: 652px;
+    max-width: var(--max-width);
     margin: 0 auto;
     /* padding: 0 2em; */
     font-size: 3rem;
@@ -330,7 +333,7 @@ h3.listing-seperator {
 }
 
 .main-footer p {
-    max-width: 652px;
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -432,7 +435,7 @@ _:future,
 }
 
 #content {
-    max-width: 652px;
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -465,7 +468,7 @@ _:future,
 #content article p img {
     display: block;
     width: auto;
-    max-width: 800px;
+    max-width: var(--max-width);
 }
 
 #content iframe {
