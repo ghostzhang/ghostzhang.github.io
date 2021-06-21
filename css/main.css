@@ -173,7 +173,7 @@ section {
 
 /* === logo === */
 .logo {
-    max-width: 800px;
+    max-width: 652px;
     margin: 0 auto;
     /* padding: 0 2em; */
     font-size: 3rem;
@@ -288,7 +288,7 @@ section {
     display: block;
     margin: auto;
     padding: 0;
-    max-width: 856px;
+    max-width: 714px;
 }
 
 .main-header nav li {
@@ -314,9 +314,9 @@ h3.listing-seperator {
     position: -webkit-sticky;
     position: sticky;
     top:  8px;
-    margin-left: -3.5em;
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-left: -4em;
+    height: 0;
+    margin-bottom: -1.5rem;
 }
 
 h3.listing-seperator {
@@ -330,7 +330,7 @@ h3.listing-seperator {
 }
 
 .main-footer p {
-    max-width: 800px;
+    max-width: 652px;
     margin: auto;
 }
 
@@ -349,6 +349,11 @@ footer p a:visited {
 
 .txpCommentInputMessage {
     width: 50%;
+}
+
+.listing{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .listing h4 {
@@ -427,7 +432,7 @@ _:future,
 }
 
 #content {
-    max-width: 800px;
+    max-width: 652px;
     margin: auto;
 }
 
@@ -452,8 +457,9 @@ _:future,
 }
 
 #content article p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.8em;
+    letter-spacing:1px;
 }
 
 #content article p img {
@@ -467,6 +473,11 @@ _:future,
     border-width: 1px 1px 0;
     margin-bottom: 5px;
     max-width: 100%;
+}
+
+#tag_cloud {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 /* === code === */
@@ -541,16 +552,20 @@ _:future,
     }
 
     h2.listing-seperator {
-        margin: 0 -10px;
+        height: auto;
+        margin: 0;
         background-color: #FFFFFF;
-        padding: 15px 10px 10px;
+        padding: 10px 0;
+        top:0;
     }
 
     h3.listing-seperator {
         margin-left: auto;
         text-align: right;
     }
-
+    .listing{
+        margin-top: 0;
+    }
     .listing h4 {
         font-size: 1em;
     }
