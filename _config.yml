@@ -11,7 +11,7 @@ highlighter: rouge
 permalink: /:year/:month/:day/:title.html
 published: false
 file: https://www.cssforest.org/file
-copyright: 2020
+copyright: 2021
 comments: true
 github_ower: ghostzhang
 github_repo: ghostzhang.github.io
