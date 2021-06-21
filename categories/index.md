@@ -13,10 +13,10 @@ layout: index
 
 {% for cat in site.categories %}
 <section>
-  <h2 class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</h2>
-  <ul class="listing">
+  <h2 class="categories_listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</h2>
+  <ul class="categories_listing">
   {% for post in cat[1] %}
-    <li class="listing-item">
+    <li class="categories_listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>

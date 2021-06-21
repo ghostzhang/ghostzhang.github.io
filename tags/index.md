@@ -13,10 +13,10 @@ layout: index
 
 {% for tag in site.tags %}
 <section>
-  <h2 class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</h2>
-  <ul class="listing">
+  <h2 class="tag_listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</h2>
+  <ul class="tag_listing">
   {% for post in tag[1] %}
-    <li class="listing-item">
+    <li class="tag_listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>
