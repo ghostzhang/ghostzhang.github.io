@@ -41,7 +41,9 @@
         background-color: #252526;
     }
 
-    h2.listing-seperator {
+    h2.listing-seperator,
+    .tag_listing-seperator ,
+    .categories_listing-seperator {
         background-color: #1e1e1e;
     }
 
