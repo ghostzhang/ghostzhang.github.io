@@ -13,13 +13,6 @@
     - name: 还活着的博客
       meta: false
       data:
-        - name: a'ゞ『完美』
-          url: http://www.zxycc.cc
-        - name: 白树
-          url: http://peunzhang.cnblogs.com/
-          desc: peun
-        - name: WEB前端开发
-          url: http://www.css88.com
         - name: 米随随 s5s5
           url: http://s5s5.me/
         - name: 余果
@@ -48,6 +41,13 @@
           url: http://www.pjhome.net/
         - name: cbm's land
           url: http://www.cbmland.com/
+        - name: a'ゞ『完美』
+          url: http://www.zxycc.cc
+        - name: 白树
+          url: http://peunzhang.cnblogs.com/
+          desc: peun
+        - name: 范叶亮
+          url: https://leovan.me/
 - name: 其它
   meta: false
   data:
