@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
+
+<head>
 	{% include header.html %}
-	</head>
-	<body>
-		<div id="container">
-			<header class="main-header">
-			  {% include nav.html %}
-			</header>
-			<main id="content" role="main">
-				<article>
-		　　　　{{ content }}
-                </article>
-				<section>
-					<h2>评论</h2>
+</head>
+
+<body>
+	<div id="container">
+		<header class="main-header">
+			{% include nav.html %}
+		</header>
+		<main id="content" role="main">
+			<article>
+				{{ content }}
+			</article>
+			<section>
+				<h2>评论</h2>
 				<!-- 评论框 start -->
 				{% include comments.html %}
 				<!-- 评论框 end -->
-				</section>
-			</main>
-			{% include footer.html %}
-		</div>
-	</body>
+			</section>
+		</main>
+		{% include footer.html %}
+	</div>
+</body>
+
 </html>

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<head>
+
+<head>
 	{% include header.html %}
-	</head>
-	<body>
-		<div id="container">
-			<header class="main-header">
-			  {% include nav.html %}
-			</header>
-			<article id="content" role="main">
-		　　　　{{ content }}
-			</article>
-			{% include footer.html %}
-		</div>
-	</body>
+</head>
+
+<body>
+	<div id="container">
+		<header class="main-header">
+			{% include nav.html %}
+		</header>
+		<article id="content" role="main">
+			{{ content }}
+		</article>
+		{% include footer.html %}
+	</div>
+</body>
+
 </html>
