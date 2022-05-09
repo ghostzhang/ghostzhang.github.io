@@ -16,3 +16,4 @@ comments: true
 github_ower: ghostzhang
 github_repo: ghostzhang.github.io
 proxy: https://billowing-unit-bd06.cssforest.workers.dev/?https://github.com/login/oauth/access_token
+timezone: Asia/Shanghai
