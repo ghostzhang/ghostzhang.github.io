@@ -35,23 +35,7 @@
 </script>
 {% endif %}
 {% if comments and page.id %}
-<!-- 加载评论 开始 -->
-<script src="/js/gitalk.min.js"></script>
-<script>
-  var clientId = '35c7ef11aed44af743ef'
-  var clientSecret = '414895d2ece4971bf786ceb8a9d9d9fee0c89acb'
-  var gitalk = new Gitalk({
-    clientID: clientId,
-    clientSecret: clientSecret,
-    repo: 'ghostzhang.github.io',
-    owner: 'ghostzhang',
-    admin: ['ghostzhang'],
-    id: '{{ page.title }}',
-    proxy: '{{ site.proxy }}'
-  })
-  gitalk.render('gitalk-container')
-</script>
-<!-- 加载评论 结束 -->
+
 {% endif %}
 <!-- 站点统计 开始 -->
 <!-- Start of StatCounter Code for Default Guide -->
