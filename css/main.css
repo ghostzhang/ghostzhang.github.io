@@ -498,6 +498,10 @@ _:future,
     max-width: 100%;
 }
 
+#content .comments {
+    padding: 0 0 30px;
+}
+
 #content iframe {
     border: 1px solid #CCC;
     border-width: 1px 1px 0;
