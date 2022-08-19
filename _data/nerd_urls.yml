@@ -8,17 +8,17 @@
           url: https://www.cssforest.org
         - name: my github
           url: https://github.com/ghostzhang
-        - name: 深山老林（CSS森林前身）
-          url: http://forest.blogbus.com/
     - name: 还活着的博客
       meta: false
       data:
         - name: 米随随 s5s5
           url: http://s5s5.me/
-        - name: 余果
-          url: http://yuguo.us/weblog/
         - name: 豆豆猫
           url: http://www.ddcat.net/blog/
+        - name: 前端西瓜哥
+          url: https://blog.fstars.wang/
+        - name: 小小黑的个人小站
+          url: https://lonelyenderman.top/
     - name: 友情链接
       meta: false
       data:
@@ -48,6 +48,8 @@
           desc: peun
         - name: 范叶亮
           url: https://leovan.me/
+        - name: 余果
+          url: http://yuguo.us/weblog/
 - name: 其它
   meta: false
   data:
