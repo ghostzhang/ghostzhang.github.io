@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #1E1E1E;
+        background-color: #0A0A0A;
         color: #C9C9C9;
     }
 
@@ -34,7 +34,7 @@
 
 
     .main-header {
-        background-color: rgba(10, 10, 10, 0.5);
+        background-color: #0A0A0A;
     }
 
     .main-header nav,
@@ -84,6 +84,6 @@
     }
 
     #content article header {
-        background-color: #1e1e1e;
+        background-color: rgba(10, 10, 10, 0.5);
     }
 }
