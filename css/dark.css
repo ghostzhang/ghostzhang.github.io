@@ -13,7 +13,7 @@
     }
 
     blockquote {
-        background-color: #252525;
+        background-color: #0A0A0A;
         border-left-color: #000
     }
 
@@ -32,17 +32,22 @@
         top: .05em;
     }
 
-    .main-header,
+
+    .main-header {
+        background-color: rgba(10, 10, 10, 0.5);
+    }
+
+    .main-header nav,
     .main-footer {
-        background-color: #252526;
+        background-color: #14180e;
     }
 
     .logo span[data-title='CSS'] span:after {
-        background-color: #252526;
+        background-color: #0A0A0A;
     }
 
     h2.listing-seperator,
-    .tag_listing-seperator ,
+    .tag_listing-seperator,
     .categories_listing-seperator {
         background-color: #1e1e1e;
     }
@@ -67,7 +72,7 @@
     }
 
     .gt-container .gt-header-textarea {
-        background-color: #252525
+        background-color: #0A0A0A;
     }
 
     .gt-container .gt-user-inner {
