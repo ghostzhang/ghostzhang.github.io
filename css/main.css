@@ -537,6 +537,10 @@ _:future,
     display: inline-block;
 }
 
+.license img {
+    width: 100px;
+}
+
 @media (max-width:800px) {
 
     .logo,
