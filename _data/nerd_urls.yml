@@ -15,8 +15,6 @@
           url: http://s5s5.me/
         - name: 被删
           url: https://godbasin.github.io/
-        - name: 豆豆猫
-          url: http://www.ddcat.net/blog/
         - name: 前端西瓜哥
           url: https://blog.fstars.wang/
         - name: 小小黑的个人小站
@@ -29,8 +27,6 @@
           url: https://www.zhangweicheng.xyz/
         - name: 六月长河
           url: https://charlie-king.github.io/
-        - name: 给时光以生命
-          url: https://allasone.cc/
         - name: 梦中残影如月
           url: https://www.cnblogs.com/chafry/
         - name: Pei's Blog
@@ -68,8 +64,6 @@
           desc: peun
         - name: 范叶亮
           url: https://leovan.me/
-        - name: 余果
-          url: http://yuguo.us/weblog/
 - name: 其它
   meta: false
   data:
