@@ -376,6 +376,13 @@ footer p a:visited {
     padding-left: 5px;
 }
 
+.listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
 .listing h4 {
     display: inline-block;
     margin: .2rem 0;
@@ -396,12 +403,14 @@ footer p a:visited {
 }
 
 .listing .post-info {
-    display: inline;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin: 0;
 }
 
 .listing time {
     color: #333333;
-    display: inline-block;
 }
 
 .listing .listing-item {
@@ -414,7 +423,8 @@ footer p a:visited {
     list-style: none;
 }
 
-.listing .date-published {
+.listing .date-published span,
+.update .date-update span {
     display: none;
 }
 
@@ -423,26 +433,19 @@ footer p a:visited {
     z-index: 1;
 }
 
-.update h4:before {
-    content: "update";
-    margin: 0 0 0 -3.7em;
-    font-size: 10px;
-    color: rgba(137, 210, 40, 0.5);
-    position: absolute;
-    left: -19px;
-    top: 10px;
-}
-
 .update time[itemprop="dateUpdate"] {
+    position: absolute;
+    left: -12em;
+    margin-left: 8px;
     font-size: 10px;
     color: #F27B2E;
-    position: absolute;
-    left: -82px;
-    top: 0px;
 }
 
-.update .date-update {
-    display: none;
+.update .post-info time[itemprop="dateUpdate"]:before {
+    content: "update";
+    margin-right: 4px;
+    font-size: 10px;
+    color: rgba(137, 210, 40, 0.5);
 }
 
 _::-webkit-full-page-media,
