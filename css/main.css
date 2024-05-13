@@ -403,9 +403,6 @@ footer p a:visited {
 }
 
 .listing .post-info {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
     margin: 0;
 }
 
@@ -434,11 +431,16 @@ footer p a:visited {
 }
 
 .update time[itemprop="dateUpdate"] {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     position: absolute;
-    left: -12em;
+    left: -8em;
+    top: 5px;
     margin-left: 8px;
     font-size: 10px;
     color: #F27B2E;
+    line-height: normal;
 }
 
 .update .post-info time[itemprop="dateUpdate"]:before {
