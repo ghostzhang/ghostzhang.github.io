@@ -243,6 +243,7 @@ section {
     z-index: 10;
     margin-top: .2em;
     color: #89D228;
+    font-family: SheikahGlyphs;
     font-size: 1.5rem;
     vertical-align: top;
 }
@@ -254,7 +255,6 @@ section {
     left: 0;
     top: 1.3em;
     color: rgba(84, 186, 243, .5);
-    font-family: SheikahGlyphs;
     font-size: 1.5rem;
 }
 
