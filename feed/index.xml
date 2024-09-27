@@ -13,6 +13,10 @@ layout: none
 			<name>GhostZhang</name>
 			<email>ghostzhang@cssforest.org</email>
 		</author>
+		<follow_challenge>
+    		<feedId>62377656480471040</feedId>
+    		<userId>61695717095510016</userId>
+		</follow_challenge>
 		<atom:link href="{{ site.url }}/feed.articles.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
 			{% unless post.link %}
@@ -21,9 +25,6 @@ layout: none
 				{% else %}
 					{% assign author = site.data.author %}
 				{% endif %}
-				{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-				{% capture yn %}{{site.copyright}}{% endcapture %}
-				{% if y == yn %}
 				<item>
 					<title>{{ post.title | xml_escape }}</title>
 					<author>{{ author.name | capitalize }}</author>  
@@ -32,7 +33,6 @@ layout: none
 					<link>{{ site.url }}{{ post.url }}</link>
 					<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 				</item>
-				{% endif %}
 			{% endunless %}
 		{% endfor %}
 	</channel>
