@@ -24,7 +24,7 @@
         - name: 十分钟空间
           url: https://www.tmspace.cn/
         - name: VAE+
-          url: https://www.zhangweicheng.xyz/
+          url: https://www.zhangweicheng.com/
         - name: 六月长河
           url: https://charlie-king.github.io/
         - name: 梦中残影如月
@@ -35,6 +35,15 @@
           url: http://www.mysecretrainbow.com/
         - name: Beforweb
           url: http://beforweb.com/
+        - name: Freetao's Blog
+          url: http://blogs.kainy.cn/
+          desc: kainy
+        - name: cbm's land
+          url: http://www.cbmland.com/
+        - name: 范叶亮
+          url: https://leovan.me/
+        - name: Airing 的博客
+          url: https://blog.ursb.me/
     - name: 友情链接
       meta: false
       data:
@@ -43,27 +52,13 @@
           desc: 彪叔
         - name: lilac（雪青）
           url: http://www.cnblogs.com/lilaczhu/
-        - name: Freetao's Blog
-          url: http://blogs.kainy.cn/
-          desc: kainy
-        - name: CS_wuxiang的专栏
-          url: http://blog.csdn.net/cs_wuxiang
-          desc: wuxiang
         - name: 冰糖橙子
           url: http://www.btorange.com/
-        - name: 崔凯的博客
-          url: http://uicss.cn/
-        - name: PuterJam's Blog
-          url: http://www.pjhome.net/
-        - name: cbm's land
-          url: http://www.cbmland.com/
         - name: a'ゞ『完美』
           url: http://www.zxycc.cc
         - name: 白树
           url: http://peunzhang.cnblogs.com/
           desc: peun
-        - name: 范叶亮
-          url: https://leovan.me/
 - name: 其它
   meta: false
   data:
