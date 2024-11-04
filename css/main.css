@@ -522,6 +522,10 @@ _:future,
     max-width: 100%;
 }
 
+#content .giscus-frame {
+    border: 0 none;
+}
+
 #tag_cloud {
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -553,9 +557,6 @@ _:future,
     width: 100px;
 }
 
-.giscus-frame #content iframe {
-    border: 0 none;
-}
 
 @media (max-width:800px) {
 
