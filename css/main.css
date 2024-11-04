@@ -85,6 +85,7 @@ input[name="submit"].button {
     border-right-color: #5890BF;
     border-bottom-color: #4F93CA;
     border-left-color: #768FA5;
+    box-shadow: rgba(66, 140, 240, 0.5) 0 10px 16px;
     -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0 10px 16px;
     -moz-box-shadow: rgba(66, 140, 240, 0.5) 0 10px 16px;
 }
@@ -93,6 +94,7 @@ input[name="submit"].button.disabled {
     background-color: rgba(244, 244, 244, 0.8);
     background-image: -moz-linear-gradient(rgba(244, 244, 244, 0.8) 0, rgba(0, 0, 0, .9) 90%);
     border-color: #ADB2B5;
+    box-shadow: rgba(173, 178, 181, 0.5) 0 0 0;
     -webkit-box-shadow: rgba(173, 178, 181, 0.5) 0 0 0;
     -moz-box-shadow: rgba(173, 178, 181, 0.5) 0 10px 16px;
     color: #6D6D6D;
@@ -151,6 +153,7 @@ pre {
     word-wrap: break-word;
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 article,
@@ -361,6 +364,7 @@ footer p a:visited {
 .gist td {
     background: none;
     border: none 0;
+    box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -529,6 +533,7 @@ _:future,
 .highlight .code pre,
 .lineno {
     border: none 0;
+    box-shadow: none;
     -webkit-box-shadow: none;
 }
 
@@ -546,6 +551,10 @@ _:future,
 
 .license img {
     width: 100px;
+}
+
+.giscus-frame #content iframe {
+    border: 0 none;
 }
 
 @media (max-width:800px) {
