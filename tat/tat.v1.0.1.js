@@ -360,7 +360,7 @@
             var timer;
             var eBody = QQTAT.lib.$Tag("body")[0];
             QQTAT.subtitle.setSwitchBtn(false);
-            QQTAT.subtitle.setAudioSwitchBtn(false);
+            // QQTAT.subtitle.setAudioSwitchBtn(false);
             if (QQTAT.config.zoomCurr != 0) {
                 QQTAT.zoom.Revert();
             }
@@ -388,7 +388,7 @@
         "show": function() {
             var eBody = QQTAT.lib.$Tag("body")[0];
             QQTAT.subtitle.setSwitchBtn(true);
-            QQTAT.subtitle.setAudioSwitchBtn(false);
+            // QQTAT.subtitle.setAudioSwitchBtn(false);
             QQTAT.lib.animate(QQTAT.lib.$Id("a11y_TAT_Hook"), {
                 left: "-69"
             }, 1);
