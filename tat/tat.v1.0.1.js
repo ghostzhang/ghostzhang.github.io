@@ -559,7 +559,7 @@
     QQTAT.subtitle = {
         "TAT_timer": null,
         "oldBgColor": "",
-        // "playSound": false,
+        "playSound": false,
         // "audioPlayer": QQTAT.lib.$Create('audio'),
         // "audioPlayerIe": QQTAT.lib.$Create('bgsound'),
         "audioSwitch": false,
