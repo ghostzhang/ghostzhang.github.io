@@ -6,19 +6,23 @@
 {% endif %}
 
 	<nav role="navigation">
-        {% unless page.id %}
+        {% if page.collection == "posts" %}
+        <ul role="menubar">
+            <li><a title="返回博客文章" role="menuitem" accesskey="1" href="/">返回博客文章</a></li>
+        </ul>
+        {% elsif page.collection == "thought" %}
+        <ul role="menubar">
+            <li><a title="返回思维卡片" role="menuitem" accesskey="1" href="/thought/">返回思维卡片</a></li>
+        </ul>
+        {% else %}
         <h2 class="none">导航</h2>
         <ul role="menubar">
-            <li><a title="网站首页" role="menuitem" accesskey="1" href="/">首页</a></li>
-            <li><a title="文章分类" role="menuitem" accesskey="2" href="/categories/">分类</a></li>
-            <li><a title="标签索引" role="menuitem" accesskey="3" href="/tags/">标签</a></li>
-            <li><a title="友情链接" role="menuitem" accesskey="4" href="/links/">友链</a></li>
-            <li><a title="关于站长" role="menuitem" accesskey="5" href="/about/">关于</a></li>
-        </ul>
-        {% endunless %}
-        {% if page.id %}
-        <ul role="menubar">
-            <li><a title="返回首页" role="menuitem" accesskey="1" href="/">返回首页</a></li>
+            <li><a title="博客文章" role="menuitem" accesskey="1" href="/">博客文章</a></li>
+            <li><a title="思维卡片" role="menuitem" accesskey="2" href="/thought/">思维卡片</a></li>
+            <li><a title="文章分类" role="menuitem" accesskey="3" href="/categories/">分类</a></li>
+            <li><a title="标签索引" role="menuitem" accesskey="4" href="/tags/">标签</a></li>
+            <li><a title="友情链接" role="menuitem" accesskey="5" href="/links/">友链</a></li>
+            <li><a title="关于站长" role="menuitem" accesskey="6" href="/about/">关于</a></li>
         </ul>
         {% endif %}
 	</nav>

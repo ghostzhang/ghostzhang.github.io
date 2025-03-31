@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include header.html %}
+</head>
+
+<body>
+	<div id="container">
+		<header class="main-header">
+			{% include nav.html %}
+		</header>
+		<main id="content" role="main">
+			<h2>💭 {{ page.title }}</h2>
+			<time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+			<article>
+				{{ content }}
+			</article>
+			<section id="comments">
+				<!-- 评论框 start -->
+				{% include comments.html %}
+				<!-- 评论框 end -->
+			</section>
+		</main>
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>

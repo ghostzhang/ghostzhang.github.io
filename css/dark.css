@@ -57,6 +57,10 @@
     }
 
     .archive-info {
+        border-left-color: #555;
+    }
+
+    .archive-info hr {
         border-top-color: #555;
     }
 
@@ -85,5 +89,9 @@
 
     #content article header {
         background-color: rgba(10, 10, 10, 0.5);
+    }
+
+    .tiny-think {
+        background-color: #1e1e1e;
     }
 }
