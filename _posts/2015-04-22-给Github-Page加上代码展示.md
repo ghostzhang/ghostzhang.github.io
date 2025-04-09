@@ -161,4 +161,3 @@ index.html文件内容如下：
 ```
 
 {% include links.md %}
-{% include article_footer.html %}

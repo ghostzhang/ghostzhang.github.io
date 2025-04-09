@@ -90,4 +90,3 @@ open -e .profile
 [^1]:https://coolestguidesontheplanet.com/add-shell-path-osx/
 
 {% include links.md %}
-{% include article_footer.html %}

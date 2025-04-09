@@ -119,4 +119,3 @@ Photoshop CS2 (9.0) 零售版启动画面
 Photoshop CS2 (9.0) 彩蛋 (by Chris Smith)
 
 {% include links.md %}
-{% include article_footer.html %}

@@ -21,4 +21,3 @@ published: true
 更多Jekyll 3.0的特性可以看[Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/)。
 
 {% include links.md %}
-{% include article_footer.html %}

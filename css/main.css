@@ -115,11 +115,10 @@ th {
 }
 
 blockquote {
-    margin: 1em;
-    padding: 0 1em;
+    margin: 0.5em;
+    padding: 0.5rem 1rem 0.1rem;
     background-color: #EFEFEF;
     border-left: 5px double #89D228;
-    white-space: pre-line;
 }
 
 blockquote p {
@@ -506,7 +505,7 @@ _:future,
     font-size: 1.1rem;
     line-height: 1.8em;
     letter-spacing: 1px;
-    margin: 0 0 0.5rem;
+    margin: 0 0 1rem;
 }
 
 #content article p img {
@@ -521,12 +520,12 @@ _:future,
 
 #content article .archive-info {
     border-left: 4px solid #EFEFEF;
-    padding: 1px 1em;
+    padding: 0.8rem 1rem 0.5rem;
 }
 
 #content article .archive-info p {
     font-size: 1rem;
-    line-height: 0.5em;
+    line-height: 1rem;
     letter-spacing: 1px;
 }
 

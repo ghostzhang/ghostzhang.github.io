@@ -29,15 +29,15 @@ adl application.xml
 
 ```cmd
 {% raw %}
-    {
-        "cmd": ["adl","application.xml"],
-        "path":"/Users/ghostzhang/AIRSDK/bin/",
-        "working_dir":"${project_path:${folder}}",
-        "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-        "windows":{
-            "path":"D:/AIRSDK/bin/"
-        }
+{
+    "cmd": ["adl","application.xml"],
+    "path":"/Users/ghostzhang/AIRSDK/bin/",
+    "working_dir":"${project_path:${folder}}",
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "windows":{
+        "path":"D:/AIRSDK/bin/"
     }
+}
 {% endraw %}
 ```
 
@@ -55,8 +55,6 @@ adl application.xml
 在窗口左边会出现项目的目录，说明设置成功了。然后选择我们创建的Build设置『Tools->Build System->Air』，这时我们按『<key>Ctrl+B</key>』，mac下快捷键为『<key>command+B</key>』，可以看到我们的项目就运行了。
 
 [^1]:   [使用Adobe AIR SDK搭建AIR开发环境（HTML+Javascript）][]
-
 [^2]:   windows：Preferences->Browse Packages…；mac：Sublime Text->Preferences->Browse Packages…；打开后里面的User目录
 
 {% include links.md %}
-{% include article_footer.html %}
