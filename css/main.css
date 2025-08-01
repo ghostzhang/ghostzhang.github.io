@@ -121,10 +121,6 @@ blockquote {
     border-left: 5px double #89D228;
 }
 
-blockquote p {
-    margin: 0;
-}
-
 sup {
     margin-left: -8px;
 }
@@ -505,7 +501,6 @@ _:future,
     font-size: 1.1rem;
     line-height: 1.8em;
     letter-spacing: 1px;
-    margin: 0 0 1rem;
 }
 
 #content article p img {
