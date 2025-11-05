@@ -46,7 +46,7 @@ published: true
 
 **2018.7** 参与研发效能平台、工具的建设
 
-**2018.9** 负责研发效能平台、工具的交互设计工作
+**2018.9 ~ 2025.11** 负责研发效能平台、工具的交互设计工作
 
 ## 联系方式
 
@@ -54,10 +54,21 @@ published: true
 {% if site.qq %}
 ＱＱ：<a title="QQ" href="tencent://message/?uin={{ site.qq }}">{{ site.qq }}</a><br />
 {% endif %}
+{% if site.wechat %}
+微信：{{ site.wechat }}<br />
+{% endif %}
+{% if site.name %}
 网站：<a title="邮箱" href="{{ site.url }}">{{ site.name }}</a><br />
+{% endif %}
+{% if site.email %}
 邮箱：<a title="邮箱" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+{% endif %}
+{% if site.github %}
 GitHub : <a title="Github" href="http://github.com/{{ site.github }}">http://github.com/{{ site.github }}</a><br />
+{% endif %}
+{% if site.linkedin %}
 Linkedin：<a title="Github" href="https://www.linkedin.com/in/{{ site.linkedin }}">{{ site.linkedin }}</a>
+{% endif %}
 </address>
 
 <script>
