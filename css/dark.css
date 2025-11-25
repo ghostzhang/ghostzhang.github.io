@@ -14,7 +14,7 @@
 
     blockquote {
         background-color: #0A0A0A;
-        border-left-color: #000
+        border-left-color: #555555;
     }
 
     .logo span[data-title='CSS'] span:after {
