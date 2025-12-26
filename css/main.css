@@ -437,7 +437,7 @@ footer p a:visited {
     align-items: flex-end;
     position: absolute;
     left: -8em;
-    top: 5px;
+    top: 6px;
     margin-left: 8px;
     font-size: 10px;
     color: #F27B2E;
@@ -446,7 +446,7 @@ footer p a:visited {
 
 .update .post-info time[itemprop="dateUpdate"]:before {
     content: "update";
-    margin-right: 4px;
+    margin-top: -4px;
     font-size: 10px;
     color: rgba(137, 210, 40, 0.5);
 }
@@ -455,12 +455,6 @@ _::-webkit-full-page-media,
 _:future,
 :root .update h4:before {
     left: -12px;
-}
-
-_::-webkit-full-page-media,
-_:future,
-:root .update time[itemprop="dateUpdate"] {
-    left: -71px;
 }
 
 #content {
