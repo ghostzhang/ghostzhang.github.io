@@ -542,13 +542,21 @@ _:future,
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
-
-#content article .archive-info p.coffee img {
-    width: 30%;
+#content article .archive-info p {
+    line-height: 1em;;
+}
+#content article .archive-info p.coffee img,
+#content article .archive-info p.reward img {
+    display: inline;
+    width: 185px;
 }
 
 #content article .archive-info p.coffee a {
     padding: 0;
+}
+
+#content article .archive-info p.reward img:hover {
+    width: auto;
 }
 
 /* === code === */
