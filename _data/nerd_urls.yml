@@ -15,18 +15,10 @@
           url: http://s5s5.me/
         - name: 被删
           url: https://godbasin.github.io/
-        - name: 前端西瓜哥
-          url: https://blog.fstars.wang/
         - name: 小小黑的个人小站
           url: https://lonelyenderman.top/
         - name: biaoblog - 个人博客
           url: http://biaoblog.cn/
-        - name: 十分钟空间
-          url: https://www.tmspace.cn/
-        - name: VAE+
-          url: https://www.zhangweicheng.com/
-        - name: 六月长河
-          url: https://charlie-king.github.io/
         - name: 梦中残影如月
           url: https://www.cnblogs.com/chafry/
         - name: Pei's Blog
@@ -44,6 +36,9 @@
           url: https://leovan.me/
         - name: Airing 的博客
           url: https://blog.ursb.me/
+        - name: 时歌的博客
+          url: https://www.lapis.cafe
+          desc: 理解以真实为本，但真实本身并不会自动呈现
     - name: 友情链接
       meta: false
       data:
