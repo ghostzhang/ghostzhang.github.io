@@ -18,7 +18,7 @@ layout: none
     		<feedId>62377656480471040</feedId>
     		<userId>61695717095510016</userId>
 		</follow_challenge>
-		<atom:link href="{{ site.url }}/feed.articles.xml" rel="self" type="application/rss+xml" />
+		<atom:link href="{{ site.url }}/feed/index.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts %}
 			{% unless post.link %}
 				{% if page.author %}
