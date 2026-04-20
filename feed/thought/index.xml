@@ -1,0 +1,41 @@
+---
+layout: none
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.name | xml_escape }} - Thought</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+		<link>{{ site.url }}</link>
+		<language>zh-cn</language>
+		<copyright>cssforest.org</copyright>
+		<author>
+			<name>GhostZhang</name>
+			<email>ghostzhang@cssforest.org</email>
+		</author>
+		<follow_challenge>
+    		<feedId>62377656480471040</feedId>
+    		<userId>61695717095510016</userId>
+		</follow_challenge>
+		<atom:link href="{{ site.url }}/feed/thought/index.xml" rel="self" type="application/rss+xml" />
+		{% assign sorted_posts = site.thought | sort: 'date' | reverse %}
+		{% for thought in sorted_posts %}
+			{% unless post.link %}
+				{% if page.author %}
+					{% assign author = page.author %}
+				{% else %}
+					{% assign author = site.data.author %}
+				{% endif %}
+				<item>
+					<title>{{ thought.title | xml_escape }}</title>
+					<author>{{ author.name | capitalize }}</author>  
+					<description>{{ thought.content | xml_escape }}</description>
+					<pubDate>{{ thought.date | date: "%F %T" }}</pubDate>
+					<link>{{ site.url }}{{ thought.url }}</link>
+					<guid isPermaLink="true">{{ site.url }}{{ thought.url }}</guid>
+				</item>
+			{% endunless %}
+		{% endfor %}
+	</channel>
+</rss>
