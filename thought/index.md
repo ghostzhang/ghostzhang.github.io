@@ -9,7 +9,7 @@ layout: index
 <h3>💭 {{ thought.title }}</h3>
 <time datetime="{{ thought.date | date: "%Y-%m-%d" }}">{{ thought.date | date: "%Y-%m-%d" }}</time>
 {{ thought.content }}
-<a href="{{ thought.url }}#comments" title="{{ thought.title }}">💡我有话说</a>
+<a href="{{ thought.url }}#comments" title="{{ thought.title | escape }}">💡我有话说</a>
 </section>
 
 {% endfor %}

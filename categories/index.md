@@ -18,7 +18,7 @@ layout: index
   {% for post in cat[1] %}
     <li class="categories_listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>

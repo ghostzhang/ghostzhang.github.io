@@ -22,7 +22,7 @@ title: CSSForest.org
     <h3 class="listing-seperator">{{ y }}</h3>
     {% endif %}
     <section class="listing {% if post.update %}update{% endif %}">
-        <h4><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+        <h4><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a></h4>
         <p class="post-info">
           {% if post.update %}
           <span class="date-update"><span>更新时间：</span><time itemprop="dateUpdate" datetime="{{ post.update | date:'%Y-%m-%d' }}">{{ post.update | date:"%Y-%m-%d" }}</time></span>
