@@ -11,6 +11,12 @@ layout: none
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>http://www.cssforest.org/thought/</loc>
+		<lastmod>2026-04-21</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>http://www.cssforest.org/categories/</loc>
 		<lastmod>2014-09-29</lastmod>
 		<changefreq>daily</changefreq>
