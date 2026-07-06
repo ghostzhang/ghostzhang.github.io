@@ -53,11 +53,12 @@ fieldset {
 
 a:link,
 a:visited {
-    color: #54BAF3;
+    color: #067dc1;
     -webkit-transition: color .25s linear;
     transition: color .25s linear;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 2px 5px;
+    border-bottom:1px dotted #89D228;
 }
 
 a:hover {
@@ -176,7 +177,6 @@ section {
 .logo {
     max-width: var(--max-width);
     margin: 0 auto;
-    /* padding: 0 2em; */
     font-size: 3rem;
     font-family: Helvetica, "Microsoft YaHei", STHeiti, Georgia, "Times New Roman", Times, serif;
     background-image: linear-gradient(bottom, #2EF5F5 17%, #309EFF 51%, #2B78ED 81%);
@@ -184,6 +184,7 @@ section {
 
 .logo a {
     padding-left: 0;
+    border-style: none;
 }
 
 .logo a:hover {
@@ -215,8 +216,8 @@ section {
 }
 
 .logo span[data-title='CSS'] span:nth-child(1) {
-    color: #54BAF3;
-    background-color: #54BAF3;
+    color: #42ace8;
+    background-color: #42ace8;
     z-index: 9;
     margin-right: .055em;
 }
@@ -304,6 +305,7 @@ section {
 .main-header nav a:link,
 .main-header nav a:visited {
     color: #FFFFFF;
+    border-style: none;
     background-color: transparent;
 }
 
