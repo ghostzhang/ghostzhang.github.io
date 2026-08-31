@@ -4,6 +4,10 @@
 [{{ post.title }}]:{{ post.url }}
 {% endfor %}
 
+{% for thought in site.thought %}
+[{{ thought.title }}]:{{ thought.url }}
+{% endfor %}
+
 {% if page.series == '页面重构中的模块化设计' %}
 
 ### 系列文章
