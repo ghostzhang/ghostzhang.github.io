@@ -1,1 +1,3 @@
 Sitemap: http://www.cssforest.org/sitemap.xml
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
