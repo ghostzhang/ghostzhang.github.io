@@ -55,7 +55,8 @@
       url: http://www.twinsenliang.net/
       desc: 彪叔
     - name: WebRebuild
-      url: http://www.webrebuild.org/
+      url: /
+      desc: 域名未继，一切已成过往
     - name: 前端体验大会
       url: http://feexp.org/
     - name: web标准化交流会
