@@ -1,6 +1,7 @@
 ---
 title: 标签
 layout: index
+rule: tags
 ---
 
 ## 标签云

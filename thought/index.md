@@ -1,7 +1,9 @@
 ---
 title: thought
 layout: index
+rule: thought
 ---
+
 {% assign sorted_posts = site.thought | sort: 'date' | reverse %}
 {% for thought in sorted_posts %}
 

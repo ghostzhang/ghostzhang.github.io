@@ -1,6 +1,7 @@
 ---
 title: 分类
 layout: index
+rule: categories
 ---
 
 ## 分类

@@ -1,0 +1,141 @@
+/*!
+ * Modified from GitHub's Dark Dimmed theme, licensed under the MIT License
+ * Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ */
+
+main {
+  --color-1: #191713;
+  --color-2: #221F19;
+  --color-3: #38332A;
+  --color-4: #8B8376;
+  --color-5: #B4AC9E;
+  --color-6: #EAE3D6;
+  --color-7: #B4472A;
+
+  --color-btn-text: var(--color-5);
+  --color-btn-bg: var(--color-3);
+  --color-btn-border: var(--color-5);
+  --color-btn-hover-bg: var(--color-1);
+  --color-btn-hover-border: var(--color-1);
+  --color-btn-active-bg: var(--color-5);
+  --color-btn-active-border: var(--color-3);
+  --color-btn-selected-bg: var(--color-4);
+  --color-btn-primary-text: var(--color-5);
+  --color-btn-primary-bg: var(--color-3);
+  --color-btn-primary-border: var(--color-6);
+  --color-btn-primary-hover-bg: var(--color-1);
+  --color-btn-primary-hover-border: var(--color-1);
+  --color-btn-primary-selected-bg: var(--color-1);
+  --color-btn-primary-disabled-text: var(--color-4);
+  --color-btn-primary-disabled-bg: var(--color-5);
+  --color-btn-primary-disabled-border: var(--color-5);
+  --color-action-list-item-default-hover-bg: var(--color-4);
+  --color-segmented-control-bg: var(--color-5);
+  --color-segmented-control-button-bg: var(--color-4);
+  --color-segmented-control-button-selected-border: var(--color-4);
+  --color-fg-default: var(--color-3);
+  --color-fg-muted: var(--color-3);
+  --color-fg-subtle: var(--color-2);
+  --color-canvas-default: var(--color-6);
+  --color-canvas-primary: var(--color-5);
+  --color-canvas-overlay: var(--color-4);
+  --color-canvas-inset: var(--color-6);
+  --color-canvas-subtle: var(--color-5);
+  --color-border-default: var(--color-4);
+  --color-border-primary: var(--color-4);
+  --color-border-muted: var(--color-5);
+  --color-accent-fg: var(--color-7);
+  --color-accent-emphasis: var(--color-5);
+  --color-accent-muted: var(--color-3);
+  --color-accent-subtle: var(--color-6);
+  --color-scale-gray-7: var(--color-3);
+  --color-scale-blue-8: var(--color-5);
+
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+/*! Custom CSS */
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+.BtnGroup-item .btn {
+  color: var(--color-3);
+}
+
+.gsc-reactions-count {
+  display: none;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments>.gsc-comment-box {
+  margin-bottom: 1rem;
+}
+
+.gsc-comments>.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-comments>.gsc-comment-box .btn:not([disabled]):hover,
+.gsc-comments>.gsc-timeline .btn:not([disabled]):hover {
+  color: var(--color-6);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  main {
+    --color-btn-text: var(--color-5);
+    --color-btn-bg: var(--color-1);
+    --color-btn-border: var(--color-3);
+    --color-btn-hover-bg: var(--color-5);
+    --color-btn-hover-border: var(--color-5);
+    --color-btn-primary-text: var(--color-5);
+    --color-btn-primary-bg: var(--color-1);
+    --color-btn-primary-border: var(--color-3);
+    --color-btn-primary-hover-bg: var(--color-5);
+    --color-btn-primary-hover-border: var(--color-5);
+    --color-btn-primary-disabled-bg: var(--color-3);
+    --color-btn-primary-disabled-border: var(--color-3);
+    --color-action-list-item-default-hover-bg: var(--color-2);
+    --color-segmented-control-bg: var(--color-2);
+    --color-segmented-control-button-bg: var(--color-3);
+    --color-segmented-control-button-selected-border: var(--color-3);
+    --color-fg-default: var(--color-6);
+    --color-fg-muted: var(--color-4);
+    --color-fg-subtle: var(--color-4);
+    --color-canvas-default: var(--color-2);
+    --color-canvas-primary: var(--color-2);
+    --color-canvas-overlay: var(--color-1);
+    --color-canvas-inset: var(--color-3);
+    --color-canvas-subtle: var(--color-2);
+    --color-border-default: var(--color-3);
+    --color-border-primary: var(--color-3);
+    --color-border-muted: var(--color-5);
+    --color-accent-fg: var(--color-7);
+    --color-accent-emphasis: var(--color-5);
+    --color-accent-muted: var(--color-3);
+    --color-accent-subtle: var(--color-3);
+    --color-scale-gray-7: var(--color-3);
+    --color-scale-blue-8: var(--color-1);
+
+    /*! Extensions from @primer/css/alerts/flash.scss */
+    --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+    --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+  }
+
+  /*! Custom CSS */
+  .BtnGroup-item .btn {
+    color: var(--color-4);
+  }
+
+  .gsc-comments>.gsc-comment-box .btn:not([disabled]):hover,
+  .gsc-comments>.gsc-timeline .btn:not([disabled]):hover {
+    color: var(--color-2);
+  }
+}

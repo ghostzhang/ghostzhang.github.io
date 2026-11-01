@@ -5446,8 +5446,8 @@ emmet.define('actionUtils', function(require, _) {
 		 * @return {Object} Object with <code>width</code> and <code>height</code> properties
 		 */
 		getImageSize: function(stream) {
-			var pngMagicNum = "\211PNG\r\n\032\n",
-				jpgMagicNum = "\377\330",
+			var pngMagicNum = "\x98PNG\r\n\x1a\n",
+				jpgMagicNum = "\xff\xd8",
 				gifMagicNum = "GIF8",
 				nextByte = function() {
 					return stream.charCodeAt(pos++);

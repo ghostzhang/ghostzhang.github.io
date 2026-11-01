@@ -1,0 +1,59 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --article-body-padding-lr: 2rem;
+        --highlight-bg: var(--color-1);
+
+        --link-link: var(--color-6);
+        --link-visited: var(--color-7);
+        --logo-color-1: var(--color-6);
+        --logo-color-2: var(--color-6);
+        --logo-color-3: var(--color-6);
+        --logo-color-4: var(--color-6);
+        --logo-color-5: var(--color-6);
+        --nav-gb: var(--color-3);
+        --nav-text: var(--color-6);
+        --main-bg: var(--color-1);
+        --body-bg: var(--color-1);
+        --body-text: var(--color-6);
+        --main-footer-bg: var(--color-2);
+        --main-footer-text: var(--link-link);
+        --article-title-text: var(--color-2);
+        --article-body-bg: var(--color-2);
+        --article-header: transparent;
+        --article-data: var(--color-4);
+        --article-quote: var(--color-4);
+        --article-quote-bg: transparent;
+        --hr: 1px solid var(--color-3);
+        --code-bg: var(--color-3);
+        --code-text: var(--color-5);
+        --thought-card-bg: var(--color-2);
+        --thought-card-title: var(--color-5);
+    }
+
+    pre,
+    code,
+    kbd {
+        background-color: var(--color-1);
+        border-color: var(--color-3);
+    }
+
+    .gt-container .gt-header-textarea {
+        background-color: var(--thought-card-bg);
+    }
+
+    .gt-container .gt-user-inner {
+        fill: #C9C9C9;
+    }
+
+    .gt-container .gt-meta {
+        border-bottom-color: var(--thought-card-bg);
+    }
+
+    #content article header {
+        background-color: var(--color-2)00;
+    }
+
+    .tiny-think {
+        background-color: var(--thought-card-bg);
+    }
+}

@@ -38,7 +38,7 @@ bundle exec jekyll build
 运行命令：
 
 ```
-jekyll serve --incremental --watch
+jbundle exec ekyll serve --incremental --watch
 ```
 
 然后在浏览器中打开 http://localhost:4000 即可预览。
